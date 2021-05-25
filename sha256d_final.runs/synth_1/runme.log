@@ -1,0 +1,421 @@
+
+*** Running vivado
+    with args -log IO.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source IO.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source IO.tcl -notrace
+Command: synth_design -top IO -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1548
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1031.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'IO' [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/IO.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'sha256d' [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256d.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'sha256' [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sha256' (1#1) [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'sha256__parameterized0' [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sha256__parameterized0' (1#1) [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'sha256d' (2#1) [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256d.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'IO' (3#1) [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/IO.vhd:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1031.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1031.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1031.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1031.383 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Uni/RL/sha256d_final/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc]
+Finished Parsing XDC File [D:/Uni/RL/sha256d_final/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Uni/RL/sha256d_final/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/IO_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/IO_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1033.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1033.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.371 ; gain = 1.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.371 ; gain = 1.988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.371 ; gain = 1.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'currentstate_reg' in module 'sha256d'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 waiting |                              000 |                              000
+                   first |                              001 |                              001
+            waitingfirst |                              010 |                              010
+                 working |                              011 |                              011
+             waitingwork |                              100 |                              100
+                finished |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'currentstate_reg' using encoding 'sequential' in module 'sha256d'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1072.582 ; gain = 41.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 18    
+	   4 Input   32 Bit       Adders := 2     
+	   5 Input   32 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 10    
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	              512 Bit    Registers := 4     
+	              256 Bit    Registers := 2     
+	               32 Bit    Registers := 24    
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input  512 Bit        Muxes := 2     
+	   8 Input  512 Bit        Muxes := 2     
+	   4 Input  512 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 20    
+	   8 Input   32 Bit        Muxes := 18    
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 5     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 27    
+	   8 Input    1 Bit        Muxes := 14    
+	   7 Input    1 Bit        Muxes := 6     
+	   5 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'message_reg[0]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[1]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[2]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[3]' (FDE) to 'message_reg[503]'
+INFO: [Synth 8-3886] merging instance 'message_reg[4]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[5]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[6]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[7]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[8]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[9]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[10]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[11]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[12]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[13]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[14]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[15]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[16]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[17]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[18]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[19]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[20]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[21]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[22]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[23]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[24]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[25]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[26]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[27]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[28]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[29]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[30]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[31]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[32]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[33]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[34]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[35]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[36]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[37]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[38]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[39]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[40]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[41]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[42]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[43]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[44]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[45]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[46]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[47]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[48]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[49]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[50]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[51]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[52]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[53]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[54]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[55]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[56]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[57]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[58]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[59]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[60]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[61]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[62]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[63]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[64]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[65]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[66]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[67]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[68]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[69]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[70]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[71]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[72]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[73]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[74]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[75]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[76]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[77]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[78]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[79]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[80]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[81]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[82]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[83]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[84]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[85]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[86]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[87]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[88]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[89]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[90]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[91]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[92]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[93]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[94]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[95]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[96]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[97]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[98]' (FDE) to 'message_reg[502]'
+INFO: [Synth 8-3886] merging instance 'message_reg[99]' (FDE) to 'message_reg[502]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\message_reg[502] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\message_reg[503] )
+INFO: [Synth 8-4471] merging register 'block_round_reg[31:0]' into 'block_round_reg[31:0]' [D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256.vhd:83]
+WARNING: [Synth 8-3917] design sha256__GB5 has port P[4] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port P[3] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port P[2] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port P[1] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port P[0] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[8] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[7] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[6] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[5] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[4] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[3] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[2] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[1] driven by constant 0
+WARNING: [Synth 8-3917] design sha256__GB5 has port O2[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:16 . Memory (MB): peak = 1106.883 ; gain = 75.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|sha256      | K[63]      | 64x32         | LUT            | 
+|sha256      | K[63]      | 64x32         | LUT            | 
+|IO          | K[63]      | 64x32         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++----------------------------+------------+-----------+----------------------+----------------------------+
+|Module Name                 | RTL Object | Inference | Size (Depth x Width) | Primitives                 | 
++----------------------------+------------+-----------+----------------------+----------------------------+
+|sha256__GB5                 | W_reg      | Implied   | 64 x 32              | RAM64X1D x 10	RAM64M x 50	 | 
+|sha256__parameterized0__GB4 | W_reg      | Implied   | 64 x 32              | RAM64X1D x 10	RAM64M x 50	 | 
++----------------------------+------------+-----------+----------------------+----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:26 . Memory (MB): peak = 1106.883 ; gain = 75.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:52 . Memory (MB): peak = 1108.938 ; gain = 77.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++----------------------------+------------+-----------+----------------------+----------------------------+
+|Module Name                 | RTL Object | Inference | Size (Depth x Width) | Primitives                 | 
++----------------------------+------------+-----------+----------------------+----------------------------+
+|sha256__GB5                 | W_reg      | Implied   | 64 x 32              | RAM64X1D x 10	RAM64M x 50	 | 
+|sha256__parameterized0__GB4 | W_reg      | Implied   | 64 x 32              | RAM64X1D x 10	RAM64M x 50	 | 
++----------------------------+------------+-----------+----------------------+----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:34 ; elapsed = 00:01:56 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:38 ; elapsed = 00:02:01 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:38 ; elapsed = 00:02:01 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   284|
+|3     |LUT1     |    14|
+|4     |LUT2     |   716|
+|5     |LUT3     |  1014|
+|6     |LUT4     |   161|
+|7     |LUT5     |   257|
+|8     |LUT6     |   335|
+|9     |MUXF7    |     2|
+|10    |RAM64M   |   100|
+|11    |RAM64X1D |    20|
+|12    |FDRE     |  1889|
+|13    |FDSE     |   272|
+|14    |IBUF     |     8|
+|15    |OBUF     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:39 ; elapsed = 00:02:01 . Memory (MB): peak = 1119.008 ; gain = 87.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:29 ; elapsed = 00:01:59 . Memory (MB): peak = 1119.008 ; gain = 85.637
+Synthesis Optimization Complete : Time (s): cpu = 00:01:39 ; elapsed = 00:02:02 . Memory (MB): peak = 1119.008 ; gain = 87.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1119.008 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 406 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1119.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 120 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 100 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 20 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:02:12 . Memory (MB): peak = 1119.008 ; gain = 112.902
+INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_final/sha256d_final.runs/synth_1/IO.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file IO_utilization_synth.rpt -pb IO_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 25 14:11:08 2021...

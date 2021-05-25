@@ -1,0 +1,99 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue May 25 14:12:05 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file IO_control_sets_placed.rpt
+| Design       : IO
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    21 |
+|    Minimum number of control sets                        |    21 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    15 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    21 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    17 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              13 |            5 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1432 |          342 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             716 |          188 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+-------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|   Clock Signal  |               Enable Signal               |             Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+-------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+|  GCLK_IBUF_BUFG | sha256d/sha1/message[510]_i_1_n_0         |                                         |                1 |              7 |         7.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/message_block[510]_i_1_n_0   |                                         |                3 |              8 |         2.67 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/done2                        |                                         |                3 |              8 |         2.67 |
+|  GCLK_IBUF_BUFG |                                           |                                         |                5 |             13 |         2.60 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/p_1_out                      | sha256d/sha1/block_round[31]_i_1__0_n_0 |                9 |             32 |         3.56 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/W_reg_r1_0_63_0_2_i_4_n_0    | sha256d/sha1/message[510]_i_1_n_0       |               10 |             32 |         3.20 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/W_reg_r1_0_63_0_2_i_4__0_n_0 | sha256d/sha2/message[511]_i_1_n_0       |               11 |             32 |         2.91 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/block_round[31]_i_2_n_0      | sha256d/sha2/block_round[31]_i_1_n_0    |                8 |             32 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/hash_round_rep[5]_i_1_n_0    | sha256d/sha1/message[510]_i_1_n_0       |               11 |             38 |         3.45 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/hash_round[0]_i_1_n_0        | sha256d/sha2/message[511]_i_1_n_0       |               11 |             38 |         3.45 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/T2[31]_i_1_n_0               |                                         |               16 |             64 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/T1[31]_i_1_n_0               |                                         |               16 |             64 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/W_reg_r1_0_63_0_2_i_4_n_0    |                                         |               55 |            220 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/W_reg_r1_0_63_0_2_i_4__0_n_0 |                                         |               55 |            220 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/E[0]                         |                                         |               71 |            256 |         3.61 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/words[1][31]_i_1_n_0         |                                         |               50 |            256 |         5.12 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/message[511]_i_1_n_0         |                                         |               65 |            256 |         3.94 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/words[0][31]_i_1__0_n_0      |                                         |               56 |            256 |         4.57 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/hv[1][0]_i_1_n_0             | sha256d/sha1/message[510]_i_1_n_0       |               64 |            256 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/hv[0][0]_i_1_n_0             | sha256d/sha2/message[511]_i_1_n_0       |               64 |            256 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/message_block[511]_i_1_n_0   |                                         |               61 |            257 |         4.21 |
++-----------------+-------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
+
+

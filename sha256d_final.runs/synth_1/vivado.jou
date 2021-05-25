@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 25 14:08:52 2021
+# Process ID: 512
+# Current directory: D:/Uni/RL/sha256d_final/sha256d_final.runs/synth_1
+# Command line: vivado.exe -log IO.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IO.tcl
+# Log file: D:/Uni/RL/sha256d_final/sha256d_final.runs/synth_1/IO.vds
+# Journal file: D:/Uni/RL/sha256d_final/sha256d_final.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IO.tcl -notrace
