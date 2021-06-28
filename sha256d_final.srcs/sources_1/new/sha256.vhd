@@ -69,6 +69,7 @@ architecture Behavioral of sha256 is
     signal hv: WordsArray(7 downto 0);
     signal words: WordsArray(7 downto 0);
     signal W: WordsArray(63 downto 0);
+    signal T1, T2: unsigned(31 downto 0);
     
     signal message: std_logic_vector(((((SIZE+65) / 512) + 1)*512)-1 downto 0);
     
@@ -121,8 +122,6 @@ begin
                     counter_val=>hash_round_counter_val);
     
     process(clk, message_block, hv) is
-        variable T1, T2: unsigned(31 downto 0);
-        variable W: WordsArray(63 downto 0);
     begin
         message_block <= message_block;
         hv <= hv;
@@ -136,14 +135,14 @@ begin
                     words <= hv;
                 when hashLoop0b =>
                     if w_counter_int_val < 16 then
-                        W(w_counter_int_val) := message_block((16-w_counter_int_val)*32-1 downto (15-w_counter_int_val)*32);
+                        W(w_counter_int_val) <= message_block((16-w_counter_int_val)*32-1 downto (15-w_counter_int_val)*32);
                     else
-                        W(w_counter_int_val) := std_logic_vector(unsigned(small_s1(W(w_counter_int_val-2))) + unsigned(W(w_counter_int_val-7)) + unsigned(small_s0(W(w_counter_int_val-15))) + unsigned(W(w_counter_int_val-16)));
+                        W(w_counter_int_val) <= std_logic_vector(unsigned(small_s1(W(w_counter_int_val-2))) + unsigned(W(w_counter_int_val-7)) + unsigned(small_s0(W(w_counter_int_val-15))) + unsigned(W(w_counter_int_val-16)));
                     end if;
                 when hashLoop1a =>
                     --for i in 0 to 3 loop
-                        T1 := unsigned(words(7))+unsigned(BIG_S1(words(4)))+unsigned(Ch(words(4), words(5), words(6)))+unsigned(K(hash_round_counter_int_val))+unsigned(W(hash_round_counter_int_val));
-                        T2 := unsigned(BIG_S0(words(0)))+unsigned(Maj(words(0), words(1), words(2)));
+                        T1 <= unsigned(words(7))+unsigned(BIG_S1(words(4)))+unsigned(Ch(words(4), words(5), words(6)))+unsigned(K(hash_round_counter_int_val))+unsigned(W(hash_round_counter_int_val));
+                        T2 <= unsigned(BIG_S0(words(0)))+unsigned(Maj(words(0), words(1), words(2)));
                 when hashLoop1b =>
                         words(7) <= words(6);
                         words(6) <= words(5);
