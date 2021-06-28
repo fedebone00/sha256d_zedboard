@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
@@ -89,6 +88,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
   D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256_pkg.vhd
+  D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/imports/oled_driver/oled_counter.vhd
   D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256.vhd
   D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256d.vhd
   D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/IO.vhd

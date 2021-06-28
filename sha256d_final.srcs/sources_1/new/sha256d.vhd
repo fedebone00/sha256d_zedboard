@@ -32,6 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity sha256d is
+    Generic (SIZE: integer);
     Port (
         clk: in std_logic;
         rst: in std_logic;
@@ -51,8 +52,8 @@ architecture Behavioral of sha256d is
     signal input2, output1, output2, output_out: std_logic_vector(255 downto 0);
 begin
     
-    sha1: entity work.sha256 port map (clk=>clk, rst=>rst, ready=>ready1, input=>input1, output=>output1, done=>done1);
-    sha2: entity work.sha256 port map (clk=>clk, rst=>rst, ready=>ready2, input=>input2, output=>output2, done=>done2);
+    sha1: entity work.sha256 generic map (SIZE=>SIZE) port map (clk=>clk, rst=>rst, start=>ready1, input=>input1, output=>output1, done=>done1);
+    sha2: entity work.sha256 generic map (SIZE=>256) port map (clk=>clk, rst=>rst, start=>ready2, input=>input2, output=>output2, done=>done2);
     
     with currentstate select done <=
         '1' when finished,

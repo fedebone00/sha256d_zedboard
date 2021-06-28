@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue May 25 14:12:05 2021
+| Date         : Mon Jun 28 15:34:27 2021
 | Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file IO_control_sets_placed.rpt
 | Design       : IO
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    21 |
-|    Minimum number of control sets                        |    21 |
+| Total control sets                                       |    19 |
+|    Minimum number of control sets                        |    19 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    15 |
+| Unused register locations in slices containing registers |    10 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    21 |
+| Total control sets |    19 |
 | >= 0 to < 4        |     0 |
 | >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     1 |
-| >= 8 to < 10       |     2 |
+| >= 6 to < 8        |     6 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     0 |
-| >= 16              |    17 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    10 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,42 +58,40 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              13 |            5 |
+| No           | No                    | No                     |              13 |            8 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |            1432 |          342 |
+| Yes          | No                    | No                     |            1217 |          413 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |             716 |          188 |
+| Yes          | Yes                   | No                     |             512 |          128 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------+-------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
-|   Clock Signal  |               Enable Signal               |             Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
-+-----------------+-------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
-|  GCLK_IBUF_BUFG | sha256d/sha1/message[510]_i_1_n_0         |                                         |                1 |              7 |         7.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/message_block[510]_i_1_n_0   |                                         |                3 |              8 |         2.67 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/done2                        |                                         |                3 |              8 |         2.67 |
-|  GCLK_IBUF_BUFG |                                           |                                         |                5 |             13 |         2.60 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/p_1_out                      | sha256d/sha1/block_round[31]_i_1__0_n_0 |                9 |             32 |         3.56 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/W_reg_r1_0_63_0_2_i_4_n_0    | sha256d/sha1/message[510]_i_1_n_0       |               10 |             32 |         3.20 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/W_reg_r1_0_63_0_2_i_4__0_n_0 | sha256d/sha2/message[511]_i_1_n_0       |               11 |             32 |         2.91 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/block_round[31]_i_2_n_0      | sha256d/sha2/block_round[31]_i_1_n_0    |                8 |             32 |         4.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/hash_round_rep[5]_i_1_n_0    | sha256d/sha1/message[510]_i_1_n_0       |               11 |             38 |         3.45 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/hash_round[0]_i_1_n_0        | sha256d/sha2/message[511]_i_1_n_0       |               11 |             38 |         3.45 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/T2[31]_i_1_n_0               |                                         |               16 |             64 |         4.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/T1[31]_i_1_n_0               |                                         |               16 |             64 |         4.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/W_reg_r1_0_63_0_2_i_4_n_0    |                                         |               55 |            220 |         4.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/W_reg_r1_0_63_0_2_i_4__0_n_0 |                                         |               55 |            220 |         4.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/E[0]                         |                                         |               71 |            256 |         3.61 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/words[1][31]_i_1_n_0         |                                         |               50 |            256 |         5.12 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/message[511]_i_1_n_0         |                                         |               65 |            256 |         3.94 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/words[0][31]_i_1__0_n_0      |                                         |               56 |            256 |         4.57 |
-|  GCLK_IBUF_BUFG | sha256d/sha1/hv[1][0]_i_1_n_0             | sha256d/sha1/message[510]_i_1_n_0       |               64 |            256 |         4.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/hv[0][0]_i_1_n_0             | sha256d/sha2/message[511]_i_1_n_0       |               64 |            256 |         4.00 |
-|  GCLK_IBUF_BUFG | sha256d/sha2/message_block[511]_i_1_n_0   |                                         |               61 |            257 |         4.21 |
-+-----------------+-------------------------------------------+-----------------------------------------+------------------+----------------+--------------+
++-----------------+------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+--------------+
+|   Clock Signal  |                        Enable Signal                       |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------+------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+--------------+
+|  GCLK_IBUF_BUFG | sha256d/sha1/message_block_counter/the_count[6]_i_1_n_0    |                                                        |                3 |              7 |         2.33 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/hash_round_counter/the_count[6]_i_1__0_n_0    |                                                        |                4 |              7 |         1.75 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/w_counter/the_count[6]_i_1__1_n_0             |                                                        |                4 |              7 |         1.75 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/message_block[510]_i_1_n_0                    |                                                        |                3 |              7 |         2.33 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/hash_round_counter/the_count[6]_i_1__3_n_0    |                                                        |                3 |              7 |         2.33 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/w_counter/the_count[6]_i_1__4_n_0             |                                                        |                6 |              7 |         1.17 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/done2                                         |                                                        |                2 |              8 |         4.00 |
+|  GCLK_IBUF_BUFG |                                                            |                                                        |                8 |             13 |         1.62 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/message_block_counter/the_count[6]_i_1__2_n_0 |                                                        |                5 |             15 |         3.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/T2[31]_i_1__0_n_0                             |                                                        |               16 |             64 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/T2[31]_i_1_n_0                                |                                                        |               16 |             64 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/hash_round_counter/currentstate_reg[0]_rep__0 |                                                        |               55 |            220 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/hash_round_counter/currentstate_reg[0]        |                                                        |               55 |            220 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/E[0]                                          |                                                        |               69 |            256 |         3.71 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/words[1][31]_i_1_n_0                          |                                                        |               59 |            256 |         4.34 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/hv[1][0]_i_2__0_n_0                           | sha256d/sha2/message_block_counter/currentstate_reg[1] |               64 |            256 |         4.00 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/message_block[511]_i_1_n_0                    |                                                        |              163 |            256 |         1.57 |
+|  GCLK_IBUF_BUFG | sha256d/sha2/words[1][31]_i_1__0_n_0                       |                                                        |               60 |            256 |         4.27 |
+|  GCLK_IBUF_BUFG | sha256d/sha1/hv[1][0]_i_2_n_0                              | sha256d/sha1/message_block_counter/currentstate_reg[1] |               64 |            256 |         4.00 |
++-----------------+------------------------------------------------------------+--------------------------------------------------------+------------------+----------------+--------------+
 
 

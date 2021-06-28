@@ -45,7 +45,7 @@ begin
     clk <= not clk after 5ns;
     ready <= '0', '1' after 10ns;
 
-    sha256d: entity work.sha256d port map (clk => clk, rst=>rst, ready=>ready,input=>input,output=>output, done=>done );
+    sha256d: entity work.sha256d generic map (SIZE=>24) port map (clk => clk, rst=>rst, ready=>ready,input=>input,output=>output, done=>done );
     
     process(done) is
     begin

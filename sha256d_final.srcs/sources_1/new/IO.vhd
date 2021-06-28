@@ -45,7 +45,7 @@ begin
     inp <= "0" & input;
     outputLed <= output(7 downto 0);
 
-    sha256d: entity work.sha256d port map (clk => GCLK, rst=>rst, ready=>ready,input=>inp,output=>output, done=>done );
+    sha256d: entity work.sha256d generic map (SIZE=>8) port map (clk => GCLK, rst=>rst, ready=>ready,input=>inp,output=>output, done=>done );
     
     
 

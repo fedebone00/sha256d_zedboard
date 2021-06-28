@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1621944528">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1624887121">
   <File Type="BITSTR-BMM" Name="IO_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="IO_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="IO_timing_summary_init.rpt"/>
@@ -79,6 +79,14 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/sha256_pkg.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/oled_driver/oled_counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../oled_driver/oled_counter.vhd"/>
+        <Attr Name="ImportTime" Val="1556571866"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
