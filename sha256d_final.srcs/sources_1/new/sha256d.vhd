@@ -86,11 +86,9 @@ begin
 
     process(clk, rst) is
     begin
-        if falling_edge(rst) then
+        if rst='0' then
             currentstate <= reset;
-        end if;
-        
-        if rising_edge(clk) then
+        elsif rising_edge(clk) then
             currentstate <= nextstate;
         end if;
     end process;

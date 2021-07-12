@@ -9,6 +9,8 @@ entity counter is
   generic (
     -- Size in bits of the counter
     SIZE : integer := 4;
+    -- Starting value of the counter
+    START: integer := 0;
     -- Value at which the terminal count is asserted
     TERMINAL : integer := 15
   );
@@ -39,10 +41,10 @@ begin
 
   process ( clock, reset ) begin
     if reset = '0' then
-      the_count <= ( others => '0' );
+      the_count <= to_unsigned(START, SIZE);
     elsif rising_edge( clock ) then
       if ( counter_init = '1' ) then
-        the_count <= ( others => '0' );
+        the_count <= to_unsigned(START, SIZE);
       elsif ( counter_enable = '1' ) then
         the_count <= the_count + 1;
       end if;
