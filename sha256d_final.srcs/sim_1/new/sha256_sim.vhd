@@ -36,22 +36,26 @@ entity sha256_sim is
 end sha256_sim;
 
 architecture Behavioral of sha256_sim is
-    signal clk, rst, ready: std_logic := '1';
-    signal input: std_logic_vector(23 downto 0) := x"616263";
+    signal clk, rst, start: std_logic := '1';
+    signal input: std_logic_vector(447 downto 0) := x"6162636462636465636465666465666765666768666768696768696a68696a6b696a6b6c6a6b6c6d6b6c6d6e6c6d6e6f6d6e6f706e6f7071";
     signal output: std_logic_vector(255 downto 0);
-    signal done: std_logic;
+    signal done, ready: std_logic;
 begin
 
     clk <= not clk after 5ns;
-    ready <= '0', '1' after 10ns;
 
-    sha256d: entity work.sha256d generic map (SIZE=>24) port map (clk => clk, rst=>rst, ready=>ready,input=>input,output=>output, done=>done );
+    sha256d: entity work.sha256d generic map (SIZE=>448) port map (clk => clk, rst=>rst, start=>start,input=>input,output=>output, ready=>ready, done=>done );
     
-    process(done) is
+    process(clk, ready, done) is
     begin
-        if rising_edge(done) then
-            input <= not input;
+        if rising_edge(clk) then
+            input <= input;
+            start <= '0';
+            if ready='1' then
+                input <= not input;
+                start <= '1';
+            end if;
         end if;
     end process;
-
+    
 end Behavioral;

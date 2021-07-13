@@ -12,11 +12,11 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package xil_defaultlib.sha256_pkg
-Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(size=7,terminal=0)\]
-Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(size=7,start=16,termina...]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(size=7,terminal=1)\]
 Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(size=7,terminal=63)\]
-Compiling architecture behavioral of entity xil_defaultlib.sha256 [\sha256(size=24)\]
+Compiling architecture behavioral of entity xil_defaultlib.sha256 [\sha256(size=448)\]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(size=7,terminal=0)\]
 Compiling architecture behavioral of entity xil_defaultlib.sha256 [\sha256(size=256)\]
-Compiling architecture behavioral of entity xil_defaultlib.sha256d [\sha256d(size=24)(23,0)\]
+Compiling architecture behavioral of entity xil_defaultlib.sha256d [\sha256d(size=448)(447,0)\]
 Compiling architecture behavioral of entity xil_defaultlib.sha256_sim
 Built simulation snapshot sha256_sim_behav

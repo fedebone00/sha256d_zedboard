@@ -41,6 +41,7 @@ entity sha256 is
         start: in std_logic;
         input: in std_logic_vector(SIZE-1 downto 0);
         output: out std_logic_vector(255 downto 0);
+        ready: out std_logic;
         done: out std_logic
         );
 end sha256;
@@ -73,6 +74,12 @@ architecture Behavioral of sha256 is
     signal hash_round_counter_init, hash_round_counter_enable, hash_round_counter_tc: std_logic;
         
 begin
+    output <= hv(0) & hv(1) & hv(2) & hv(3) & hv(4) & hv(5) & hv(6) & hv(7);
+    
+    done <= '1' when (currentstate=hashLoop2 and message_block_counter_tc='1') or currentstate=finish else '0';
+        
+    ready <= '1' when (currentstate=hashLoop2 and message_block_counter_tc='1') or currentstate=waiting else '0';
+
     blocks_count <= ((SIZE+65) / 512) + 1;
     
     message <= input & '1' & std_logic_vector(to_unsigned(SIZE, message'length-SIZE-1));
@@ -90,7 +97,7 @@ begin
     w_counter_int_val <= to_integer(w_counter_val);
     w_counter_init <= '1' when currentstate=hashLoop0a else '0';
     w_counter_enable <= '1' when currentstate=hashLoop0b else '0';
-    w_counter: entity work.counter generic map (SIZE=>7, START=>16, TERMINAL=>63)
+    w_counter: entity work.counter generic map (SIZE=>7, TERMINAL=>63)
         port map (  clock=>clk, reset=>rst,
                     counter_init=>w_counter_init,
                     counter_enable=>w_counter_enable,
@@ -112,6 +119,10 @@ begin
     begin
         message_block <= message_block;
         hv <= hv;
+        words <= words;
+        W <= W;
+        T1 <= T1;
+        T2 <= T2;
         
         if rising_edge(clk) then
             case currentstate is
@@ -120,15 +131,12 @@ begin
                     message_block <= message((blocks_count*512)-1 downto (blocks_count-1)*512);
                 when hashLoop0a =>
                     words <= hv;
-                    for i in 0 to 15 loop
-                        W(i) <= message_block((16-i)*32-1 downto (15-i)*32);
-                    end loop;
                 when hashLoop0b =>
---                    if w_counter_int_val < 16 then
---                        W(w_counter_int_val) <= message_block((16-w_counter_int_val)*32-1 downto (15-w_counter_int_val)*32);
---                    else
+                    if w_counter_int_val < 16 then
+                        W(w_counter_int_val) <= message_block((16-w_counter_int_val)*32-1 downto (15-w_counter_int_val)*32);
+                    else
                         W(w_counter_int_val) <= std_logic_vector(unsigned(small_s1(W(w_counter_int_val-2))) + unsigned(W(w_counter_int_val-7)) + unsigned(small_s0(W(w_counter_int_val-15))) + unsigned(W(w_counter_int_val-16)));
---                    end if;
+                    end if;
                 when hashLoop1a =>
                     --for i in 0 to 3 loop
                         T1 <= unsigned(words(7))+unsigned(BIG_S1(words(4)))+unsigned(Ch(words(4), words(5), words(6)))+unsigned(K(hash_round_counter_int_val))+unsigned(W(hash_round_counter_int_val));
@@ -149,15 +157,11 @@ begin
                     end loop;
                     message_block <= message((message_block_counter_int_val+1)*512-1 downto message_block_counter_int_val*512);
                 when finish =>
-                    output <= hv(0) & hv(1) & hv(2) & hv(3) & hv(4) & hv(5) & hv(6) & hv(7);
                 when others =>
             end case;
         end if;
+                
     end process;
-
-    with currentstate select done <=
-        '1' when finish,
-        '0' when others;
 
     process(clk, rst) is
     begin
@@ -185,11 +189,6 @@ begin
                 else
                     nextstate <= hashLoop0b;
                 end if;
---            when hashLoop0c => nextstate <= hashLoop0d;
---            when hashLoop0d => nextstate <= hashLoop0e;
---            when hashLoop0e => nextstate <= hashLoop0f;
---            when hashLoop0f => nextstate <= hashLoop0g;
---            when hashLoop0g => nextstate <= hashLoop1a;
             when hashLoop1a => nextstate <= hashLoop1b;
             when hashLoop1b => 
                 if hash_round_counter_tc='1' then

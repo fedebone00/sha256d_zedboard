@@ -36,16 +36,16 @@ entity IO is
 end IO;
 
 architecture Behavioral of IO is
-    signal rst, ready: std_logic := '1';
+    signal rst, start: std_logic := '1';
     signal output: std_logic_vector(255 downto 0);
-    signal done: std_logic;
+    signal done, ready: std_logic;
     signal inp: std_logic_vector(7 downto 0);
 begin
 
     inp <= "0" & input;
     outputLed <= output(7 downto 0);
 
-    sha256d: entity work.sha256d generic map (SIZE=>8) port map (clk => GCLK, rst=>rst, ready=>ready,input=>inp,output=>output, done=>done );
+    sha256d: entity work.sha256d generic map (SIZE=>8) port map (clk => GCLK, rst=>rst, start=>start,input=>inp,output=>output, ready=>ready, done=>done );
     
     
 

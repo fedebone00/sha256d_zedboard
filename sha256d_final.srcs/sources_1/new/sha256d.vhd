@@ -36,51 +36,43 @@ entity sha256d is
     Port (
         clk: in std_logic;
         rst: in std_logic;
-        ready: in std_logic;
+        start: in std_logic;
         input: in std_logic_vector;
         output: out std_logic_vector(255 downto 0);
-        new_data: out std_logic;
+        ready: out std_logic;
         done: out std_logic
         );
 end sha256d;
 
 architecture Behavioral of sha256d is
-    type state is (waiting, first, waitingfirst, working, waitingwork, finished, reset);
+    type state is (waiting, round1, waitinground1, round2, waitinground2, finished, reset);
     signal currentstate, nextstate: state;
-    signal ready1, ready2, done1, done2: std_logic := '0';
+    signal start1, start2, done1, done2: std_logic := '0';
+    signal ready1, ready2: std_logic;
     signal input1: std_logic_vector(input'length-1 downto 0);
     signal input2, output1, output2, output_out: std_logic_vector(255 downto 0);
 begin
     
-    sha1: entity work.sha256 generic map (SIZE=>SIZE) port map (clk=>clk, rst=>rst, start=>ready1, input=>input1, output=>output1, done=>done1);
-    sha2: entity work.sha256 generic map (SIZE=>256) port map (clk=>clk, rst=>rst, start=>ready2, input=>input2, output=>output2, done=>done2);
+    sha1: entity work.sha256 generic map (SIZE=>SIZE) port map (clk=>clk, rst=>rst, start=>start1, input=>input1, output=>output1, ready=>ready1, done=>done1);
+    sha2: entity work.sha256 generic map (SIZE=>256) port map (clk=>clk, rst=>rst, start=>start2, input=>input2, output=>output2, ready=>ready2, done=>done2);
     
-    with currentstate select done <=
-        '1' when finished,
-        '0' when others;
+    done <= '1' when (currentstate=waitinground2 and done2='1') or currentstate=finished else '0';
         
-    output <= output_out;
+    ready <= '1' when (currentstate=waitinground2 and done2='1') or currentstate=waiting else '0';
+        
+    input1 <= input;
+    input2 <= output1;
+    output <= output2;
 
-    process(clk, currentstate, input, ready, output1, output2) is
+    process(clk, currentstate) is
     begin
-        ready1<='0'; ready2<='0';
-        input1<=input; input2<=output1;
-        output_out<=output2;
+        start1<='0'; start2<='0';
         case currentstate is
-            when waiting =>
-            when first =>
-                ready1 <= '1';
-            when waitingwork|waitingfirst=>
-                ready1 <= '0';
-                ready2 <= '0';
-            when working =>
-                if ready='1' then
-                    ready1 <= '1';
-                end if;
-                
-                ready2 <= '1';
-            when finished =>
-            when reset =>
+            when round1 =>
+                start1 <= '1';
+            when round2 =>
+                start2 <= '1';
+            when others =>
         end case;
     end process;
 
@@ -93,36 +85,40 @@ begin
         end if;
     end process;
     
-    process(clk, currentstate, rst, ready, done1, done2) is
+    process(clk, currentstate, rst, start, done1, done2) is
     begin
         case currentstate is
             when waiting =>
-                if ready='1' then
-                    nextstate <= first;
+                if start='1' and ready1='1' then
+                    nextstate <= round1;
                 else
                     nextstate <= waiting;
                 end if;
-            when first =>
-                nextstate <= waitingfirst;
-            when waitingfirst =>
-                if done1='1' then
-                    nextstate <= working;
+            when round1 =>
+                nextstate <= waitinground1;
+            when waitinground1 =>
+                if done1='1' and ready2='1' then
+                    nextstate <= round2;
                 else
-                    nextstate <= waitingfirst;
+                    nextstate <= waitinground1;
                 end if;
-            when working =>
-                nextstate <= waitingwork;
-            when waitingwork =>
-                if done1='1' and done2='1' then
+            when round2 =>
+                nextstate <= waitinground2;
+            when waitinground2 =>
+                if done2='1' then
                     nextstate <= finished;
                 else
-                    nextstate <= waitingwork;
+                    nextstate <= waitinground2;
                 end if;
             when finished =>
-                nextstate <= working;
+                if start='1' and ready1='1' then
+                    nextstate <= round1;
+                else
+                    nextstate <= waiting;
+                end if;
             when reset =>
-                if rst='1' and ready='1' then
-                    nextstate <= first;
+                if rst='1' and start='1' and ready1='1' then
+                    nextstate <= round1;
                 elsif rst='1' then
                     nextstate <= waiting;
                 else
