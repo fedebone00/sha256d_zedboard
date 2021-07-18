@@ -42,6 +42,7 @@ architecture Behavioral of sha256_sim is
     signal done, ready: std_logic;
 begin
 
+    rst <= '0', '1' after 5 ns;
     clk <= not clk after 5ns;
 
     sha256d: entity work.sha256d generic map (SIZE=>448) port map (clk => clk, rst=>rst, start=>start,input=>input,output=>output, ready=>ready, done=>done );
@@ -52,7 +53,7 @@ begin
             input <= input;
             start <= '0';
             if ready='1' then
-                input <= not input;
+                --input <= not input;
                 start <= '1';
             end if;
         end if;
