@@ -46,16 +46,4 @@ begin
 
     sha256d: entity work.sha256d generic map (SIZE=>448) port map (clk => clk, rst=>rst, start=>start,input=>input,output=>output, ready=>ready, done=>done );
     
-    process(clk, ready, done) is
-    begin
-        if rising_edge(clk) then
-            input <= input;
-            start <= '0';
-            if ready='1' then
-                input <= not input;
-                start <= '1';
-            end if;
-        end if;
-    end process;
-    
 end Behavioral;
