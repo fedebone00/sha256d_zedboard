@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/Uni/RL/sha256d_final/sha256d_final.runs/impl_1/IO.tcl"
+  variable script "D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/IO.tcl"
   variable category "vivado_impl"
 }
 
@@ -130,16 +130,16 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/Uni/RL/sha256d_final/sha256d_final.cache/wt [current_project]
-  set_property parent.project_path D:/Uni/RL/sha256d_final/sha256d_final.xpr [current_project]
-  set_property ip_output_repo D:/Uni/RL/sha256d_final/sha256d_final.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/wt [current_project]
+  set_property parent.project_path D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr [current_project]
+  set_property ip_output_repo D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/Uni/RL/sha256d_final/sha256d_final.runs/synth_1/IO.dcp
+  add_files -quiet D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/IO.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/Uni/RL/sha256d_final/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc
-  read_xdc D:/Uni/RL/sha256d_final/sha256d_final.srcs/constrs_1/new/zedboard_iostandards.xdc
+  read_xdc D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc
+  read_xdc D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/new/zedboard_iostandards.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

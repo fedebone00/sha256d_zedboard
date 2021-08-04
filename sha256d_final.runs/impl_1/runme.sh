@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Uni/RL/sha256d_final/sha256d_final.runs/impl_1'
+HD_PWD='D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

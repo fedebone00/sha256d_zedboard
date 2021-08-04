@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Uni/RL/sha256d_final/sha256d_final.runs/synth_1/IO.tcl"
+  variable script "D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/IO.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,21 +77,21 @@ create_project -in_memory -part xc7z020clg484-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Uni/RL/sha256d_final/sha256d_final.cache/wt [current_project]
-set_property parent.project_path D:/Uni/RL/sha256d_final/sha256d_final.xpr [current_project]
+set_property webtalk.parent_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/wt [current_project]
+set_property parent.project_path D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_output_repo d:/Uni/RL/sha256d_final/sha256d_final.cache/ip [current_project]
+set_property ip_output_repo d:/Uni/RL/sha256d_zedboard/sha256d_final.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256_pkg.vhd
-  D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/imports/oled_driver/oled_counter.vhd
-  D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256.vhd
-  D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/sha256d.vhd
-  D:/Uni/RL/sha256d_final/sha256d_final.srcs/sources_1/new/IO.vhd
+  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/new/sha256_pkg.vhd
+  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/imports/oled_driver/oled_counter.vhd
+  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/new/sha256.vhd
+  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/new/sha256d.vhd
+  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/new/IO.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -102,8 +102,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Uni/RL/sha256d_final/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc
-set_property used_in_implementation false [get_files D:/Uni/RL/sha256d_final/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc]
+read_xdc D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc
+set_property used_in_implementation false [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
