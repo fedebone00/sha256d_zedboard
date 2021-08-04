@@ -2,8 +2,8 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Jul 18 00:10:28 2021
-# Process ID: 17848
+# Start of session at: Mon Jun 28 14:52:50 2021
+# Process ID: 8040
 # Current directory: D:/Uni/RL/sha256d_final/sha256d_final.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/Uni/RL/sha256d_final/sha256d_final.sim/sim_1/behav/xsim/xsim.dir/sha256_sim_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Uni/RL/sha256d_final/sha256d_final.sim/sim_1/behav/xsim/webtalk.log

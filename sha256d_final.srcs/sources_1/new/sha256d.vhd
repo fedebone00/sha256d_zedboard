@@ -85,7 +85,7 @@ begin
         end if;
     end process;
     
-    process(clk, currentstate, rst, start, done1, done2, ready1, ready2) is
+    process(clk, currentstate, rst, start, done1, done2) is
     begin
         case currentstate is
             when waiting =>
