@@ -17,12 +17,3 @@ domain create -name {standalone_ps7_cortexa9_0} -display-name {standalone_ps7_co
 platform generate -domains 
 platform write
 platform generate -quick
-bsp reload
-bsp setlib -name xilpm -ver 3.2
-bsp write
-bsp reload
-catch {bsp regenerate}
-bsp removelib -name xilpm
-bsp write
-bsp reload
-catch {bsp regenerate}
