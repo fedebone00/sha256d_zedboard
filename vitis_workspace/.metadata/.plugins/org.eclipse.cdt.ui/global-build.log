@@ -1,0 +1,46 @@
+Nothing to build in platform 'design_1_wrapper'
+
+21:38:52 **** Incremental Build of configuration Debug for project sha256d ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+../src/helloworld.c: In function 'main':
+D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/xparameters.h:364:48: warning: passing argument 1 of 'SHA256D_AXI_IP_Reg_SelfTest' makes pointer from integer without a cast [-Wint-conversion]
+  364 | #define XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR 0x43C00000
+      |                                                ^~~~~~~~~~
+      |                                                |
+      |                                                int
+../src/helloworld.c:63:33: note: in expansion of macro 'XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR'
+   63 |     SHA256D_AXI_IP_Reg_SelfTest(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR);
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:52:
+D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include/sha256d_axi_ip.h:93:44: note: expected 'void *' but argument is of type 'int'
+   93 | XStatus SHA256D_AXI_IP_Reg_SelfTest(void * baseaddr_p);
+      |                                     ~~~~~~~^~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: sha256d.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "sha256d.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sha256d.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sha256d.elf  |tee "sha256d.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61072	   2548	  22640	  86260	  150f4	sha256d.elf
+'Finished building: sha256d.elf.size'
+' '
+21:38:55 **** Incremental Build of configuration Debug for project sha256d_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62717 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_system/Debug/system.bif
+sdcard_gen --xpfm D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_system/Debug/system.bif --bitstream D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d/_ide/bitstream/design_1_wrapper.bit --elf D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d/Debug/sha256d.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d/_ide/bitstream/design_1_wrapper.bit
+Running D:/Xilinx/Vitis/2020.2/bin/bootgen  -image D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

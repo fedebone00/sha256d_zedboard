@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_sha256d_axi_ip_0_1_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
@@ -93,7 +94,7 @@ set_property ip_output_repo d:/Uni/RL/sha256d_zedboard/sha256d_final.cache/ip [c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_1/design_1_sha256d_axi_ip_0_1.xci
+read_ip -quiet D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_1/design_1_sha256d_axi_ip_0_1.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

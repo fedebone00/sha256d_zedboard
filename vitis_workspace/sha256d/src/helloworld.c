@@ -48,17 +48,37 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "xil_io.h"
 #include "sha256d_axi_ip.h"
 
 
 int main()
 {
-    init_platform();
+	char hex_result[256];
+	init_platform();
 
     print("Hello World\n\r");
-    print("Successfully ran Hello World application");
+    print("Successfully ran Hello World application\n\r");
 
     SHA256D_AXI_IP_Reg_SelfTest(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR);
+
+    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, 0, "abcd");
+    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, 19*32, 1);
+
+    printf("%lx\n\r", SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, 0));
+    printf("%lx\n\r", SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, 19*32));
+
+    print("\n\r********************************************\n\r");
+
+    while(SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, 19*32) != 1);
+
+    for(int i=0; i<8; ++i){
+    	snprintf(hex_result, 32, "%lx", SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*32));
+    	print(hex_result);
+    	print("\n\r");
+    }
+
+    print(hex_result);
 
     cleanup_platform();
     return 0;

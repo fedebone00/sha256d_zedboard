@@ -1,0 +1,10 @@
+21:38:55 **** Incremental Build of configuration Debug for project sha256d_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62717 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_system/Debug/system.bif
+sdcard_gen --xpfm D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_system/Debug/system.bif --bitstream D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d/_ide/bitstream/design_1_wrapper.bit --elf D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d/Debug/sha256d.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d/_ide/bitstream/design_1_wrapper.bit
+Running D:/Xilinx/Vitis/2020.2/bin/bootgen  -image D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+21:39:03 Build Finished (took 8s.425ms)
+
