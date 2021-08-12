@@ -46,9 +46,9 @@ XStatus SHA256D_AXI_IP_Reg_SelfTest(void * baseaddr_p)
 	 */
 	xil_printf("User logic slave module test...\n\r");
 
-	for (write_loop_index = 0 ; write_loop_index < 4; write_loop_index++)
+	for (write_loop_index = 0 ; write_loop_index < 20; write_loop_index++)
 	  SHA256D_AXI_IP_mWriteReg (baseaddr, write_loop_index*4, (write_loop_index+1)*READ_WRITE_MUL_FACTOR);
-	for (read_loop_index = 0 ; read_loop_index < 4; read_loop_index++)
+	for (read_loop_index = 0 ; read_loop_index < 20; read_loop_index++)
 	  if ( SHA256D_AXI_IP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
 	    xil_printf ("Error reading register value at address %x\n", (int)baseaddr + read_loop_index*4);
 	    return XST_FAILURE;

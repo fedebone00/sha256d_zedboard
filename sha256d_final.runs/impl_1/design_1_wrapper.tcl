@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -124,7 +123,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg484-1
   set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
@@ -135,8 +133,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/wt [current_project]
   set_property parent.project_path D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr [current_project]
   set_property ip_repo_paths {
-  D:/Uni/RL/ip_repo/sha256d_axi_ip_1.0
-  D:/Uni/RL/ip_repo/myip_1.0
+  D:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0
+  D:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0
 } [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/ip [current_project]

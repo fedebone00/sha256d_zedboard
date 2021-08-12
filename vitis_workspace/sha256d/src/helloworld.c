@@ -48,6 +48,7 @@
 #include <stdio.h>
 #include "platform.h"
 #include "xil_printf.h"
+#include "sha256d_axi_ip.h"
 
 
 int main()
@@ -56,6 +57,9 @@ int main()
 
     print("Hello World\n\r");
     print("Successfully ran Hello World application");
+
+    SHA256D_AXI_IP_Reg_SelfTest(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR);
+
     cleanup_platform();
     return 0;
 }

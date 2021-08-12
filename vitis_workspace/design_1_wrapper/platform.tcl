@@ -15,5 +15,7 @@ platform create -name {design_1_wrapper}\
 platform write
 domain create -name {standalone_ps7_cortexa9_0} -display-name {standalone_ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}
 platform generate -domains 
-platform write
+platform active {design_1_wrapper}
 platform generate -quick
+platform generate
+platform generate -domains standalone_ps7_cortexa9_0 
