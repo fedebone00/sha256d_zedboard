@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Aug 12 10:18:47 2021
+# Process ID: 13368
+# Current directory: D:/Uni/RL/sha256d_zedboard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent808 D:\Uni\RL\sha256d_zedboard\sha256d_final.xpr
+# Log file: D:/Uni/RL/sha256d_zedboard/vivado.log
+# Journal file: D:/Uni/RL/sha256d_zedboard\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 1108.438 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:user:sha256d_axi_ip:1.0 - sha256d_axi_ip_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <design_1> from block design file <D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1173.027 ; gain = 64.590
+ipx::edit_ip_in_project -upgrade true -name sha256d_axi_ip_v1_0_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/sha256d_axi_ip_v1_0_project d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1379.281 ; gain = 1.781
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 1393.121 ; gain = 15.621
+update_compile_order -fileset sources_1
+current_project sha256d_final
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 12 10:21:23 2021...
