@@ -3,7 +3,6 @@
 	<name>sha256d</name>
 	<comment>Created by Vitis v2020.2</comment>
 	<projects>
-		<project>design_1_wrapper</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

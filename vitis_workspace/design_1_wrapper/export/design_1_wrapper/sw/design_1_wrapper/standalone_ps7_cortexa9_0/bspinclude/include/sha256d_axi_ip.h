@@ -4,6 +4,7 @@
 
 
 /****************** Include Files ********************/
+#include "xil_io.h"
 #include "xil_types.h"
 #include "xstatus.h"
 
@@ -24,9 +25,6 @@
 #define SHA256D_AXI_IP_S00_AXI_SLV_REG14_OFFSET 56
 #define SHA256D_AXI_IP_S00_AXI_SLV_REG15_OFFSET 60
 #define SHA256D_AXI_IP_S00_AXI_SLV_REG16_OFFSET 64
-#define SHA256D_AXI_IP_S00_AXI_SLV_REG17_OFFSET 68
-#define SHA256D_AXI_IP_S00_AXI_SLV_REG18_OFFSET 72
-#define SHA256D_AXI_IP_S00_AXI_SLV_REG19_OFFSET 76
 
 
 /**************************** Type Definitions *****************************/

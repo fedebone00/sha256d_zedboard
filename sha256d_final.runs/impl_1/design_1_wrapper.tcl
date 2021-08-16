@@ -133,6 +133,8 @@ OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/wt [current_project]
   set_property parent.project_path D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr [current_project]
   set_property ip_repo_paths {
+  D:/Uni/RL/ip_repo/sha256d_axi_ip_1.0
+  D:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0
   D:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0
   D:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0
 } [current_project]
