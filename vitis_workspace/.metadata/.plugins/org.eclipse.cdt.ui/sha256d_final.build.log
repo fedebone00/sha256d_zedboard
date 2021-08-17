@@ -1,4 +1,4 @@
-15:05:52 **** Incremental Build of configuration Debug for project sha256d_final ****
+17:58:03 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -17,9 +17,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size sha256d_final.elf  |tee "sha256d_final.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  59388	   2548	  22640	  84576	  14a60	sha256d_final.elf
+  47736	   2548	  22640	  72924	  11cdc	sha256d_final.elf
 'Finished building: sha256d_final.elf.size'
 ' '
 
-15:05:54 Build Finished (took 1s.541ms)
+17:58:04 Build Finished (took 1s.591ms)
 

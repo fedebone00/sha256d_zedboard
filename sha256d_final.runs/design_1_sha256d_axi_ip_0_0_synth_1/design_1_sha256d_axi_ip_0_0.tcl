@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_sha256d_axi_ip_0_0_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1

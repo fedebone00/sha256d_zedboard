@@ -46,6 +46,8 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 #include "platform.h"
 #include "xil_io.h"
 #include "xil_printf.h"
@@ -56,66 +58,53 @@ int main()
 {
 	int i;
     u32 result;
-    char stringResult[256];
+    char stringResult[65];
+    char input[9];
+    char control;
 
-    init_platform();
-
-    print("starting sha256d test\n");
-    print("writing 'abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq' in registers\n");
-
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG0_OFFSET, (u32)0x61626364);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG1_OFFSET, (u32)0x62636465);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG2_OFFSET, (u32)0x63646566);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG3_OFFSET, (u32)0x64656667);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG4_OFFSET, (u32)0x65666768);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG5_OFFSET, (u32)0x66676869);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG6_OFFSET, (u32)0x6768696a);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG7_OFFSET, (u32)0x68696A6b);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG8_OFFSET, (u32)0x696A6B6c);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG9_OFFSET, (u32)0x6a6b6c6d);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG10_OFFSET, (u32)0x6b6c6d6e);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG11_OFFSET, (u32)0x6c6d6e6f);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG12_OFFSET, (u32)0x6d6e6f70);
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG13_OFFSET, (u32)0x6e6f7071);
-
-    print("written\n");
-
-    print("***************\n");
-
-
-    print("writing 0x1 in the last register (starts computation)\n");
-
-    SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG16_OFFSET, (u32)1);
-
-    print("written\n");
-
-    print("***************\n");
-
-    print("hopefully read result\n");
-
-
+	init_platform();
 
     while(1){
-    	result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG16_OFFSET);
-    	//printf("%lu == %lu\n", r, (u32)1);
-    	if(result==(u32)1){
-    		break;
+    	fflush(stdin);
+    	//write input loop
+    	control = getc(stdin);
+    	if(control != '\r' && control != '\n'){
+    		ungetc(control, stdin);
     	}
+
+    	for(i=0; i<19; ++i){
+			fgets(input, 9, stdin);
+			result = strtoul(input, NULL, 16);
+			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4, result);
+    	}
+
+    	//write 0x1 in the last register (19)
+		SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG19_OFFSET, (u32)1);
+
+		//wait for the result
+		while(1){
+			result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG16_OFFSET);
+			//printf("%lu == %lu\n", r, (u32)1);
+			if(result==(u32)1){
+				break;
+			}
+		}
+
+		for(i=7; i>=0; --i){
+			result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4);
+			snprintf(stringResult+(8*(7-i)), 9, "%08lx", result);
+		}
+
+    	//write 0x0 in the last register (19)
+		SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG19_OFFSET, (u32)0);
+
+
+		stringResult[64] = 0;
+
+		print(stringResult);
+		print("\n");
+
     }
-
-
-    for(i=7; i>=0; --i){
-    	result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4);
-    	snprintf(stringResult+(8*(7-i)), 9, "%08lx", result);
-    }
-
-    stringResult[64] = 0;
-
-	print("read\n");
-
-	printf("result: %s\n", stringResult);
-
-	print("***************\n");
 
 
     cleanup_platform();

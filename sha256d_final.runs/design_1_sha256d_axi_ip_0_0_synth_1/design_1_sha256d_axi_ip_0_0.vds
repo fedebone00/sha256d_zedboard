@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Aug 17 14:45:50 2021
-# Process ID: 16048
+# Start of session at: Tue Aug 17 17:49:57 2021
+# Process ID: 13116
 # Current directory: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1
 # Command line: vivado.exe -log design_1_sha256d_axi_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_sha256d_axi_ip_0_0.tcl
 # Log file: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1/design_1_sha256d_axi_ip_0_0.vds
@@ -20,128 +20,133 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19584
+INFO: [Synth 8-7075] Helper process launched with PID 16556
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1110.215 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1111.172 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_sha256d_axi_ip_0_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_0/synth/design_1_sha256d_axi_ip_0_0.vhd:82]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'sha256d_axi_ip_v1_0' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0.vhd:5' bound to instance 'U0' of component 'sha256d_axi_ip_v1_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_0/synth/design_1_sha256d_axi_ip_0_0.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'sha256d_axi_ip_v1_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0.vhd:49]
+INFO: [Synth 8-3491] module 'sha256d_axi_ip_v1_0' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0.vhd:5' bound to instance 'U0' of component 'sha256d_axi_ip_v1_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_0/synth/design_1_sha256d_axi_ip_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'sha256d_axi_ip_v1_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0.vhd:49]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'sha256d_axi_ip_v1_0_S00_AXI' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:5' bound to instance 'sha256d_axi_ip_v1_0_S00_AXI_inst' of component 'sha256d_axi_ip_v1_0_S00_AXI' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'sha256d_axi_ip_v1_0_S00_AXI' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-3491] module 'sha256d_axi_ip_v1_0_S00_AXI' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:5' bound to instance 'sha256d_axi_ip_v1_0_S00_AXI_inst' of component 'sha256d_axi_ip_v1_0_S00_AXI' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'sha256d_axi_ip_v1_0_S00_AXI' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:86]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-WARNING: [Synth 8-614] signal 'slv_reg8' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-WARNING: [Synth 8-614] signal 'slv_reg9' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-WARNING: [Synth 8-614] signal 'slv_reg10' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-WARNING: [Synth 8-614] signal 'slv_reg11' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-WARNING: [Synth 8-614] signal 'slv_reg12' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-WARNING: [Synth 8-614] signal 'slv_reg13' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-WARNING: [Synth 8-614] signal 'slv_reg14' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-WARNING: [Synth 8-614] signal 'slv_reg15' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:509]
-	Parameter SIZE bound to: 448 - type: integer 
-INFO: [Synth 8-3491] module 'sha256d' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256d.vhd:34' bound to instance 'sha256d_inst' of component 'sha256d' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:576]
-INFO: [Synth 8-638] synthesizing module 'sha256d' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256d.vhd:47]
-	Parameter SIZE bound to: 448 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'sha256' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:49]
-	Parameter SIZE bound to: 448 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'counter' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/counter.vhd:33]
+WARNING: [Synth 8-614] signal 'output' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg8' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg9' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg10' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg11' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg12' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg13' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg14' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+WARNING: [Synth 8-614] signal 'slv_reg15' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:543]
+	Parameter SIZE bound to: 608 - type: integer 
+INFO: [Synth 8-3491] module 'sha256d' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256d.vhd:34' bound to instance 'sha256d_inst' of component 'sha256d' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:610]
+INFO: [Synth 8-638] synthesizing module 'sha256d' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256d.vhd:47]
+	Parameter SIZE bound to: 608 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'sha256' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:49]
+	Parameter SIZE bound to: 608 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/counter.vhd:33]
 	Parameter SIZE bound to: 7 - type: integer 
 	Parameter START bound to: 0 - type: integer 
 	Parameter TERMINAL bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/counter.vhd:33]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/counter.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'counter' (1#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/counter.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/counter.vhd:33]
 	Parameter SIZE bound to: 7 - type: integer 
 	Parameter START bound to: 0 - type: integer 
 	Parameter TERMINAL bound to: 63 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (1#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/counter.vhd:33]
-WARNING: [Synth 8-614] signal 'words' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'T1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'T2' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'smallS0' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'smallS1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-INFO: [Synth 8-256] done synthesizing module 'sha256' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:49]
-INFO: [Synth 8-638] synthesizing module 'sha256__parameterized0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized0' (1#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/counter.vhd:33]
+WARNING: [Synth 8-614] signal 'words' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'T1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'T2' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'smallS0' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'smallS1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'sha256' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'sha256__parameterized0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:49]
 	Parameter SIZE bound to: 256 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/counter.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/counter.vhd:33]
 	Parameter SIZE bound to: 7 - type: integer 
 	Parameter START bound to: 0 - type: integer 
 	Parameter TERMINAL bound to: 0 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/counter.vhd:33]
-WARNING: [Synth 8-614] signal 'words' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'T1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'T2' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'smallS0' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-WARNING: [Synth 8-614] signal 'smallS1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:137]
-INFO: [Synth 8-256] done synthesizing module 'sha256__parameterized0' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256.vhd:49]
-WARNING: [Synth 8-614] signal 'ready1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256d.vhd:88]
-WARNING: [Synth 8-614] signal 'ready2' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256d.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'sha256d' (3#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/src/sha256d.vhd:47]
-WARNING: [Synth 8-614] signal 'sha256d_ready' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:579]
-INFO: [Synth 8-256] done synthesizing module 'sha256d_axi_ip_v1_0_S00_AXI' (4#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:86]
-INFO: [Synth 8-256] done synthesizing module 'sha256d_axi_ip_v1_0' (5#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/0ebe/hdl/sha256d_axi_ip_v1_0.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/counter.vhd:33]
+WARNING: [Synth 8-614] signal 'words' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'T1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'T2' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'smallS0' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+WARNING: [Synth 8-614] signal 'smallS1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:137]
+INFO: [Synth 8-256] done synthesizing module 'sha256__parameterized0' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:49]
+WARNING: [Synth 8-614] signal 'ready1' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256d.vhd:88]
+WARNING: [Synth 8-614] signal 'ready2' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256d.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'sha256d' (3#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256d.vhd:47]
+WARNING: [Synth 8-614] signal 'output' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:621]
+WARNING: [Synth 8-614] signal 'sha256d_output' is read in the process but is not in the sensitivity list [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:621]
+INFO: [Synth 8-256] done synthesizing module 'sha256d_axi_ip_v1_0_S00_AXI' (4#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'sha256d_axi_ip_v1_0' (5#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0.vhd:49]
 INFO: [Synth 8-256] done synthesizing module 'design_1_sha256d_axi_ip_0_0' (6#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_0/synth/design_1_sha256d_axi_ip_0_0.vhd:82]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1141.090 ; gain = 30.875
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1144.352 ; gain = 33.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1141.090 ; gain = 30.875
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1144.352 ; gain = 33.180
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1141.090 ; gain = 30.875
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1144.352 ; gain = 33.180
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1141.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 1144.352 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1240.176 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1253.809 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1240.238 ; gain = 0.062
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1254.934 ; gain = 1.125
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1240.238 ; gain = 130.023
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1254.934 ; gain = 143.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1240.238 ; gain = 130.023
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1254.934 ; gain = 143.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1240.238 ; gain = 130.023
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1254.934 ; gain = 143.762
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'currentstate_reg' in module 'sha256d'
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:81]
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/src/sha256.vhd:81]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
                    reset |                          0000001 |                              110
-                 waiting |                          0000100 |                              000
-                  round1 |                          0000010 |                              001
-           waitinground1 |                          1000000 |                              010
-                  round2 |                          0100000 |                              011
-           waitinground2 |                          0010000 |                              100
-                finished |                          0001000 |                              101
+                 waiting |                          0000010 |                              000
+                  round1 |                          0000100 |                              001
+           waitinground1 |                          0001000 |                              010
+                  round2 |                          0010000 |                              011
+           waitinground2 |                          0100000 |                              100
+                finished |                          1000000 |                              101
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'currentstate_reg' using encoding 'one-hot' in module 'sha256d'
+WARNING: [Synth 8-327] inferring latch for variable 'output_reg' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:623]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1240.238 ; gain = 130.023
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1254.934 ; gain = 143.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -157,22 +162,22 @@ Detailed RTL Component Info :
 	   3 Input     32 Bit         XORs := 10    
 	   2 Input     32 Bit         XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 42    
+	               32 Bit    Registers := 45    
 	                7 Bit    Registers := 8     
 	                4 Bit    Registers := 2     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 6     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 19    
+	   2 Input   32 Bit        Muxes := 22    
 	   4 Input   32 Bit        Muxes := 2     
 	   9 Input   32 Bit        Muxes := 16    
-	  18 Input   32 Bit        Muxes := 17    
+	  21 Input   32 Bit        Muxes := 20    
 	   2 Input    7 Bit        Muxes := 12    
 	   7 Input    7 Bit        Muxes := 1     
 	   2 Input    4 Bit        Muxes := 4     
 	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 31    
 	   8 Input    1 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 29    
 	   9 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -190,7 +195,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1240.238 ; gain = 130.023
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1254.934 ; gain = 143.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -223,13 +228,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1241.148 ; gain = 130.934
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1254.934 ; gain = 143.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1241.297 ; gain = 131.082
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1254.934 ; gain = 143.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -250,7 +255,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1269.098 ; gain = 158.883
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:18 . Memory (MB): peak = 1273.441 ; gain = 162.270
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -268,37 +273,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1287.020 ; gain = 175.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1287.020 ; gain = 175.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1287.020 ; gain = 175.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1287.020 ; gain = 175.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1287.020 ; gain = 175.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1287.020 ; gain = 175.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -316,46 +321,48 @@ Report Cell Usage:
 +------+---------+------+
 |1     |CARRY4   |   224|
 |2     |LUT1     |     7|
-|3     |LUT2     |   680|
-|4     |LUT3     |   886|
-|5     |LUT4     |   126|
-|6     |LUT5     |   182|
-|7     |LUT6     |   838|
-|8     |MUXF7    |   101|
-|9     |MUXF8    |    33|
+|3     |LUT2     |   682|
+|4     |LUT3     |   882|
+|5     |LUT4     |   379|
+|6     |LUT5     |   241|
+|7     |LUT6     |   629|
+|8     |MUXF7    |   165|
+|9     |MUXF8    |    66|
 |10    |RAM64M   |   100|
 |11    |RAM64X1D |    20|
-|12    |FDCE     |    61|
+|12    |FDCE     |    59|
 |13    |FDPE     |     5|
-|14    |FDRE     |  1563|
+|14    |FDRE     |  1659|
 |15    |FDSE     |   278|
+|16    |LD       |   768|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1287.020 ; gain = 175.848
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:46 ; elapsed = 00:00:55 . Memory (MB): peak = 1281.910 ; gain = 72.547
-Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1281.910 ; gain = 171.695
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:21 . Memory (MB): peak = 1287.020 ; gain = 65.266
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1287.020 ; gain = 175.848
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1293.988 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 478 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.174 . Memory (MB): peak = 1299.059 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1343 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1293.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1299.059 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 120 instances were transformed.
+  A total of 888 instances were transformed.
+  LD => LDCE: 768 instances
   RAM64M => RAM64M (RAMD64E(x4)): 100 instances
   RAM64X1D => RAM64X1D (RAMD64E(x2)): 20 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-40 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1293.988 ; gain = 183.773
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 1299.059 ; gain = 187.887
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1/design_1_sha256d_axi_ip_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_sha256d_axi_ip_0_0, cache-ID = 26e698713839db2c
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_sha256d_axi_ip_0_0, cache-ID = 2c61aff7f4bb1271
 INFO: [Coretcl 2-1174] Renamed 11 cell refs.
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1/design_1_sha256d_axi_ip_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_sha256d_axi_ip_0_0_utilization_synth.rpt -pb design_1_sha256d_axi_ip_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Aug 17 14:47:09 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 17 17:51:44 2021...

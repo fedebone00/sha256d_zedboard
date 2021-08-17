@@ -1225,19 +1225,13 @@
         "inst_hier_path": "rst_ps7_0_100M"
       },
       "sha256d_axi_ip_0": {
-        "vlnv": "xilinx.com:user:sha256d_axi_ip:1.7",
+        "vlnv": "xilinx.com:user:sha256d_axi_ip:2.4",
         "xci_name": "design_1_sha256d_axi_ip_0_0",
         "xci_path": "ip\\design_1_sha256d_axi_ip_0_0\\design_1_sha256d_axi_ip_0_0.xci",
         "inst_hier_path": "sha256d_axi_ip_0"
       }
     },
     "interface_nets": {
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
-        ]
-      },
       "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
           "processing_system7_0/M_AXI_GP0",
@@ -1254,6 +1248,12 @@
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
+        ]
+      },
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
         ]
       }
     },

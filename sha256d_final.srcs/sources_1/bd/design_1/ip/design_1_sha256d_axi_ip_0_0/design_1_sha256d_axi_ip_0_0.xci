@@ -7,7 +7,7 @@
   <spirit:componentInstances>
     <spirit:componentInstance>
       <spirit:instanceName>design_1_sha256d_axi_ip_0_0</spirit:instanceName>
-      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="user" spirit:name="sha256d_axi_ip" spirit:version="1.7"/>
+      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="user" spirit:name="sha256d_axi_ip" spirit:version="2.4"/>
       <spirit:configurableElementValues>
         <spirit:configurableElementValue spirit:referenceId="ADDRBLOCK_BASE_ADDRESS.S00_AXI.S00_AXI_reg">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S00_AXI.ADDR_WIDTH">7</spirit:configurableElementValue>

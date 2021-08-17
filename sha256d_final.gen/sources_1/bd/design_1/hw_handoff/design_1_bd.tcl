@@ -568,7 +568,7 @@ proc create_root_design { parentCell } {
   set rst_ps7_0_100M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps7_0_100M ]
 
   # Create instance: sha256d_axi_ip_0, and set properties
-  set sha256d_axi_ip_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:sha256d_axi_ip:1.7 sha256d_axi_ip_0 ]
+  set sha256d_axi_ip_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:sha256d_axi_ip:2.4 sha256d_axi_ip_0 ]
 
   # Create interface connections
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]

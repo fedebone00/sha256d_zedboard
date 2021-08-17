@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>user</spirit:library>
   <spirit:name>sha256d_axi_ip</spirit:name>
-  <spirit:version>1.7</spirit:version>
+  <spirit:version>2.4</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>S00_AXI</spirit:name>
@@ -266,7 +266,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>95de2b2e</spirit:value>
+            <spirit:value>00312ed3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -282,7 +282,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3829fb1b</spirit:value>
+            <spirit:value>3131a909</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -296,7 +296,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>aff23ed2</spirit:value>
+            <spirit:value>3f68491c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -753,7 +753,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/sha256d_axi_ip_v1_7.tcl</spirit:name>
+        <spirit:name>xgui/sha256d_axi_ip_v2_4.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_0e5443b4</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -840,8 +840,10 @@
         <xilinx:canUpgradeFrom>xilinx.com:user:sha256d_axi_ip:1.3</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:sha256d_axi_ip:1.5</xilinx:canUpgradeFrom>
         <xilinx:canUpgradeFrom>xilinx.com:user:sha256d_axi_ip:1.6</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:sha256d_axi_ip:2.1</xilinx:canUpgradeFrom>
+        <xilinx:canUpgradeFrom>xilinx.com:user:sha256d_axi_ip:2.3</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2021-08-17T12:43:40Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2021-08-17T15:48:57Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@1d4a97a0_ARCHIVE_LOCATION">d:/Uni/RL/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@734467b0_ARCHIVE_LOCATION">d:/Uni/RL/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
@@ -992,13 +994,73 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@62a11236_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3df93c84_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@51d86e1b_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@80b97c0_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f4b312_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26d87809_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e37ceb9_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c24ff45_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51a94357_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48cfd8a0_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45f336bb_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74c6a19f_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@147d9dc8_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b8eca24_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@241f3ee0_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@688e62e9_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47c155ef_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@403f05ab_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47466c35_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@494e9ce5_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1326a05b_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a96bf0f_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a8ed008_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8efbb98_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e45126d_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b880cbc_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@72d11d20_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5bc01df2_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ef073b6_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@141170a_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21491a79_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ef488f0_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46e945e4_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dbb69d5_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31c95069_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22556d17_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b1277e9_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24799f28_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@738afd7b_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ec5f1e5_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6624b52e_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61ec42b_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3687fff7_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@cdbcd9a_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75c0ec0c_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42d36705_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c03278_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d0578d7_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@784ac12e_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c668370_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@973bb95_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45acd36d_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@845fc0d_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ee8d3e4_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e353f_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b57dfcf_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a1304f4_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ddc84e5_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c09fac1_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6be905db_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d7fede_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@130fdafb_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6624f42c_ARCHIVE_LOCATION">d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="299c8a5a"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="ed1368d5"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d71ee93c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2754e507"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="1b4053fb"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="a0a6f17f"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="2cd4093f"/>

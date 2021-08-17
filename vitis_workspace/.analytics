@@ -289,3 +289,69 @@ timestamp=[2021-08-17 13:18:55], mode=BUILD, duration=0:00:10.451, duration_ms=1
 timestamp=[2021-08-17 15:05:47], mode=PLATFORM_GENERATION, duration=0:00:06.096, duration_ms=6096, data={name=design_1_wrapper}
 timestamp=[2021-08-17 15:05:54], mode=BUILD, duration=0:00:01.554, duration_ms=1554, data={name=sha256d_final, configuration=Debug, clean_build=false}
 timestamp=[2021-08-17 15:06:15], mode=BUILD, duration=0:00:10.312, duration_ms=10312, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:15:20], mode=BUILD, duration=0:00:01.583, duration_ms=1583, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:15:31], mode=BUILD, duration=0:00:10.696, duration_ms=10696, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:15:39], mode=BUILD, duration=0:00:01.194, duration_ms=1194, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:15:50], mode=BUILD, duration=0:00:10.354, duration_ms=10354, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:52:30], mode=BUILD, duration=0:00:06.174, duration_ms=6174, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:52:52], mode=BUILD, duration=0:00:20.016, duration_ms=20016, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:57:54], mode=BUILD, duration=0:00:01.539, duration_ms=1539, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 15:58:06], mode=BUILD, duration=0:00:10.529, duration_ms=10529, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:02:11], mode=BUILD, duration=0:00:01.272, duration_ms=1272, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:02:22], mode=BUILD, duration=0:00:10.424, duration_ms=10424, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:05:07], mode=BUILD, duration=0:00:01.435, duration_ms=1435, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:05:18], mode=BUILD, duration=0:00:10.270, duration_ms=10270, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:06:31], mode=BUILD, duration=0:00:01.251, duration_ms=1251, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:06:43], mode=BUILD, duration=0:00:11.846, duration_ms=11846, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:07:34], mode=BUILD, duration=0:00:00.861, duration_ms=861, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:07:48], mode=BUILD, duration=0:00:13.401, duration_ms=13401, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:14:25], mode=PLATFORM_GENERATION, duration=0:00:08.108, duration_ms=8108, data={name=design_1_wrapper}
+timestamp=[2021-08-17 16:14:30], mode=BUILD, duration=0:00:00.346, duration_ms=346, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:14:53], mode=BUILD, duration=0:00:10.909, duration_ms=10909, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:17:58], mode=BUILD, duration=0:00:00.827, duration_ms=827, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:18:10], mode=BUILD, duration=0:00:11.950, duration_ms=11950, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:20:42], mode=BUILD, duration=0:00:00.627, duration_ms=627, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:20:54], mode=BUILD, duration=0:00:11.925, duration_ms=11925, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:21:01], mode=BUILD, duration=0:00:04.158, duration_ms=4158, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:21:12], mode=BUILD, duration=0:00:10.235, duration_ms=10235, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:21:45], mode=BUILD, duration=0:00:01.267, duration_ms=1267, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:21:57], mode=BUILD, duration=0:00:11.099, duration_ms=11099, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:41:04], mode=BUILD, duration=0:00:01.650, duration_ms=1650, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:41:14], mode=BUILD, duration=0:00:10.432, duration_ms=10432, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:43:09], mode=BUILD, duration=0:00:01.268, duration_ms=1268, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:43:20], mode=BUILD, duration=0:00:10.574, duration_ms=10574, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:45:46], mode=BUILD, duration=0:00:00.696, duration_ms=696, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:45:55], mode=BUILD, duration=0:00:08.640, duration_ms=8640, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:45:59], mode=BUILD, duration=0:00:03.190, duration_ms=3190, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:46:10], mode=BUILD, duration=0:00:10.510, duration_ms=10510, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:49:13], mode=BUILD, duration=0:00:02.471, duration_ms=2471, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:49:24], mode=BUILD, duration=0:00:10.348, duration_ms=10348, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:51:21], mode=BUILD, duration=0:00:02.911, duration_ms=2911, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:51:32], mode=BUILD, duration=0:00:10.299, duration_ms=10299, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:51:55], mode=BUILD, duration=0:00:01.277, duration_ms=1277, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:52:06], mode=BUILD, duration=0:00:10.419, duration_ms=10419, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:56:18], mode=BUILD, duration=0:00:01.709, duration_ms=1709, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 16:56:30], mode=BUILD, duration=0:00:10.751, duration_ms=10751, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:02:52], mode=BUILD, duration=0:00:01.197, duration_ms=1197, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:03:02], mode=BUILD, duration=0:00:10.423, duration_ms=10423, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:06:04], mode=BUILD, duration=0:00:01.323, duration_ms=1323, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:06:15], mode=BUILD, duration=0:00:10.853, duration_ms=10853, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:08:19], mode=BUILD, duration=0:00:01.263, duration_ms=1263, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:08:30], mode=BUILD, duration=0:00:10.382, duration_ms=10382, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:10:35], mode=BUILD, duration=0:00:01.273, duration_ms=1273, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:10:45], mode=BUILD, duration=0:00:10.294, duration_ms=10294, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:29:26], mode=PLATFORM_GENERATION, duration=0:00:04.193, duration_ms=4193, data={name=design_1_wrapper}
+timestamp=[2021-08-17 17:29:26], mode=BUILD, duration=0:00:00.401, duration_ms=401, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:29:40], mode=BUILD, duration=0:00:12.783, duration_ms=12783, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:30:35], mode=BUILD, duration=0:00:00.421, duration_ms=421, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:30:46], mode=BUILD, duration=0:00:10.462, duration_ms=10462, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:32:46], mode=BUILD, duration=0:00:00.745, duration_ms=745, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:32:59], mode=BUILD, duration=0:00:12.606, duration_ms=12606, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:57:05], mode=PLATFORM_GENERATION, duration=0:00:04.933, duration_ms=4933, data={name=design_1_wrapper}
+timestamp=[2021-08-17 17:57:10], mode=BUILD, duration=0:00:00.671, duration_ms=671, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:57:32], mode=BUILD, duration=0:00:11.168, duration_ms=11168, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:58:04], mode=BUILD, duration=0:00:01.615, duration_ms=1615, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 17:58:16], mode=BUILD, duration=0:00:11.102, duration_ms=11102, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-08-17 18:19:33], mode=WORKBENCH_START, duration=0:00:26.113, duration_ms=26113, data={}
+timestamp=[2021-08-17 18:19:35], mode=WORKBENCH_UI_INIT, duration=0:00:01.916, duration_ms=1916, data={editors_count=9, platform_editors_count=5, projects_count=5, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,sha256d,sha256d_final,sha256d_final_system}
+timestamp=[2021-08-17 18:19:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.041, duration_ms=41, data={}
