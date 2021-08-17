@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-15:36:02 **** Incremental Build of configuration Debug for project sha256d_final ****
+12:52:18 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -19,29 +19,62 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size sha256d_final.elf  |tee "sha256d_final.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  48556	   2548	  22640	  73744	  12010	sha256d_final.elf
+  59324	   2548	  22640	  84512	  14a20	sha256d_final.elf
 'Finished building: sha256d_final.elf.size'
 ' '
-15:36:04 **** Incremental Build of configuration Debug for project sha256d_final_system ****
+12:52:22 **** Incremental Build of configuration Debug for project sha256d_final_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 61003 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif
+generate_system_bif.bat 51982 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif
 sdcard_gen --xpfm D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif --bitstream D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit --elf D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf,ps7_cortexa9_0
 creating BOOT.BIN using D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
 Running D:/Xilinx/Vitis/2020.2/bin/bootgen  -image D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
-Nothing to build in platform 'design_1_wrapper'
-
-15:42:31 **** Incremental Build of configuration Debug for project sha256d_final ****
+13:18:25 **** Incremental Build of project design_1_wrapper ****
+buildplatform.bat 51982 design_1_wrapper no_domain_build 
+XSDB Server Channel: tcfchan#51
+13:18:34 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
-15:42:32 **** Incremental Build of configuration Debug for project sha256d_final_system ****
+13:18:44 **** Incremental Build of configuration Debug for project sha256d_final_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 50496 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif
+generate_system_bif.bat 51982 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif
+sdcard_gen --xpfm D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif --bitstream D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit --elf D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
+Running D:/Xilinx/Vitis/2020.2/bin/bootgen  -image D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+15:05:41 **** Incremental Build of project design_1_wrapper ****
+buildplatform.bat 51982 design_1_wrapper no_domain_build 
+XSDB Server Channel: tcfchan#55
+15:05:52 **** Incremental Build of configuration Debug for project sha256d_final ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: sha256d_final.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "sha256d_final.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sha256d_final.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size sha256d_final.elf  |tee "sha256d_final.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59388	   2548	  22640	  84576	  14a60	sha256d_final.elf
+'Finished building: sha256d_final.elf.size'
+' '
+15:06:05 **** Incremental Build of configuration Debug for project sha256d_final_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 51982 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_ps7_cortexa9_0 D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif
 sdcard_gen --xpfm D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif --bitstream D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit --elf D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf,ps7_cortexa9_0
 creating BOOT.BIN using D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
 Running D:/Xilinx/Vitis/2020.2/bin/bootgen  -image D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

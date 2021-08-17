@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Aug 16 15:14:24 2021
-# Process ID: 9332
+# Start of session at: Tue Aug 17 14:48:11 2021
+# Process ID: 15272
 # Current directory: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper.vdi

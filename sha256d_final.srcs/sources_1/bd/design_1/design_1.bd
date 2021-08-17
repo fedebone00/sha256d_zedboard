@@ -12,13 +12,13 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "sha256d_axi_ip_0": "",
       "ps7_0_axi_periph": {
         "s00_couplers": {
           "auto_pc": ""
         }
       },
-      "rst_ps7_0_100M": ""
+      "rst_ps7_0_100M": "",
+      "sha256d_axi_ip_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1010,12 +1010,6 @@
           }
         }
       },
-      "sha256d_axi_ip_0": {
-        "vlnv": "xilinx.com:user:sha256d_axi_ip:1.1",
-        "xci_name": "design_1_sha256d_axi_ip_0_0",
-        "xci_path": "ip\\design_1_sha256d_axi_ip_0_0\\design_1_sha256d_axi_ip_0_0.xci",
-        "inst_hier_path": "sha256d_axi_ip_0"
-      },
       "ps7_0_axi_periph": {
         "vlnv": "xilinx.com:ip:axi_interconnect:2.1",
         "xci_path": "ip\\design_1_ps7_0_axi_periph_0\\design_1_ps7_0_axi_periph_0.xci",
@@ -1154,16 +1148,16 @@
               }
             },
             "interface_nets": {
-              "s00_couplers_to_auto_pc": {
-                "interface_ports": [
-                  "S_AXI",
-                  "auto_pc/S_AXI"
-                ]
-              },
               "auto_pc_to_s00_couplers": {
                 "interface_ports": [
                   "M_AXI",
                   "auto_pc/M_AXI"
+                ]
+              },
+              "s00_couplers_to_auto_pc": {
+                "interface_ports": [
+                  "S_AXI",
+                  "auto_pc/S_AXI"
                 ]
               }
             },
@@ -1229,6 +1223,12 @@
         "xci_name": "design_1_rst_ps7_0_100M_0",
         "xci_path": "ip\\design_1_rst_ps7_0_100M_0\\design_1_rst_ps7_0_100M_0.xci",
         "inst_hier_path": "rst_ps7_0_100M"
+      },
+      "sha256d_axi_ip_0": {
+        "vlnv": "xilinx.com:user:sha256d_axi_ip:1.7",
+        "xci_name": "design_1_sha256d_axi_ip_0_0",
+        "xci_path": "ip\\design_1_sha256d_axi_ip_0_0\\design_1_sha256d_axi_ip_0_0.xci",
+        "inst_hier_path": "sha256d_axi_ip_0"
       }
     },
     "interface_nets": {
@@ -1236,12 +1236,6 @@
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
-        ]
-      },
-      "processing_system7_0_FIXED_IO": {
-        "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -1255,6 +1249,12 @@
           "ps7_0_axi_periph/M00_AXI",
           "sha256d_axi_ip_0/S00_AXI"
         ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
+        ]
       }
     },
     "nets": {
@@ -1264,9 +1264,9 @@
           "processing_system7_0/M_AXI_GP0_ACLK",
           "ps7_0_axi_periph/S00_ACLK",
           "rst_ps7_0_100M/slowest_sync_clk",
-          "sha256d_axi_ip_0/s00_axi_aclk",
           "ps7_0_axi_periph/M00_ACLK",
-          "ps7_0_axi_periph/ACLK"
+          "ps7_0_axi_periph/ACLK",
+          "sha256d_axi_ip_0/s00_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1279,9 +1279,9 @@
         "ports": [
           "rst_ps7_0_100M/peripheral_aresetn",
           "ps7_0_axi_periph/S00_ARESETN",
-          "sha256d_axi_ip_0/s00_axi_aresetn",
           "ps7_0_axi_periph/M00_ARESETN",
-          "ps7_0_axi_periph/ARESETN"
+          "ps7_0_axi_periph/ARESETN",
+          "sha256d_axi_ip_0/s00_axi_aresetn"
         ]
       }
     },

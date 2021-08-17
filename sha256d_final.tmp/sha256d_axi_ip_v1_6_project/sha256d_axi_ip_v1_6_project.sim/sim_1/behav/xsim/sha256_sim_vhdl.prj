@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl   \
+"../../../../../../ip_repo/sha256d_axi_ip_1.0/src/counter.vhd" \
+"../../../../../../ip_repo/sha256d_axi_ip_1.0/src/sha256_pkg.vhd" \
+"../../../../../../ip_repo/sha256d_axi_ip_1.0/src/sha256.vhd" \
+"../../../../../../ip_repo/sha256d_axi_ip_1.0/src/sha256d.vhd" \
+
+vhdl xil_defaultlib  \
+"C:/Users/Federico/Downloads/src/sha256d_sim.vhd" \
+
+# Do not sort compile order
+nosort

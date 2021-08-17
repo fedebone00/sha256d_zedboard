@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:sha256d_axi_ip:1.1
--- IP Revision: 2
+-- IP VLNV: xilinx.com:user:sha256d_axi_ip:1.7
+-- IP Revision: 1
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -116,7 +116,7 @@ ARCHITECTURE design_1_sha256d_axi_ip_0_0_arch OF design_1_sha256d_axi_ip_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_sha256d_axi_ip_0_0_arch : ARCHITECTURE IS "design_1_sha256d_axi_ip_0_0,sha256d_axi_ip_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_sha256d_axi_ip_0_0_arch: ARCHITECTURE IS "design_1_sha256d_axi_ip_0_0,sha256d_axi_ip_v1_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=sha256d_axi_ip,x_ipVersion=1.1,x_ipCoreRevision=2,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_sha256d_axi_ip_0_0_arch: ARCHITECTURE IS "design_1_sha256d_axi_ip_0_0,sha256d_axi_ip_v1_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=sha256d_axi_ip,x_ipVersion=1.7,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aresetn: SIGNAL IS "XIL_INTERFACENAME S00_AXI_RST, POLARITY ACTIVE_LOW, INSERT_VIP 0";
