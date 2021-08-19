@@ -47,12 +47,32 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
+#include <limits.h>
 #include "platform.h"
 #include "xil_io.h"
 #include "xil_printf.h"
 #include "sha256d_axi_ip.h"
 
+int meetsTarget(const char* result, const char* target){
+	unsigned dataByte, targetByte;
+    char dataByteStr[3];
+    char targetByteStr[3];
+    dataByteStr[2] = 0;
+    targetByteStr[2] = 0;
+
+	for(int i=strlen(result)/2 - 1; i>=0; --i){
+		strncpy(dataByteStr, result+(i*2), 2);
+		dataByte = (unsigned)strtoul(dataByteStr, NULL, 16);
+
+		strncpy(targetByteStr, target+(i*2), 2);
+		targetByte = (unsigned)strtoul(targetByteStr, NULL, 16);
+
+		if((dataByte & 0xff) > (targetByte & 0xff))
+			return 0;
+		if((dataByte & 0xff) < (targetByte & 0xff))
+			return 1;
+	}
+}
 
 int main()
 {
@@ -61,6 +81,13 @@ int main()
     char stringResult[65];
     char input[9];
     char control;
+
+    char data[153];
+    char target[65];
+
+    input[8] = 0;
+    data[152] = 0;
+    target[64] = 0;
 
 	init_platform();
 
@@ -72,38 +99,56 @@ int main()
     		ungetc(control, stdin);
     	}
 
-    	for(i=0; i<19; ++i){
-			fgets(input, 9, stdin);
+
+    	fgets(data, 153, stdin);
+    	fgets(target, 65, stdin);
+
+    	//write first 18 registers (always the same for a given data)
+		for(i=0; i<19; ++i){
+			strncpy(input, data+(i*8), 8);
 			result = strtoul(input, NULL, 16);
 			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4, result);
-    	}
+		}
 
-    	//write 0x1 in the last register (19)
-		SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG19_OFFSET, (u32)1);
+    	for(u32 nonce=0; nonce<ULONG_MAX; ++nonce){
 
-		//wait for the result
-		while(1){
-			result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG16_OFFSET);
-			//printf("%lu == %lu\n", r, (u32)1);
-			if(result==(u32)1){
+    		//write last register (19) that contains the nonce
+    		snprintf(input, 9, "%08lx", __builtin_bswap32(nonce));
+    		i=19;
+			result = strtoul(input, NULL, 16);
+			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4, result);
+
+			//write 0x1 in the last register (20) to start the computation
+			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG20_OFFSET, (u32)1);
+
+			//wait for the result
+			while(1){
+				result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG20_OFFSET);
+				//printf("%lu == %lu\n", result, (u32)1);
+				if(result==(u32)1){
+					break;
+				}
+			}
+
+			//while(1);
+
+			for(i=7; i>=0; --i){
+				result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4);
+				snprintf(stringResult+(8*(7-i)), 9, "%08lx", result);
+			}
+
+			//write 0x0 in the last register (20)
+			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG20_OFFSET, (u32)0);
+
+			stringResult[64] = 0;
+
+			if(meetsTarget(stringResult, target))
+			{
+				printf("<nonce>%08lx</nonce>\n", nonce);
 				break;
 			}
-		}
 
-		for(i=7; i>=0; --i){
-			result = SHA256D_AXI_IP_mReadReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4);
-			snprintf(stringResult+(8*(7-i)), 9, "%08lx", result);
-		}
-
-    	//write 0x0 in the last register (19)
-		SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG19_OFFSET, (u32)0);
-
-
-		stringResult[64] = 0;
-
-		print(stringResult);
-		print("\n");
-
+    	}
     }
 
 

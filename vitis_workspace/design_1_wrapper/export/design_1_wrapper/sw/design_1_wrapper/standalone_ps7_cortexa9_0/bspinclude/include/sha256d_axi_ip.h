@@ -27,6 +27,7 @@
 #define SHA256D_AXI_IP_S00_AXI_SLV_REG17_OFFSET 68
 #define SHA256D_AXI_IP_S00_AXI_SLV_REG18_OFFSET 72
 #define SHA256D_AXI_IP_S00_AXI_SLV_REG19_OFFSET 76
+#define SHA256D_AXI_IP_S00_AXI_SLV_REG20_OFFSET 80
 
 
 /**************************** Type Definitions *****************************/

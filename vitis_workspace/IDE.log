@@ -5245,3 +5245,169 @@ con
 
 18:03:26 INFO  : Launch script is exported to file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final_system\_ide\scripts\systemdebugger_sha256d_final_system_standalone.tcl'
 18:17:51 INFO  : Disconnected from the channel tcfchan#118.
+18:17:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Uni\RL\sha256d_zedboard\vitis_workspace\temp_xsdb_launch_script.tcl
+18:17:33 INFO  : XSCT server has started successfully.
+18:17:33 INFO  : plnx-install-location is set to ''
+18:17:33 INFO  : Successfully done setting XSCT server connection channel  
+18:17:33 INFO  : Successfully done setting workspace for the tool. 
+18:17:46 INFO  : Platform repository initialization has completed.
+18:17:46 INFO  : Registering command handlers for Vitis TCF services
+18:18:05 INFO  : Successfully done query RDI_DATADIR 
+18:18:05 INFO  : Restoring local repository preferences: 
+		 D:\Uni\RL\sha256d_zedboard\ip_repo\sha256d_axi_ip_1.0
+02:08:59 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+02:09:38 INFO  : Result from executing command 'getProjects': design_1_wrapper
+02:09:38 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+02:09:38 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:09:43 INFO  : The hardware specfication used by project 'sha256d_final' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+02:09:43 INFO  : The file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+02:09:44 INFO  : The updated bitstream files are copied from platform to folder 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\bitstream' in project 'sha256d_final'.
+02:09:44 INFO  : The file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\psinit\ps7_init.tcl' stored in project is removed.
+02:09:53 INFO  : The updated ps init files are copied from platform to folder 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\psinit' in project 'sha256d_final'.
+02:14:50 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:19:02 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:19:17 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:19:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:19:44 INFO  : Jtag cable 'Digilent Zed 210248684685' is selected.
+02:19:44 INFO  : 'jtag frequency' command is executed.
+02:19:44 INFO  : Context for 'APU' is selected.
+02:19:44 INFO  : System reset is completed.
+02:19:47 INFO  : 'after 3000' command is executed.
+02:19:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}' command is executed.
+02:19:50 INFO  : Device configured successfully with "D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit"
+02:19:50 INFO  : Context for 'APU' is selected.
+02:19:50 INFO  : Hardware design and registers information is loaded from 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+02:19:50 INFO  : 'configparams force-mem-access 1' command is executed.
+02:19:50 INFO  : Context for 'APU' is selected.
+02:19:50 INFO  : Sourcing of 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl' is done.
+02:19:51 INFO  : 'ps7_init' command is executed.
+02:19:51 INFO  : 'ps7_post_config' command is executed.
+02:19:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:19:51 INFO  : The application 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:19:51 INFO  : 'configparams force-mem-access 0' command is executed.
+02:19:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}
+fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:19:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:19:51 INFO  : 'con' command is executed.
+02:19:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:19:51 INFO  : Launch script is exported to file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final_system\_ide\scripts\systemdebugger_sha256d_final_system_standalone.tcl'
+02:21:49 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:22:08 INFO  : Disconnected from the channel tcfchan#6.
+02:22:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:22:08 INFO  : Jtag cable 'Digilent Zed 210248684685' is selected.
+02:22:08 INFO  : 'jtag frequency' command is executed.
+02:22:08 INFO  : Context for 'APU' is selected.
+02:22:08 INFO  : System reset is completed.
+02:22:11 INFO  : 'after 3000' command is executed.
+02:22:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}' command is executed.
+02:22:14 INFO  : Device configured successfully with "D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit"
+02:22:14 INFO  : Context for 'APU' is selected.
+02:22:14 INFO  : Hardware design and registers information is loaded from 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+02:22:14 INFO  : 'configparams force-mem-access 1' command is executed.
+02:22:14 INFO  : Context for 'APU' is selected.
+02:22:14 INFO  : Sourcing of 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl' is done.
+02:22:15 INFO  : 'ps7_init' command is executed.
+02:22:15 INFO  : 'ps7_post_config' command is executed.
+02:22:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:22:15 INFO  : The application 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:22:15 INFO  : 'configparams force-mem-access 0' command is executed.
+02:22:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}
+fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:22:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:22:15 INFO  : 'con' command is executed.
+02:22:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:22:15 INFO  : Launch script is exported to file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final_system\_ide\scripts\systemdebugger_sha256d_final_system_standalone.tcl'
+02:23:11 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:23:21 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:23:34 INFO  : Disconnected from the channel tcfchan#8.
+02:23:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:23:34 INFO  : Jtag cable 'Digilent Zed 210248684685' is selected.
+02:23:34 INFO  : 'jtag frequency' command is executed.
+02:23:34 INFO  : Context for 'APU' is selected.
+02:23:34 INFO  : System reset is completed.
+02:23:37 INFO  : 'after 3000' command is executed.
+02:23:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}' command is executed.
+02:23:40 INFO  : Device configured successfully with "D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit"
+02:23:40 INFO  : Context for 'APU' is selected.
+02:23:40 INFO  : Hardware design and registers information is loaded from 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+02:23:40 INFO  : 'configparams force-mem-access 1' command is executed.
+02:23:40 INFO  : Context for 'APU' is selected.
+02:23:40 INFO  : Sourcing of 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl' is done.
+02:23:41 INFO  : 'ps7_init' command is executed.
+02:23:41 INFO  : 'ps7_post_config' command is executed.
+02:23:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:23:41 INFO  : The application 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:23:41 INFO  : 'configparams force-mem-access 0' command is executed.
+02:23:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}
+fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:23:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:23:42 INFO  : 'con' command is executed.
+02:23:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+02:23:42 INFO  : Launch script is exported to file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final_system\_ide\scripts\systemdebugger_sha256d_final_system_standalone.tcl'
+02:25:23 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+02:25:30 INFO  : Disconnected from the channel tcfchan#11.
+02:26:35 ERROR : (XSDB Server)Invalid target. Use "connect" command to connect to hw_server/TCF agent
+

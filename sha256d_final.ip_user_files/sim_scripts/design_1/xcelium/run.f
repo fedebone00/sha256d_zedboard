@@ -36,11 +36,11 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
-  "../../../bd/design_1/ipshared/5b01/src/counter.vhd" \
-  "../../../bd/design_1/ipshared/5b01/src/sha256_pkg.vhd" \
-  "../../../bd/design_1/ipshared/5b01/src/sha256.vhd" \
-  "../../../bd/design_1/ipshared/5b01/src/sha256d.vhd" \
-  "../../../bd/design_1/ipshared/5b01/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd" \
+  "../../../bd/design_1/ipshared/83b9/src/counter.vhd" \
+  "../../../bd/design_1/ipshared/83b9/src/sha256_pkg.vhd" \
+  "../../../bd/design_1/ipshared/83b9/src/sha256.vhd" \
+  "../../../bd/design_1/ipshared/83b9/src/sha256d.vhd" \
+  "../../../bd/design_1/ipshared/83b9/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd" \
   "../../../bd/design_1/ip/design_1_sha256d_axi_ip_0_0/sim/design_1_sha256d_axi_ip_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/generic_baseblocks_v2_1_0 \
