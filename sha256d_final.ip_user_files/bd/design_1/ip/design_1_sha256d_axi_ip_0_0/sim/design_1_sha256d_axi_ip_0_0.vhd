@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:sha256d_axi_ip:2.7
+-- IP VLNV: xilinx.com:user:sha256d_axi_ip:2.8
 -- IP Revision: 1
 
 LIBRARY ieee;
@@ -55,7 +55,6 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_sha256d_axi_ip_0_0 IS
   PORT (
-    irq : OUT STD_LOGIC;
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -89,7 +88,6 @@ ARCHITECTURE design_1_sha256d_axi_ip_0_0_arch OF design_1_sha256d_axi_ip_0_0 IS
       C_S00_AXI_ADDR_WIDTH : INTEGER -- Width of S_AXI address bus
     );
     PORT (
-      irq : OUT STD_LOGIC;
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -140,8 +138,6 @@ ARCHITECTURE design_1_sha256d_axi_ip_0_0_arch OF design_1_sha256d_axi_ip_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 S00_AXI_RST RST";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axi_aclk: SIGNAL IS "XIL_INTERFACENAME S00_AXI_CLK, ASSOCIATED_BUSIF S00_AXI, ASSOCIATED_RESET s00_axi_aresetn, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axi_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 S00_AXI_CLK CLK";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF irq: SIGNAL IS "XIL_INTERFACENAME irq, SENSITIVITY LEVEL_HIGH, PortWidth 1";
-  ATTRIBUTE X_INTERFACE_INFO OF irq: SIGNAL IS "xilinx.com:signal:interrupt:1.0 irq INTERRUPT";
 BEGIN
   U0 : sha256d_axi_ip_v1_0
     GENERIC MAP (
@@ -149,7 +145,6 @@ BEGIN
       C_S00_AXI_ADDR_WIDTH => 7
     )
     PORT MAP (
-      irq => irq,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

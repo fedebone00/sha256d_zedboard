@@ -151,7 +151,6 @@ processing_system7_v5_5_tlm :: processing_system7_v5_5_tlm (sc_core::sc_module_n
         ,USB0_VBUS_PWRSELECT("USB0_VBUS_PWRSELECT")
         ,USB0_VBUS_PWRFAULT("USB0_VBUS_PWRFAULT")
         ,M_AXI_GP0_ACLK("M_AXI_GP0_ACLK")
-        ,IRQ_F2P("IRQ_F2P")
         ,FCLK_CLK0("FCLK_CLK0")
         ,FCLK_RESET0_N("FCLK_RESET0_N")
         ,MIO("MIO")

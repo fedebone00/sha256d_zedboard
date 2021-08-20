@@ -125,7 +125,6 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -231,7 +230,6 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -337,7 +335,6 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -445,7 +442,6 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;
@@ -559,7 +555,6 @@ public:
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_BRESP;
   sc_core::sc_in< sc_dt::sc_bv<2> > M_AXI_GP0_RRESP;
   sc_core::sc_in< sc_dt::sc_bv<32> > M_AXI_GP0_RDATA;
-  sc_core::sc_in< sc_dt::sc_bv<1> > IRQ_F2P;
   sc_core::sc_out< bool > FCLK_CLK0;
   sc_core::sc_out< bool > FCLK_RESET0_N;
   sc_core::sc_out< sc_dt::sc_bv<54> > MIO;

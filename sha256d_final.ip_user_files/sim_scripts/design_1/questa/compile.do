@@ -67,11 +67,11 @@ vcom -work proc_sys_reset_v5_0_13  -93 \
 
 vcom -work xil_defaultlib  -93 \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
-"../../../bd/design_1/ipshared/83b9/src/counter.vhd" \
-"../../../bd/design_1/ipshared/83b9/src/sha256_pkg.vhd" \
-"../../../bd/design_1/ipshared/83b9/src/sha256.vhd" \
-"../../../bd/design_1/ipshared/83b9/src/sha256d.vhd" \
-"../../../bd/design_1/ipshared/83b9/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/3e8f/src/counter.vhd" \
+"../../../bd/design_1/ipshared/3e8f/src/sha256_pkg.vhd" \
+"../../../bd/design_1/ipshared/3e8f/src/sha256.vhd" \
+"../../../bd/design_1/ipshared/3e8f/src/sha256d.vhd" \
+"../../../bd/design_1/ipshared/3e8f/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd" \
 "../../../bd/design_1/ip/design_1_sha256d_axi_ip_0_0/sim/design_1_sha256d_axi_ip_0_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0  "+incdir+../../../../sha256d_final.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../sha256d_final.gen/sources_1/bd/design_1/ipshared/34f8/hdl" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \

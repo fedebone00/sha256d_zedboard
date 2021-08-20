@@ -48,6 +48,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <string.h>
 #include "platform.h"
 #include "xil_io.h"
 #include "xil_printf.h"
@@ -81,6 +82,7 @@ int main()
     char stringResult[65];
     char input[9];
     char control;
+    char cmd[50];
 
     char data[153];
     char target[65];
@@ -93,7 +95,7 @@ int main()
 
     while(1){
     	fflush(stdin);
-    	//write input loop
+
     	control = getc(stdin);
     	if(control != '\r' && control != '\n'){
     		ungetc(control, stdin);
@@ -111,6 +113,14 @@ int main()
 		}
 
     	for(u32 nonce=0; nonce<ULONG_MAX; ++nonce){
+
+    		//check if new blocks are found
+    		ungetc('0', stdin);
+    		fgets(cmd, strlen(cmd), stdin);
+    		if(strstr(cmd, "<nb>")!=NULL){
+    			//new block found
+    			break;
+    		}
 
     		//write last register (19) that contains the nonce
     		snprintf(input, 9, "%08lx", __builtin_bswap32(nonce));

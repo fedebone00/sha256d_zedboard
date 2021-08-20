@@ -1,0 +1,1087 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 30304
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Aug 18 18:07:53 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 3840x2160
+Screen resolution (DPI): 250
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=30
+Scale size: 75
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Federico
+User home directory: C:/Users/Federico
+User working directory: D:/Uni/RL/sha256d_zedboard
+User country: 	IT
+User language: 	it
+User locale: 	it_IT
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2020.2
+RDI_DATADIR: D:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Federico/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Federico/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Federico/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Uni/RL/sha256d_zedboard/vivado.log
+Vivado journal file location: 	D:/Uni/RL/sha256d_zedboard/vivado.jou
+Engine tmp dir: 	D:/Uni/RL/sha256d_zedboard/.Xil/Vivado-30304-LAPTOP-S28JR86F
+
+Xilinx Environment Variables
+----------------------------
+ANDROID_SDK_ROOT: C:\Users\Federico\AppData\Local\Android\Sdk
+XILINX: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2020.2
+XILINX_SDK: D:/Xilinx/Vitis/2020.2
+XILINX_VITIS: D:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	146 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,114 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\Uni\RL\sha256d_zedboard\sha256d_final.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,114 MB. GUI used memory: 86 MB. Current time: 8/18/21, 6:07:54 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 119 MB (+122267kb) [00:00:19]
+// [Engine Memory]: 1,114 MB (+1017010kb) [00:00:19]
+// [GUI Memory]: 126 MB (+1598kb) [00:00:20]
+// [GUI Memory]: 133 MB (+577kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  5348 ms.
+// Tcl Message: open_project D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:11 . Memory (MB): peak = 1108.977 ; gain = 0.000 
+// Project name: sha256d_final; location: D:/Uni/RL/sha256d_zedboard; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 154 MB (+15074kb) [00:00:28]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bz (cr):  Open Block Design : addNotify
+// Tcl Message: open_bd_design {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Reading block design file <D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M Adding component instance block -- xilinx.com:user:sha256d_axi_ip:2.4 - sha256d_axi_ip_0 Successfully read diagram <design_1> from block design file <D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 178 MB (+16615kb) [00:00:49]
+// WARNING: HEventQueue.dispatchEvent() is taking  3475 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,159 MB. GUI used memory: 115 MB. Current time: 8/18/21, 6:08:29 PM CEST
+// [Engine Memory]: 1,176 MB (+6585kb) [00:00:51]
+// Elapsed time: 17 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1173.480 ; gain = 64.504 
+// 'bF' command handler elapsed time: 18 seconds
+// [Engine Memory]: 1,319 MB (+88305kb) [00:00:53]
+dismissDialog("Open Block Design"); // bz
+// [Engine Memory]: 1,468 MB (+86351kb) [00:00:53]
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // ac
+// [GUI Memory]: 189 MB (+1779kb) [00:00:59]
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// PAPropertyPanels.initPanels (sha256d_axi_ip_0) elapsed time: 0.2s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1755, 209, 2187, 880, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ak
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// j (cr): Edit in IP Packager: addNotify
+applyEnter(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "sha256d_axi_ip_v2_4_project"); // aa
+// bz (cr):  Edit in IP Packager : addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name sha256d_axi_ip_v2_4_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/sha256d_axi_ip_v2_4_project d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  4460 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 199 MB (+564kb) [00:01:21]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 1445.875 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// WARNING: HEventQueue.dispatchEvent() is taking  1810 ms.
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 1445.875 ; gain = 0.000 
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'i' command handler elapsed time: 13 seconds
+dismissDialog("Edit in IP Packager"); // bz
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd), sha256d_axi_ip_v1_0_S00_AXI_inst : sha256d_axi_ip_v1_0_S00_AXI(arch_imp) (sha256d_axi_ip_v1_0_S00_AXI.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd), sha256d_axi_ip_v1_0_S00_AXI_inst : sha256d_axi_ip_v1_0_S00_AXI(arch_imp) (sha256d_axi_ip_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // E
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1473 ms.
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 7); // B
+// [GUI Memory]: 219 MB (+10889kb) [00:01:44]
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 11, false); // B
+// [GUI Memory]: 241 MB (+12073kb) [00:01:47]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Settings"); // d
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ah
+selectMenuItem((HResource) null, "Launch Vitis IDE"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// bz (cr):  Launch Vitis IDE : addNotify
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sha256d_axi_ip_v1_0.vhd", 2); // m
+dismissDialog("Launch Vitis IDE"); // bz
+selectCodeEditor("sha256d_axi_ip_v1_0.vhd", 745, 144); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("sha256d_axi_ip_v1_0.vhd", 414, 414); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0.vhd", 627, 451); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 3); // m
+// Elapsed time: 21 seconds
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 388, 159); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  2280 ms.
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 414, 158); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 664, 145); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 1422, 412); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'c'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 1432, 396); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 385, 463); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 297, 405); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 297, 405, false, false, false, false, true); // bP - Double Click
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "slv_reg19"); // l
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 769, 618); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'c'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 784, 637); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 341, 668); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 480, 455); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'c'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 545, 466); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 491, 496); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 548, 706); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 748, 495); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'c'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 767, 503); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 455, 538); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 701, 539); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 390, 372); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 336, 500); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 1472, 761, false, false, false, true, false); // bP - Popup Trigger
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 2421, 418); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 2199, 414); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'c'); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 513, 373); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  1573 ms.
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sha256d_axi_ip_v1_0.vhd", 2); // m
+selectCodeEditor("sha256d_axi_ip_v1_0.vhd", 837, 305); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0.vhd", 374, 588); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - sha256d_axi_ip", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sha256d_axi_ip_v1_0.vhd", 2); // m
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 3); // m
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,542 MB (+491kb) [00:05:03]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - sha256d_axi_ip", 1); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 1,542 MB. GUI used memory: 165 MB. Current time: 8/18/21, 6:12:44 PM CEST
+setText(PAResourceItoN.IdentificationContentPanel_VERSION, "2.5"); // B
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: IP_LOCK_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ar
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'irq' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository). INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'. INFO: [IP_Flow 19-4728] Bus Interface 'irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'. 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Ports and Interfaces", 4); // ar
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// bz (cr):  Package IP : addNotify
+// Tcl Message: set_property previous_version_for_upgrade {xilinx.com:user:sha256d_axi_ip:1.0 xilinx.com:user:sha256d_axi_ip:1.1 xilinx.com:user:sha256d_axi_ip:1.3 xilinx.com:user:sha256d_axi_ip:1.5 xilinx.com:user:sha256d_axi_ip:1.6 xilinx.com:user:sha256d_axi_ip:2.1 xilinx.com:user:sha256d_axi_ip:2.3 xilinx.com:user:sha256d_axi_ip:2.4} [ipx::current_core] 
+// Tcl Message: set_property core_revision 1 [ipx::current_core] 
+// TclEventType: PACKAGER_OBJECT_DELETE
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "No"); // JButton
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 3); // m
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 1139, 414); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'c'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 1167, 413); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 599, 330); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 599, 330, false, false, false, false, true); // bP - Double Click
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'c'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 542, 409); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 536, 487); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 534, 590); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 542, 672); // bP
+typeControlKey((HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 'v'); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 410, 372); // bP
+// Elapsed time: 38 seconds
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 414, 622); // bP
+// Elapsed time: 22 seconds
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 684, 403); // bP
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 49 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - sha256d_axi_ip", 1); // m
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+// TclEventType: IP_LOCK_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Identification", 0); // ar
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+setText(PAResourceItoN.IdentificationContentPanel_VERSION, "2.6", true); // B
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: set_property core_revision 1 [ipx::current_core] 
+// TclEventType: PACKAGER_OBJECT_DELETE
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// bz (cr):  Package IP : addNotify
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: IP_LOCK_CHANGE
+// bz (cr):  Package IP : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,542 MB. GUI used memory: 177 MB. Current time: 8/18/21, 6:15:52 PM CEST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bz
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -repo_path d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0' 
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bz (cr):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bz
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// bz (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_RESET
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:sha256d_axi_ip:2.6 [get_ips  design_1_sha256d_axi_ip_0_0] -log ip_upgrade.log 
+// TclEventType: RUN_RESET
+// Tcl Message: Upgrading 'D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_sha256d_axi_ip_0_0 from sha256d_axi_ip_v1.0 2.4 to sha256d_axi_ip_v1.0 2.6 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <D:\Uni\RL\sha256d_zedboard\sha256d_final.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Uni/RL/sha256d_zedboard/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_1_sha256d_axi_ip_0_0] -no_script -sync -force -quiet 
+// a (cr): Critical Messages: addNotify
+// [Engine Memory]: 1,636 MB (+17638kb) [00:08:23]
+// aI (cr): Generate Output Products: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <D:\Uni\RL\sha256d_zedboard\sha256d_final.srcs\sources_1\bd\design_1\design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,763 MB (+47439kb) [00:08:28]
+// Tcl Message: VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block sha256d_axi_ip_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_sha256d_axi_ip_0_0] } 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = db7e160575667fbe; cache size = 13.882 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,763 MB. GUI used memory: 177 MB. Current time: 8/18/21, 6:16:09 PM CEST
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs design_1_sha256d_axi_ip_0_0_synth_1 -jobs 8 
+// Tcl Message: [Wed Aug 18 18:16:10 2021] Launched design_1_sha256d_axi_ip_0_0_synth_1... Run output will be captured here: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// ce (r): Configuration Presets: addNotify
+dismissDialog("Re-customize IP"); // N
+selectButton("Interrupts", "Interrupts"); // k
+selectTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa", 0, "Fabric Interrupts", 0, true); // ak - Node
+expandTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "Fabric Interrupts ;  ; Enable PL Interrupts to PS and vice versa", 0); // ak
+expandTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "PL-PS Interrupt Ports ; PL-PS Interrupt Ports ; PL-PS Interrupt Ports", 1); // ak
+selectTreeTable(PAResourceEtoH.GICTreeTablePanel_GIC_TREE_TABLE, "IRQ_F2P[15:0] ; [91:84], [68:61] ; Enables 16-bit shared interrupt port from the PL. MSB is assigned the highest Interrupt ID of 91", 2, "IRQ_F2P[15:0]", 0, false); // ak
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0]'
+// r (cr): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {1} CONFIG.PCW_IRQ_F2P_INTR {1}] [get_bd_cells processing_system7_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 1,857 MB (+6974kb) [00:09:02]
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 1,857 MB. GUI used memory: 190 MB. Current time: 8/18/21, 6:16:44 PM CEST
+// [GUI Memory]: 272 MB (+19734kb) [00:09:08]
+// PAPropertyPanels.initPanels (IRQ_F2P) elapsed time: 0.4s
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins sha256d_axi_ip_0/irq] 
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// am (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a
+// bz (cr):  Save Constraints : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+dismissDialog("Save Project"); // am
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <D:\Uni\RL\sha256d_zedboard\sha256d_final.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// A (cr): No Implementation Results Available: addNotify
+dismissDialog("Save Constraints"); // bz
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g: FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_sha256d_axi_ip_0_0_synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cD
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <D:\Uni\RL\sha256d_zedboard\sha256d_final.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_auto_pc_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_processing_system7_0_0 INFO: [IP_Flow 19-7066] Running IP cache check for IP design_1_sha256d_axi_ip_0_0 INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = db7e160575667fbe; cache size = 13.882 MB. 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 18 18:17:44 2021] Launched design_1_sha256d_axi_ip_0_0_synth_1, design_1_processing_system7_0_0_synth_1, synth_1... Run output will be captured here: design_1_sha256d_axi_ip_0_0_synth_1: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1/runme.log design_1_processing_system7_0_0_synth_1: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_processing_system7_0_0_synth_1/runme.log synth_1: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/runme.log [Wed Aug 18 18:17:45 2021] Launched impl_1... Run output will be captured here: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1868.504 ; gain = 0.000 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 41 seconds
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 77 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, design_1, design_1_sha256d_axi_ip_0_0_synth_1, [Synth 8-285] failed synthesizing module 'sha256d_axi_ip_v1_0_S00_AXI' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ipshared/8dfd/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd:86]. ]", 39); // ah
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1563, 581, 2187, 883, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ak
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// j (cr): Edit in IP Packager: addNotify
+applyEnter(PAResourceEtoH.EditIPProjectNameChooser_PROJECT_NAME, "sha256d_axi_ip_v2_6_project"); // aa
+// bz (cr):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name sha256d_axi_ip_v2_6_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/sha256d_axi_ip_v2_6_project d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  3937 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 293 MB (+6935kb) [00:11:57]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1873.949 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1873.949 ; gain = 0.000 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'i' command handler elapsed time: 9 seconds
+dismissDialog("Edit in IP Packager"); // bz
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd), sha256d_axi_ip_v1_0_S00_AXI_inst : sha256d_axi_ip_v1_0_S00_AXI(arch_imp) (sha256d_axi_ip_v1_0_S00_AXI.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd), sha256d_axi_ip_v1_0_S00_AXI_inst : sha256d_axi_ip_v1_0_S00_AXI(arch_imp) (sha256d_axi_ip_v1_0_S00_AXI.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // E
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cr): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1309 ms.
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 7); // B
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 11, false); // B
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// [GUI Memory]: 310 MB (+2822kb) [00:12:22]
+dismissDialog("Settings"); // d
+// WARNING: HEventQueue.dispatchEvent() is taking  1931 ms.
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 594, 333); // bP
+// WARNING: HEventQueue.dispatchEvent() is taking  1775 ms.
+// Elapsed time: 16 seconds
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 903, 431); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 903, 431, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 778, 154); // bP
+selectCodeEditor("sha256d_axi_ip_v1_0_S00_AXI.vhd", 778, 154, false, false, false, false, true); // bP - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd), sha256d_axi_ip_v1_0_S00_AXI_inst : sha256d_axi_ip_v1_0_S00_AXI(arch_imp) (sha256d_axi_ip_v1_0_S00_AXI.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd), sha256d_axi_ip_v1_0_S00_AXI_inst : sha256d_axi_ip_v1_0_S00_AXI(arch_imp) (sha256d_axi_ip_v1_0_S00_AXI.vhd), sha256d_inst : sha256d(Behavioral) (sha256d.vhd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sha256d_axi_ip_v1_0(arch_imp) (sha256d_axi_ip_v1_0.vhd), sha256d_axi_ip_v1_0_S00_AXI_inst : sha256d_axi_ip_v1_0_S00_AXI(arch_imp) (sha256d_axi_ip_v1_0_S00_AXI.vhd), sha256d_inst : sha256d(Behavioral) (sha256d.vhd)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("sha256d.vhd", 1711, 394); // bP
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sha256d_axi_ip_v1_0_S00_AXI.vhd", 3); // m
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 15, false); // u
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - sha256d_axi_ip", 1); // m
+// [GUI Memory]: 326 MB (+161kb) [00:13:16]
+setText(PAResourceItoN.IdentificationContentPanel_VERSION, "2.7"); // B
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ar
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: IP_LOCK_CHANGE
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ar
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceQtoS.ReviewContentPanel_PACKAGE_IP, "Package IP"); // a
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property previous_version_for_upgrade {xilinx.com:user:sha256d_axi_ip:1.0 xilinx.com:user:sha256d_axi_ip:1.1 xilinx.com:user:sha256d_axi_ip:1.3 xilinx.com:user:sha256d_axi_ip:1.5 xilinx.com:user:sha256d_axi_ip:1.6 xilinx.com:user:sha256d_axi_ip:2.1 xilinx.com:user:sha256d_axi_ip:2.3 xilinx.com:user:sha256d_axi_ip:2.4 xilinx.com:user:sha256d_axi_ip:2.6} [ipx::current_core] 
+// bz (cr):  Package IP : addNotify
+// Tcl Message: set_property core_revision 1 [ipx::current_core] 
+// TclEventType: PACKAGER_OBJECT_DELETE
+// TclEventType: PACKAGER_OBJECT_ADD
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::check_integrity [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-2181] Payment Required is not set for this core. INFO: [IP_Flow 19-2187] The Product Guide file is missing. INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed. 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Package IP : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,911 MB. GUI used memory: 255 MB. Current time: 8/18/21, 6:21:09 PM CEST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bz
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0' 
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bz (cr):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: upgrade_ip -vlnv xilinx.com:user:sha256d_axi_ip:2.7 [get_ips  design_1_sha256d_axi_ip_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd' 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded design_1_sha256d_axi_ip_0_0 from sha256d_axi_ip_v1.0 2.6 to sha256d_axi_ip_v1.0 2.7 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <D:\Uni\RL\sha256d_zedboard\sha256d_final.srcs\sources_1\bd\design_1\design_1.bd>  Wrote  : <D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/Uni/RL/sha256d_zedboard/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips design_1_sha256d_axi_ip_0_0] -no_script -sync -force -quiet 
+// aI (cr): Generate Output Products: addNotify
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// [Engine Memory]: 1,989 MB (+40731kb) [00:13:41]
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Wrote  : <D:\Uni\RL\sha256d_zedboard\sha256d_final.srcs\sources_1\bd\design_1\design_1.bd>  VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/sim/design_1.vhd VHDL Output written to : d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block sha256d_axi_ip_0 . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Block Design Tcl file d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl Generated Hardware Definition File d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_sha256d_axi_ip_0_0] } 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] } 
+// TclEventType: OOC_IP_CACHE_USED
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP design_1_auto_pc_0, cache-ID = db7e160575667fbe; cache size = 14.689 MB. 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs design_1_sha256d_axi_ip_0_0_synth_1 -jobs 8 
+// Tcl Message: [Wed Aug 18 18:21:23 2021] Launched design_1_sha256d_axi_ip_0_0_synth_1... Run output will be captured here: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g: FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RUN_RESET
+dismissDialog("Launch Runs"); // cD
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bz (cr):  Generate Bitstream : addNotify
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Aug 18 18:21:40 2021] Launched design_1_sha256d_axi_ip_0_0_synth_1, synth_1... Run output will be captured here: design_1_sha256d_axi_ip_0_0_synth_1: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/design_1_sha256d_axi_ip_0_0_synth_1/runme.log synth_1: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/runme.log [Wed Aug 18 18:21:40 2021] Launched impl_1... Run output will be captured here: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // bz
+// Elapsed time: 66 seconds
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 346 MB (+4192kb) [00:16:36]
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 150 seconds
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // i
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 82 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 1,989 MB. GUI used memory: 255 MB. Current time: 8/19/21, 2:07:11 AM CEST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3329 ms. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4159 ms. Increasing delay to 12477 ms.
+// Elapsed time: 27651 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 31 ms. Decreasing delay to 2031 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ah
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}]'
+// g (cr): Export Hardware Platform: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectRadioButton(PAResourceEtoH.ExportPlatformWizard_FIXED_POST_IMPL, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Command: 'get_property pfm_name [get_files -all {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}]'
+selectButton("FINISH", "Finish"); // JButton
+// 'n' command handler elapsed time: 16 seconds
+dismissDialog("Export Hardware Platform"); // g
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa ... 
+// bz (cr):  Export Hardware Platform : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,051 MB. GUI used memory: 281 MB. Current time: 8/19/21, 2:08:00 AM CEST
+// Tcl Message: INFO: [Hsi 55-2053] elapsed time for repository (D:/Xilinx/Vivado/2020.2/data\embeddedsw) loading 0 seconds 
+// Tcl Message: INFO: [Vivado 12-12467] The Hardware Platform can be used for Hardware INFO: [Vivado 12-4896] Successfully created Hardware Platform: D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 2125.770 ; gain = 95.312 
+// Elapsed time: 27 seconds
+dismissDialog("Export Hardware Platform"); // bz
+// Elapsed time: 443 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 400, 509, 2187, 883, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+// Elapsed time: 685 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // ah
+selectMenuItem((HResource) null, "Launch Vitis IDE"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ac
+// bz (cr):  Launch Vitis IDE : addNotify
+// 'X' command handler elapsed time: 6 seconds
+dismissDialog("Launch Vitis IDE"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,051 MB. GUI used memory: 242 MB. Current time: 8/19/21, 2:38:01 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,051 MB. GUI used memory: 240 MB. Current time: 8/19/21, 3:08:01 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,051 MB. GUI used memory: 240 MB. Current time: 8/19/21, 3:38:01 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,051 MB. GUI used memory: 240 MB. Current time: 8/19/21, 4:08:01 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,051 MB. GUI used memory: 240 MB. Current time: 8/19/21, 4:38:02 AM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,051 MB. GUI used memory: 241 MB. Current time: 8/19/21, 5:08:02 AM CEST

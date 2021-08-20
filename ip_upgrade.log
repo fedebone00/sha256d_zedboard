@@ -1,6 +1,47 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Aug 20 01:47:43 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_sha256d_axi_ip_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_sha256d_axi_ip_0_0 from xilinx.com:user:sha256d_axi_ip:2.7 (Rev. 1) to xilinx.com:user:sha256d_axi_ip:2.8 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_sha256d_axi_ip_0_0'.
+
+
+-Upgrade has removed interface 'irq'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_sha256d_axi_ip_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'irq'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 | Date         : Wed Aug 18 18:21:15 2021
 | Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
