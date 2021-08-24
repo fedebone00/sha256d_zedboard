@@ -722,6 +722,7 @@
   M_AXI_GP0_BRESP,
   M_AXI_GP0_RRESP,
   M_AXI_GP0_RDATA,
+  Core0_nIRQ,
   FCLK_CLK0,
   FCLK_RESET0_N,
   MIO,
@@ -853,6 +854,7 @@
       input  [1 : 0] M_AXI_GP0_BRESP;
       input  [1 : 0] M_AXI_GP0_RRESP;
       input  [31 : 0] M_AXI_GP0_RDATA;
+      input  Core0_nIRQ;
       output  FCLK_CLK0;
       output  FCLK_RESET0_N;
       inout  [53 : 0] MIO;

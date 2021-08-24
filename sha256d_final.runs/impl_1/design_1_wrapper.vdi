@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Aug 20 01:53:29 2021
-# Process ID: 26176
+# Start of session at: Tue Aug 24 14:31:43 2021
+# Process ID: 41132
 # Current directory: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1
 # Command line: vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file: D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper.vdi
@@ -11,19 +11,22 @@
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/multi_sha256d_axi_ip_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
 Command: link_design -top design_1_wrapper -part xc7z020clg484-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
 INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_multi_sha256d_axi_ip_0_1/design_1_multi_sha256d_axi_ip_0_1.dcp' for cell 'design_1_i/multi_sha256d_axi_ip_0'
 INFO: [Project 1-454] Reading design checkpoint 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
 INFO: [Project 1-454] Reading design checkpoint 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
-INFO: [Project 1-454] Reading design checkpoint 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_0/design_1_sha256d_axi_ip_0_0.dcp' for cell 'design_1_i/sha256d_axi_ip_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
 INFO: [Project 1-454] Reading design checkpoint 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1107.074 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 432 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1111.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 9171 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
@@ -33,15 +36,15 @@ Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_
 Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
 Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1107.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1169.957 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 120 instances were transformed.
-  RAM64M => RAM64M (RAMD64E(x4)): 100 instances
-  RAM64X1D => RAM64X1D (RAMD64E(x2)): 20 instances
+  A total of 1920 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 1600 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 320 instances
 
-14 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1107.074 ; gain = 0.000
+link_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1169.957 ; gain = 58.219
 Command: opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -52,58 +55,66 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1107.074 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1195.031 ; gain = 25.074
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 18a9a3cbd
+Ending Cache Timing Information Task | Checksum: cd45ff47
 
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1559.539 ; gain = 452.465
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1811.168 ; gain = 616.137
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 176474eb5
+Phase 1 Retarget | Checksum: 1de22f5da
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.632 . Memory (MB): peak = 1778.285 ; gain = 0.000
-INFO: [Opt 31-389] Phase Retarget created 4 cells and removed 29 cells
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2036.398 ; gain = 0.250
+INFO: [Opt 31-389] Phase Retarget created 37 cells and removed 64 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 1bd05509d
+Phase 2 Constant propagation | Checksum: 11bca683e
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.718 . Memory (MB): peak = 1778.285 ; gain = 0.000
-INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 8 cells
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2036.398 ; gain = 0.250
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 112c12105
+Phase 3 Sweep | Checksum: 1d522301c
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1778.285 ; gain = 0.000
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 233 cells
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2036.398 ; gain = 0.250
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 165 cells
 
 Phase 4 BUFG optimization
-INFO: [Opt 31-194] Inserted BUFG design_1_i/sha256d_axi_ip_0/U0/sha256d_axi_ip_v1_0_S00_AXI_inst/sha256d_inst/FSM_onehot_currentstate_reg[6]_0[0]_BUFG_inst to drive 259 load(s) on clock net design_1_i/sha256d_axi_ip_0/U0/sha256d_axi_ip_v1_0_S00_AXI_inst/sha256d_inst/FSM_onehot_currentstate_reg[6]_0_BUFG[0]
-INFO: [Opt 31-194] Inserted BUFG design_1_i/sha256d_axi_ip_0/U0/sha256d_axi_ip_v1_0_S00_AXI_inst/sha256d_inst/sha1/E[0]_BUFG_inst to drive 257 load(s) on clock net design_1_i/sha256d_axi_ip_0/U0/sha256d_axi_ip_v1_0_S00_AXI_inst/sha256d_inst/sha1/E_BUFG[0]
-INFO: [Opt 31-194] Inserted BUFG design_1_i/sha256d_axi_ip_0/U0/sha256d_axi_ip_v1_0_S00_AXI_inst/sha256d_inst/sha2/output_reg[255]_i_1__0_n_0_BUFG_inst to drive 257 load(s) on clock net design_1_i/sha256d_axi_ip_0/U0/sha256d_axi_ip_v1_0_S00_AXI_inst/sha256d_inst/sha2/output_reg[255]_i_1__0_n_0_BUFG
-INFO: [Opt 31-193] Inserted 3 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 1322a2bd0
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/done_BUFG_inst to drive 578 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/done_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_BUFG_inst to drive 34 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/done_BUFG_inst to drive 33 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/done_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha2/message_block_counter/done_BUFG_inst to drive 36 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha2/message_block_counter/done_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/message_block_counter/done_BUFG_inst to drive 36 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/message_block_counter/done_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/message_block_counter/done_BUFG_inst to drive 35 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/message_block_counter/done_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha2/message_block_counter/done_BUFG_inst to drive 34 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha2/message_block_counter/done_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0_BUFG_inst to drive 53 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[15].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_8_BUFG_inst to drive 55 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[15].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_8_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_BUFG_inst to drive 34 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/done_BUFG_inst to drive 34 load(s) on clock net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/done_BUFG
+INFO: [Opt 31-193] Inserted 11 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 1e4e49bff
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1778.285 ; gain = 0.000
-INFO: [Opt 31-662] Phase BUFG optimization created 3 cells of which 3 are BUFGs and removed 0 cells.
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2036.398 ; gain = 0.250
+INFO: [Opt 31-662] Phase BUFG optimization created 11 cells of which 11 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 1322a2bd0
+Phase 5 Shift Register Optimization | Checksum: 1e4e49bff
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1778.285 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2036.398 ; gain = 0.250
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 1322a2bd0
+Phase 6 Post Processing Netlist | Checksum: 1e4e49bff
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1778.285 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2036.398 ; gain = 0.250
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -112,10 +123,10 @@ Opt_design Change Summary
 -------------------------------------------------------------------------------------------------------------------------
 |  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
 -------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               4  |              29  |                                              0  |
-|  Constant propagation         |               0  |               8  |                                              0  |
-|  Sweep                        |               0  |             233  |                                              0  |
-|  BUFG optimization            |               3  |               0  |                                              0  |
+|  Retarget                     |              37  |              64  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |             165  |                                              0  |
+|  BUFG optimization            |              11  |               0  |                                              0  |
 |  Shift Register Optimization  |               0  |               0  |                                              0  |
 |  Post Processing Netlist      |               0  |               0  |                                              0  |
 -------------------------------------------------------------------------------------------------------------------------
@@ -124,38 +135,39 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1778.285 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 227225e13
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.205 . Memory (MB): peak = 2036.398 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 12da2e460
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1778.285 ; gain = 0.000
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 2036.398 ; gain = 0.250
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-Ending Power Optimization Task | Checksum: 227225e13
+Ending Power Optimization Task | Checksum: 12da2e460
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1778.285 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.216 . Memory (MB): peak = 2036.398 ; gain = 0.000
 
 Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 227225e13
+Ending Final Cleanup Task | Checksum: 12da2e460
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1778.285 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2036.398 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1778.285 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 227225e13
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2036.398 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 12da2e460
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1778.285 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2036.398 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-35 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+46 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1778.285 ; gain = 671.211
+opt_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:34 . Memory (MB): peak = 2036.398 ; gain = 866.441
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1778.285 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 2036.398 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2036.398 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
@@ -163,6 +175,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper_drc_opted.rpt.
 report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 2142.465 ; gain = 106.066
 Command: place_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
@@ -180,48 +193,48 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12fe1e07e
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2147.402 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 10848c76e
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 2147.402 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2147.402 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 7c57892b
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: fdbcb0c2
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2147.402 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: e978b03c
+Phase 1.3 Build Placer Netlist Model | Checksum: b61ce0e7
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:26 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: e978b03c
+Phase 1.4 Constrain Clocks/Macros | Checksum: b61ce0e7
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: e978b03c
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 2455.012 ; gain = 307.609
+Phase 1 Placer Initialization | Checksum: b61ce0e7
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:27 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: f6fae352
+Phase 2.1 Floorplanning | Checksum: 6d92e153
 
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:33 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 19999eba4
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 10d6a733d
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:38 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 2.3 Global Placement Core
 
 Phase 2.3.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 301 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
-INFO: [Physopt 32-775] End 1 Pass. Optimized 115 nets or cells. Created 0 new cell, deleted 115 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1035] Found 30 LUTNM shape to break, 3459 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 30, two critical 0, total 30, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1399 nets or cells. Created 30 new cells, deleted 1369 existing cells and moved 0 existing cell
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -237,7 +250,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2455.012 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -246,72 +259,87 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |            115  |                   115  |           0  |           1  |  00:00:00  |
-|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |           30  |           1369  |                  1399  |           0  |           1  |  00:00:03  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |            115  |                   115  |           0  |           8  |  00:00:00  |
+|  Total                                            |           30  |           1369  |                  1399  |           0  |           8  |  00:00:04  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.3.1 Physical Synthesis In Placer | Checksum: e6592983
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 15172aff3
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 2.3 Global Placement Core | Checksum: e1769401
+Time (s): cpu = 00:02:48 ; elapsed = 00:01:44 . Memory (MB): peak = 2455.012 ; gain = 307.609
+Phase 2.3 Global Placement Core | Checksum: 15ad67a8c
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 2 Global Placement | Checksum: e1769401
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:47 . Memory (MB): peak = 2455.012 ; gain = 307.609
+Phase 2 Global Placement | Checksum: 15ad67a8c
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:02:52 ; elapsed = 00:01:47 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: ed89908e
+Phase 3.1 Commit Multi Column Macros | Checksum: 21ed585ad
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:53 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: d982ff74
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2080e0349
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:03:35 ; elapsed = 00:02:18 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 8131c49e
+Phase 3.3 Area Swap Optimization | Checksum: 1ffd54e08
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:03:37 ; elapsed = 00:02:19 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 136ba95de
+Phase 3.4 Pipeline Register Optimization | Checksum: 18da67f6f
 
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:03:37 ; elapsed = 00:02:19 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 90fd4416
+Phase 3.5 Fast Optimization | Checksum: 149719e38
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:03:59 ; elapsed = 00:02:34 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 148c265b3
+WARNING: [Constraints 18-647] Placement may not be routable. The following cell(s) are grouped together and are placed in one single tile. The total number of clocks on non-clock pins of these cells is greater than 2, therefore, placer is not able to legalize the design to satisfy the suggested number of clocks that can drive non-clock pins in a single tile. Please modify the design such that each cell has at most 2 clocks driving its non-clock pins. Also, if one or more cells should be grouped together and placed in one tile, make sure the total number of such clocks does not exceed the maximum suggested.
+design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/out_hash_reg[255]_i_187
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1824.324 ; gain = 0.000
+WARNING: [Constraints 18-643] Placement may not be routable as design contains luts and/or flops whose data pins are driven by global clock signals and final placement is such that the number of such signals exceed the suggested number of such clocks in a single tile, which is 2. The following clock nets need to be routed to non-clock pins in tile CLBLM_R_X41Y68:
+design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_BUFG, design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_BUFG, and design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/done_BUFG
+
+Phase 3.6.1 Place Remaining
+Phase 3.6.1 Place Remaining | Checksum: 212541fd2
+
+Time (s): cpu = 00:04:25 ; elapsed = 00:03:00 . Memory (MB): peak = 2455.012 ; gain = 307.609
+Phase 3.6 Small Shape Detail Placement | Checksum: 212541fd2
+
+Time (s): cpu = 00:04:26 ; elapsed = 00:03:01 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 144e54c66
+Phase 3.7 Re-assign LUT pins | Checksum: 2c625fd97
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:04:32 ; elapsed = 00:03:09 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 1671b473a
+Phase 3.8 Pipeline Register Optimization | Checksum: 230260c17
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1671b473a
+Time (s): cpu = 00:04:33 ; elapsed = 00:03:09 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1eaf20543
+
+Time (s): cpu = 00:05:02 ; elapsed = 00:03:28 . Memory (MB): peak = 2455.012 ; gain = 307.609
+Phase 3 Detail Placement | Checksum: 1eaf20543
+
+Time (s): cpu = 00:05:03 ; elapsed = 00:03:28 . Memory (MB): peak = 2455.012 ; gain = 307.609
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -319,7 +347,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1e85854dc
+Post Placement Optimization Initialization | Checksum: 1105ab89f
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -327,28 +355,29 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.128 | TNS=0.000 |
-Phase 1 Physical Synthesis Initialization | Checksum: 24555e973
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.280 | TNS=-100.681 |
+Phase 1 Physical Synthesis Initialization | Checksum: 11cad9719
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.322 . Memory (MB): peak = 1824.324 ; gain = 0.000
-INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 245de40c7
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2508.383 ; gain = 0.000
+INFO: [Place 46-33] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[15].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate_reg[1], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 4d588e2f
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.343 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1e85854dc
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2508.383 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1105ab89f
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1824.324 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.514. For the most accurate timing information please run report_timing.
+Time (s): cpu = 00:05:35 ; elapsed = 00:03:51 . Memory (MB): peak = 2508.383 ; gain = 360.980
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.683. For the most accurate timing information please run report_timing.
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 12f832601
+Time (s): cpu = 00:06:30 ; elapsed = 00:04:48 . Memory (MB): peak = 2508.383 ; gain = 360.980
+Phase 4.1 Post Commit Optimization | Checksum: d588e244
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:06:31 ; elapsed = 00:04:48 . Memory (MB): peak = 2508.383 ; gain = 360.980
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 12f832601
+Phase 4.2 Post Placement Cleanup | Checksum: d588e244
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:06:32 ; elapsed = 00:04:51 . Memory (MB): peak = 2508.383 ; gain = 360.980
 
 Phase 4.3 Placer Reporting
 
@@ -358,66 +387,581 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                1x1|
+|      North|                4x4|              16x16|
 |___________|___________________|___________________|
-|      South|                1x1|                1x1|
+|      South|              16x16|                8x8|
 |___________|___________________|___________________|
-|       East|                1x1|                2x2|
+|       East|              32x32|              16x16|
 |___________|___________________|___________________|
-|       West|                1x1|                1x1|
+|       West|              16x16|                8x8|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 12f832601
+Phase 4.3.1 Print Estimated Congestion | Checksum: d588e244
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: 12f832601
+Time (s): cpu = 00:06:32 ; elapsed = 00:04:51 . Memory (MB): peak = 2508.383 ; gain = 360.980
+Phase 4.3 Placer Reporting | Checksum: d588e244
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:06:33 ; elapsed = 00:04:51 . Memory (MB): peak = 2508.383 ; gain = 360.980
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2508.383 ; gain = 0.000
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: fdc84a03
+Time (s): cpu = 00:06:33 ; elapsed = 00:04:52 . Memory (MB): peak = 2508.383 ; gain = 360.980
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: ffddbcf7
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1824.324 ; gain = 0.000
-Ending Placer Task | Checksum: fd70ad79
+Time (s): cpu = 00:06:33 ; elapsed = 00:04:52 . Memory (MB): peak = 2508.383 ; gain = 360.980
+Ending Placer Task | Checksum: 440e1bd2
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:20 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Time (s): cpu = 00:06:33 ; elapsed = 00:04:52 . Memory (MB): peak = 2508.383 ; gain = 360.980
 INFO: [Common 17-83] Releasing license: Implementation
-75 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+87 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1824.324 ; gain = 1.012
+place_design: Time (s): cpu = 00:06:39 ; elapsed = 00:04:55 . Memory (MB): peak = 2508.383 ; gain = 365.918
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.646 . Memory (MB): peak = 1824.324 ; gain = 0.000
+Write XDEF Complete: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 2508.383 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:15 . Memory (MB): peak = 2508.383 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1824.324 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2508.383 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1824.324 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 2508.383 ; gain = 0.000
 Command: phys_opt_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
-INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2508.383 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.378 | TNS=-9.240 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1671ff4cc
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2529.016 ; gain = 20.633
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.378 | TNS=-9.240 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 1671ff4cc
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2529.016 ; gain = 20.633
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.378 | TNS=-9.240 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/currentstate[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_7.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_2
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate_reg[0]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.344 | TNS=-8.970 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r5_0_63_27_29/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_15.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_27_29_i_5__1
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_15. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.252 | TNS=-8.595 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_15.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_27_29_i_5__1
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_15. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/slv_reg3_reg[27].  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/W_reg_r1_0_63_27_29_i_15__3
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_15. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_27_29_i_5__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/slv_reg3_reg[27]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.219 | TNS=-7.817 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_5__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_7__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_6__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_12_14_i_5__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_8__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_6__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_21__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_17__30_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_17__30
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_21__30_n_0. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_21__30_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_17__30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.200 | TNS=-7.760 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_22__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_18__30_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_18__30
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_22__30_n_0. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_22__30_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_18__30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.193 | TNS=-7.438 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r4_0_63_21_23/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/p_2_out3_out[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_15_17_i_8__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_12_14_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_10__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_8__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_30__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_26__1_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_26__1
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_26__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.181 | TNS=-7.240 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r5_0_63_15_17/DOB. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[2]_2.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_15_17_i_7__1
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/p_5_in[16]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/W_reg_r1_0_63_15_17_i_2__17_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[2]_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.180 | TNS=-6.889 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_24_26_i_6__12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_18_20_i_10__25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_15_17_i_8__25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_12_14_i_6__12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_10__25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_8__25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_28__25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_24__25_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_24__25
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_28__25_n_0. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_28__25_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_24__25_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.180 | TNS=-6.861 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r2_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_5__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_18__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_14__8_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_14__8
+INFO: [Physopt 32-601] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_14__8_n_0. Net driver design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_14__8 was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_14__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.180 | TNS=-6.668 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_6_8/DOC. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_6_8_i_9__13_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_6_8_i_9__13
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_6_8_i_9__13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.175 | TNS=-6.258 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r2_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_5__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_7__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_6__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_12_14_i_5__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_8__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_29__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_25__16_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_25__16
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_29__16_n_0. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_29__16_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_25__16_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.174 | TNS=-6.208 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_24_26_i_6__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_18_20_i_10__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_15_17_i_8__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_12_14_i_6__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_10__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_8__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_28__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_24__9_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_24__9
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_24__9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.170 | TNS=-6.034 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_3__6
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/p_5_in[31]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_31_31_i_1__22_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.169 | TNS=-5.614 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/W_reg_r1_0_63_15_17/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_15_17_i_5__8_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_15_17_i_5__8
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_15_17_i_5__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.168 | TNS=-5.510 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha1/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_3__5
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha1/w_counter/p_5_in[31]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha1/w_counter/W_reg_r1_0_63_31_31_i_1__21_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.166 | TNS=-4.973 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_39__25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_35__25_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_35__25
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_39__25_n_0. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_39__25_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_35__25_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.160 | TNS=-4.917 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_3__12
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/w_counter/p_5_in[31]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/w_counter/W_reg_r1_0_63_31_31_i_1__28_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.151 | TNS=-4.873 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r3_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_5__14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_7__14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_6__14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_12_14_i_5__14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_8__14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_6__14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_19__14_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_19__14
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_19__14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.148 | TNS=-4.699 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_3_5/DOC. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[0]_6.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_3_5_i_10__13
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[0]_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.142 | TNS=-4.523 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r5_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_3__1
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/p_5_in[31]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/W_reg_r1_0_63_31_31_i_1__17_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.141 | TNS=-4.408 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_7__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_6__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_12_14_i_5__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_8__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_28__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_24__8_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_24__8
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_28__8_n_0. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_28__8_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_24__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.141 | TNS=-3.963 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_5__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_7__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_6__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_12_14_i_5__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_8__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_27__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_23__6_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_23__6
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_23__6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.135 | TNS=-3.792 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_38__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__9_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__9
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.129 | TNS=-3.423 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/W_reg_r4_0_63_6_8/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/the_count_reg[0]_5.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_6_8_i_5__14
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/the_count_reg[0]_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-3.294 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_25__16_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_25__16
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_25__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_47__7_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_47__7
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_47__7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.125 | TNS=-3.259 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_24_26/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__13_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__13
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.120 | TNS=-3.185 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/W_reg_r5_0_63_0_2/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_1.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_0_2_i_12__15
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.116 | TNS=-3.147 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_35__25_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_35__25
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_35__25_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.114 | TNS=-3.133 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/W_reg_r3_0_63_21_23/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_21_23_i_5__8_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_21_23_i_5__8
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_21_23_i_5__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.109 | TNS=-2.883 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_38__25_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__25_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__25
+INFO: [Physopt 32-601] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__25_n_0. Net driver design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__25 was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_34__25_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.109 | TNS=-2.808 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha1/W_reg_r1_0_63_27_29/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha1/message_block_counter/the_count_reg[0]_15.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_27_29_i_5__3
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha1/message_block_counter/the_count_reg[0]_15. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.108 | TNS=-2.599 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4].  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_7
+INFO: [Physopt 32-572] Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_12
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.106 | TNS=-2.547 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_30_30/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[0]_17.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_30_30_i_3__13
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[0]_17. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.104 | TNS=-2.441 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r4_0_63_6_8/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/the_count_reg[0]_5.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_6_8_i_5__12
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/the_count_reg[0]_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.103 | TNS=-2.337 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_21_23/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_21_23_i_5__6_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_21_23_i_5__6
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_21_23_i_5__6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.101 | TNS=-2.231 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_1.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_0_2_i_12__15
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/w_counter/p_5_in[0]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/w_counter/W_reg_r1_0_63_0_2_i_1__23_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.094 | TNS=-2.081 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_31__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_27__1_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_27__1
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_27__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.094 | TNS=-1.952 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/W_reg_r4_0_63_9_11/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/the_count_reg[0]_7.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_9_11_i_5__11
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/the_count_reg[0]_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.094 | TNS=-1.857 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r5_0_63_24_26/DOB. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_14.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_8__3
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_14. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.090 | TNS=-1.726 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r2_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_28__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_24__16_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_24__16
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/W_reg_r1_0_63_6_8_i_24__16_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.086 | TNS=-1.636 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_18__30_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_18__30
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_3_5_i_18__30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.082 | TNS=-1.523 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/W_reg_r4_0_63_6_8/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_5.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_6_8_i_5__7
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.080 | TNS=-1.441 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[4].sha256_inst/sha1/W_reg_r5_0_63_9_11/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[4].sha256_inst/sha1/message_block_counter/the_count_reg[0]_7.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[4].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_9_11_i_5__10
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[4].sha256_inst/sha1/message_block_counter/the_count_reg[0]_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.080 | TNS=-1.331 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/W_reg_r5_0_63_0_2/DOB. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_2.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_0_2_i_16__15
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.078 | TNS=-1.305 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__25_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__25
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__25_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.075 | TNS=-1.292 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_24_26/DOC. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[2]_5.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_10__13
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[2]_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_36__13_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_36__13
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_36__13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.069 | TNS=-1.217 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_24_26/DOB. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[0]_14.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_8__13
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/message_block_counter/the_count_reg[0]_14. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/slv_reg3_reg[25].  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_30__13
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/slv_reg3_reg[25]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.067 | TNS=-1.147 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_2.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_0_2_i_16__15
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.066 | TNS=-1.064 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/W_reg_r2_0_63_24_26/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__27_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__27
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__27_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.065 | TNS=-0.910 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_28__25_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.065 | TNS=-0.839 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/W_reg_r1_0_63_15_17/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_15_17_i_5__8_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_15_17_i_5__8
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_15_17_i_5__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.064 | TNS=-0.774 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.064 | TNS=-0.774 |
+Phase 3 Critical Path Optimization | Checksum: 1671ff4cc
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 2541.051 ; gain = 32.668
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.064 | TNS=-0.774 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/W_reg_r4_0_63_3_5/DOC. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/message_block_counter/the_count_reg[0]_4.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_3_5_i_10__27
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/message_block_counter/the_count_reg[0]_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.062 | TNS=-0.709 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/W_reg_r1_0_63_24_26/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__13_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__13
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/p_5_in[24]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_1__22_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_5__13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.056 | TNS=-0.647 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/currentstate[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4].  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_7
+INFO: [Physopt 32-572] Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_12
+INFO: [Physopt 32-572] Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.053 | TNS=-0.632 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/W_reg_r1_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_3__14
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/w_counter/p_5_in[31]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/w_counter/W_reg_r1_0_63_31_31_i_1__30_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.051 | TNS=-0.529 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/W_reg_r4_0_63_3_5/DOC. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_4.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_3_5_i_10__15
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.051 | TNS=-0.521 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r5_0_63_30_30/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_17.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_30_30_i_3__3
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/p_5_in[30]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/w_counter/W_reg_r1_0_63_30_30_i_1__17_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/message_block_counter/the_count_reg[0]_17. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.047 | TNS=-0.421 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha1/W_reg_r4_0_63_9_11/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha1/message_block_counter/the_count_reg[0]_9.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_9_11_i_5__2
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[12].sha256_inst/sha1/message_block_counter/the_count_reg[0]_9. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.046 | TNS=-0.374 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/W_reg_r4_0_63_24_26/DOB. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/the_count_reg[0]_12.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_8__29
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha1/message_block_counter/the_count_reg[0]_12. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.044 | TNS=-0.307 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/W_reg_r5_0_63_24_26/DOB. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/message_block_counter/the_count_reg[0]_12.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_24_26_i_8__17
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/p_5_in[25]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/w_counter/W_reg_r1_0_63_24_26_i_2__24_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha1/message_block_counter/the_count_reg[0]_12. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.043 | TNS=-0.252 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_4.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_3_5_i_10__15
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/w_counter/p_5_in[5]. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/w_counter/W_reg_r1_0_63_3_5_i_3__23_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha1/message_block_counter/the_count_reg[0]_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.041 | TNS=-0.209 |
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_sequential_currentstate[0]_i_12
+INFO: [Physopt 32-572] Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/CO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_96_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_150_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_204_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_258_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_312_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_366_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_420_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_474_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_528_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_582_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_636_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_690_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_744_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_798_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_852_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_906_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_960_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1014_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1068_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1122_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1176_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1230_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1284_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1338_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1392_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1446_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1500_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1554_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1608_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1662_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate_reg[0]_i_1712_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate[0]_i_1735_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.027 | TNS=-0.182 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r5_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_24_26_i_6__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_18_20_i_10__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_15_17_i_8__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_12_14_i_6__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_10__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_8__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_27__3_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_27__3
+INFO: [Physopt 32-572] Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_27__3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_27__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.026 | TNS=-0.170 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_3__11
+INFO: [Physopt 32-134] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/the_count_reg[3]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__23_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__23
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_9__23_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_9__23
+INFO: [Physopt 32-710] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__23_n_0. Critical path length was reduced through logic transformation on cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_6__23_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[3].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_31_31_i_9__23_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.023 | TNS=-0.144 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_24_26_i_6__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_18_20_i_10__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_15_17_i_8__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_12_14_i_6__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_10__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_8__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_14__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__9_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__9
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[10].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__9_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.023 | TNS=-0.092 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/W_reg_r2_0_63_6_8/DOB. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/message_block_counter/the_count_reg[0]_6.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/message_block_counter/W_reg_r1_0_63_6_8_i_7__13
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[1].sha256_inst/sha1/message_block_counter/the_count_reg[0]_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.021 | TNS=-0.069 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r4_0_63_21_23/DOA. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/p_2_out3_out[21]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_15_17_i_8__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_12_14_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_6_8_i_10__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_8__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_29__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_25__1_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_25__1
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_3_5_i_25__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.020 | TNS=-0.068 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_14__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_29__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_26__1_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_26__1
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_26__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.016 | TNS=-0.057 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r4_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_5__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_7__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_26__30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_22__30_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_22__30
+INFO: [Physopt 32-572] Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_22__30_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[0].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_22__30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.015 | TNS=-0.040 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_14__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__3_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__3
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[13].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.014 | TNS=-0.025 |
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[2].sha256_inst/sha2/FSM_sequential_currentstate[0]_i_1736_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.009 | TNS=-0.011 |
+INFO: [Physopt 32-663] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__1_n_0.  Re-placed instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__1
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[14].sha256_inst/sha1/W_reg_r1_0_63_0_2_i_27__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.002 | TNS=-0.002 |
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r2_0_63_31_31/DPO. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/p_2_out3_out[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_24_26_i_5__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_18_20_i_7__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_6__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_23__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_19__8_n_0.  Did not re-place instance design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_19__8
+INFO: [Physopt 32-601] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_19__8_n_0. Net driver design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_19__8 was replaced.
+INFO: [Physopt 32-735] Processed net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[11].sha256_inst/sha2/W_reg_r1_0_63_15_17_i_19__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.000 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.000 | TNS=0.000 |
+Phase 4 Critical Path Optimization | Checksum: 1671ff4cc
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:27 . Memory (MB): peak = 2541.051 ; gain = 32.668
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.306 . Memory (MB): peak = 2541.051 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.000 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.378  |          9.240  |            0  |              0  |                    73  |           0  |           2  |  00:00:18  |
+|  Total          |          0.378  |          9.240  |            0  |              0  |                    73  |           0  |           3  |  00:00:18  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 2541.051 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 1dcefb7d8
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:28 . Memory (MB): peak = 2541.051 ; gain = 32.668
 INFO: [Common 17-83] Releasing license: Implementation
-84 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+557 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:01:06 ; elapsed = 00:00:42 . Memory (MB): peak = 2541.051 ; gain = 32.668
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.688 . Memory (MB): peak = 1838.871 ; gain = 14.547
+Write XDEF Complete: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 2541.051 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:16 . Memory (MB): peak = 2541.051 ; gain = 0.000
 Command: route_design
 Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
 Running DRC as a precondition to command route_design
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
@@ -426,130 +970,193 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 7ad0af43 ConstDB: 0 ShapeSum: 829ffe36 RouteDB: 0
+Checksum: PlaceDB: deadd770 ConstDB: 0 ShapeSum: 742e192b RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 100922298
+Phase 1 Build RT Design | Checksum: 98d24da2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 1944.613 ; gain = 95.656
-Post Restoration Checksum: NetGraph: 9a72f5d4 NumContArr: 661f2cc4 Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:31 . Memory (MB): peak = 2613.906 ; gain = 58.812
+Post Restoration Checksum: NetGraph: 7f46a6f0 NumContArr: 198ba6b2 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 100922298
+Phase 2.1 Create Timer | Checksum: 98d24da2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1944.613 ; gain = 95.656
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:32 . Memory (MB): peak = 2613.906 ; gain = 58.812
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 100922298
+Phase 2.2 Fix Topology Constraints | Checksum: 98d24da2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1951.414 ; gain = 102.457
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 2616.504 ; gain = 61.410
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 100922298
+Phase 2.3 Pre Route Cleanup | Checksum: 98d24da2
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 1951.414 ; gain = 102.457
- Number of Nodes with overlaps = 0
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:33 . Memory (MB): peak = 2616.504 ; gain = 61.410
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 1dfa8191b
+Phase 2.4 Update Timing | Checksum: 1cce81699
 
-Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 1976.191 ; gain = 127.234
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.683  | TNS=0.000  | WHS=-0.190 | THS=-105.272|
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:04 . Memory (MB): peak = 2673.891 ; gain = 118.797
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.144  | TNS=0.000  | WHS=-0.236 | THS=-1287.506|
 
-Phase 2 Router Initialization | Checksum: 1c46cdf10
+Phase 2 Router Initialization | Checksum: 133785efa
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1976.191 ; gain = 127.234
+Time (s): cpu = 00:02:00 ; elapsed = 00:01:18 . Memory (MB): peak = 2676.883 ; gain = 121.789
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.00201926 %
-  Global Horizontal Routing Utilization  = 0.00219743 %
+  Global Vertical Routing Utilization    = 0.133219 %
+  Global Horizontal Routing Utilization  = 0.0780933 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 5743
+  Number of Failed Nets               = 55727
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 5734
-  Number of Partially Routed Nets     = 9
-  Number of Node Overlaps             = 4
+  Number of Unrouted Nets             = 55546
+  Number of Partially Routed Nets     = 181
+  Number of Node Overlaps             = 131
 
 
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 1c46cdf10
+Phase 3.1 Global Routing | Checksum: 133785efa
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 1977.848 ; gain = 128.891
-Phase 3 Initial Routing | Checksum: 14d82b2ce
+Time (s): cpu = 00:02:01 ; elapsed = 00:01:18 . Memory (MB): peak = 2676.883 ; gain = 121.789
+Phase 3 Initial Routing | Checksum: 1b7a68da7
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:32 . Memory (MB): peak = 1977.848 ; gain = 128.891
+Time (s): cpu = 00:02:55 ; elapsed = 00:01:48 . Memory (MB): peak = 2676.883 ; gain = 121.789
+INFO: [Route 35-580] Design has 1 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|               clk_fpga_0 |               clk_fpga_0 |design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/FSM_sequential_currentstate_reg[0]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 814
- Number of Nodes with overlaps = 187
- Number of Nodes with overlaps = 58
- Number of Nodes with overlaps = 31
- Number of Nodes with overlaps = 18
- Number of Nodes with overlaps = 10
- Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 29264
+ Number of Nodes with overlaps = 9665
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.401 | TNS=-5.817 | WHS=N/A    | THS=N/A    |
+
+WARNING: [Route 35-447] Congestion is preventing the router from routing all nets. The router will prioritize the successful completion of routing all nets over timing optimizations.
+Phase 4.1 Global Iteration 0 | Checksum: 134df3ad9
+
+Time (s): cpu = 00:25:19 ; elapsed = 00:14:33 . Memory (MB): peak = 2689.023 ; gain = 133.930
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 18047
+ Number of Nodes with overlaps = 5435
+ Number of Nodes with overlaps = 1923
+ Number of Nodes with overlaps = 763
+ Number of Nodes with overlaps = 354
+ Number of Nodes with overlaps = 202
+ Number of Nodes with overlaps = 117
+ Number of Nodes with overlaps = 76
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 25
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 1
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.314  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.854 | TNS=-11.689| WHS=N/A    | THS=N/A    |
 
-Phase 4.1 Global Iteration 0 | Checksum: 1b7c4593a
+Phase 4.2 Global Iteration 1 | Checksum: 163d7b25b
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:40 . Memory (MB): peak = 1979.660 ; gain = 130.703
-Phase 4 Rip-up And Reroute | Checksum: 1b7c4593a
+Time (s): cpu = 00:50:33 ; elapsed = 00:30:14 . Memory (MB): peak = 2727.254 ; gain = 172.160
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:40 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 982
+ Number of Nodes with overlaps = 674
+ Number of Nodes with overlaps = 458
+ Number of Nodes with overlaps = 244
+ Number of Nodes with overlaps = 138
+ Number of Nodes with overlaps = 82
+ Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+Phase 4.3 Global Iteration 2 | Checksum: 221d66426
+
+Time (s): cpu = 01:04:45 ; elapsed = 00:42:23 . Memory (MB): peak = 2750.285 ; gain = 195.191
+Phase 4 Rip-up And Reroute | Checksum: 221d66426
+
+Time (s): cpu = 01:04:45 ; elapsed = 00:42:24 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 17201011f
+Phase 5.1.1 Update Timing | Checksum: 240c35e55
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:41 . Memory (MB): peak = 1979.660 ; gain = 130.703
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.429  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+Time (s): cpu = 01:04:56 ; elapsed = 00:42:31 . Memory (MB): peak = 2750.285 ; gain = 195.191
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.854 | TNS=-9.310 | WHS=N/A    | THS=N/A    |
 
-Phase 5.1 Delay CleanUp | Checksum: 17201011f
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1769bb1a7
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:41 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Time (s): cpu = 01:05:05 ; elapsed = 00:42:36 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 17201011f
+Phase 5.2 Clock Skew Optimization | Checksum: 1769bb1a7
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:41 . Memory (MB): peak = 1979.660 ; gain = 130.703
-Phase 5 Delay and Skew Optimization | Checksum: 17201011f
+Time (s): cpu = 01:05:05 ; elapsed = 00:42:36 . Memory (MB): peak = 2750.285 ; gain = 195.191
+Phase 5 Delay and Skew Optimization | Checksum: 1769bb1a7
 
-Time (s): cpu = 00:00:50 ; elapsed = 00:00:41 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Time (s): cpu = 01:05:05 ; elapsed = 00:42:36 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 1a8c07671
+Phase 6.1.1 Update Timing | Checksum: 1b1863ef2
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:41 . Memory (MB): peak = 1979.660 ; gain = 130.703
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.429  | TNS=0.000  | WHS=0.057  | THS=0.000  |
+Time (s): cpu = 01:05:17 ; elapsed = 00:42:44 . Memory (MB): peak = 2750.285 ; gain = 195.191
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.854 | TNS=-4.767 | WHS=0.034  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: 23272de76
+Phase 6.1 Hold Fix Iter | Checksum: 1e5e0bda4
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:41 . Memory (MB): peak = 1979.660 ; gain = 130.703
-Phase 6 Post Hold Fix | Checksum: 23272de76
+Time (s): cpu = 01:05:17 ; elapsed = 00:42:44 . Memory (MB): peak = 2750.285 ; gain = 195.191
+Phase 6 Post Hold Fix | Checksum: 1e5e0bda4
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:41 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Time (s): cpu = 01:05:17 ; elapsed = 00:42:45 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 1.30589 %
-  Global Horizontal Routing Utilization  = 1.55434 %
+  Global Vertical Routing Utilization    = 39.4598 %
+  Global Horizontal Routing Utilization  = 43.5022 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -559,57 +1166,96 @@ Router Utilization Summary
   Number of Partially Routed Nets     = 0
   Number of Node Overlaps             = 0
 
-Phase 7 Route finalize | Checksum: 149a3adde
+Congestion Report
+North Dir 16x16 Area, Max Cong = 87.2707%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y70 -> INT_FEEDTHRU_2_X118Y89
+   PCIE_NULL_X45Y57 -> INT_R_X31Y69
+   INT_L_X32Y54 -> INT_FEEDTHRU_2_X118Y72
+South Dir 16x16 Area, Max Cong = 89.9625%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y38 -> INT_FEEDTHRU_2_X118Y56
+East Dir 16x16 Area, Max Cong = 93.4068%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y54 -> INT_FEEDTHRU_2_X118Y72
+   INT_L_X32Y38 -> INT_FEEDTHRU_2_X118Y56
+   INT_L_X32Y22 -> INT_R_X47Y37
+West Dir 16x16 Area, Max Cong = 87.1936%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X32Y54 -> INT_FEEDTHRU_2_X118Y72
+   INT_L_X32Y38 -> INT_FEEDTHRU_2_X118Y56
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:42 . Memory (MB): peak = 1979.660 ; gain = 130.703
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 3
+Effective congestion level: 5 Aspect Ratio: 0.4 Sparse Ratio: 0.5625
+Direction: South
+----------------
+Congested clusters found at Level 3
+Effective congestion level: 4 Aspect Ratio: 0.75 Sparse Ratio: 1.75
+Direction: East
+----------------
+Congested clusters found at Level 4
+Effective congestion level: 4 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 2
+Effective congestion level: 4 Aspect Ratio: 0.846154 Sparse Ratio: 3.8125
+
+Phase 7 Route finalize | Checksum: fcc4fff6
+
+Time (s): cpu = 01:05:18 ; elapsed = 00:42:45 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 149a3adde
+Phase 8 Verifying routed nets | Checksum: fcc4fff6
 
-Time (s): cpu = 00:00:51 ; elapsed = 00:00:42 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Time (s): cpu = 01:05:19 ; elapsed = 00:42:46 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 90dace2f
+Phase 9 Depositing Routes | Checksum: 146441f31
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:42 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Time (s): cpu = 01:05:31 ; elapsed = 00:43:00 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.429  | TNS=0.000  | WHS=0.057  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.854 | TNS=-4.767 | WHS=0.034  | THS=0.000  |
 
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 90dace2f
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 146441f31
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:43 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Time (s): cpu = 01:05:32 ; elapsed = 00:43:01 . Memory (MB): peak = 2750.285 ; gain = 195.191
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:00:52 ; elapsed = 00:00:43 . Memory (MB): peak = 1979.660 ; gain = 130.703
+Time (s): cpu = 01:05:32 ; elapsed = 00:43:01 . Memory (MB): peak = 2750.285 ; gain = 195.191
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-99 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+576 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:45 . Memory (MB): peak = 1979.660 ; gain = 140.789
+route_design: Time (s): cpu = 01:06:08 ; elapsed = 00:43:22 . Memory (MB): peak = 2750.285 ; gain = 209.234
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.865 . Memory (MB): peak = 1987.504 ; gain = 7.844
+Write XDEF Complete: Time (s): cpu = 00:00:31 ; elapsed = 00:00:12 . Memory (MB): peak = 2750.285 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:38 ; elapsed = 00:00:19 . Memory (MB): peak = 2750.285 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Coretcl 2-168] The results of DRC are in file D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper_drc_routed.rpt.
 report_drc completed successfully
+report_drc: Time (s): cpu = 00:01:02 ; elapsed = 00:00:34 . Memory (MB): peak = 2802.301 ; gain = 52.016
 INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
 INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
 report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:34 ; elapsed = 00:00:21 . Memory (MB): peak = 2802.301 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
@@ -618,12 +1264,14 @@ Running Vector-less Activity Propagation...
 Finished Running Vector-less Activity Propagation
 WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
 Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
-111 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+588 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
+report_power: Time (s): cpu = 00:00:49 ; elapsed = 00:00:28 . Memory (MB): peak = 2811.680 ; gain = 9.379
 INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
 INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
 INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
 INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
@@ -636,7 +1284,14 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Vivado 12-3199] DRC finished with 0 Errors
+WARNING: [DRC PDRC-153] Gated clock check: Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[4].sha256_inst/sha2/message_block_counter/done is a gated clock net sourced by a combinational pin design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[4].sha256_inst/sha2/message_block_counter/nonce_reg[4][31]_i_2/O, cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[4].sha256_inst/sha2/message_block_counter/nonce_reg[4][31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[5].sha256_inst/sha2/message_block_counter/done is a gated clock net sourced by a combinational pin design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[5].sha256_inst/sha2/message_block_counter/nonce_reg[5][31]_i_2/O, cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[5].sha256_inst/sha2/message_block_counter/nonce_reg[5][31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha2/message_block_counter/done is a gated clock net sourced by a combinational pin design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha2/message_block_counter/nonce_reg[6][31]_i_2/O, cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[6].sha256_inst/sha2/message_block_counter/nonce_reg[6][31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4]_0 is a gated clock net sourced by a combinational pin design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/message_block_counter/nonce_reg[7][31]_i_2/O, cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[7].sha256_inst/sha2/message_block_counter/nonce_reg[7][31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/message_block_counter/FSM_onehot_currentstate_reg[4] is a gated clock net sourced by a combinational pin design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/message_block_counter/nonce_reg[8][31]_i_2/O, cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[8].sha256_inst/sha2/message_block_counter/nonce_reg[8][31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha2/message_block_counter/done is a gated clock net sourced by a combinational pin design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha2/message_block_counter/nonce_reg[9][31]_i_2/O, cell design_1_i/multi_sha256d_axi_ip_0/U0/multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst/multi_sha256d_inst/SHA256D_INST_GEN[9].sha256_inst/sha2/message_block_counter/nonce_reg[9][31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-157] Slice clock routing: For SLICE_X63Y68: more than 2 non-clock pins of the SLICE are driven by different global clocks. This condition should be corrected as it easily becomes congested and will fail to route.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 7 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -648,9 +1303,9 @@ Creating bitstream...
 Writing bitstream ./design_1_wrapper.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Aug 20 01:56:05 2021. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-186] 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Aug 24 15:25:57 2021. For additional details about this file, please refer to the WebTalk help file at D:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-13 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+13 Infos, 7 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2465.207 ; gain = 446.836
-INFO: [Common 17-206] Exiting Vivado at Fri Aug 20 01:56:05 2021...
+write_bitstream: Time (s): cpu = 00:01:04 ; elapsed = 00:00:50 . Memory (MB): peak = 3392.098 ; gain = 580.418
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 24 15:25:57 2021...

@@ -49,12 +49,195 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <string.h>
+#include <unistd.h>
 #include "platform.h"
 #include "xil_io.h"
 #include "xil_printf.h"
-#include "sha256d_axi_ip.h"
+#include "multi_sha256d_axi_ip_intr.h"
+#include "xscugic.h"
 
-int meetsTarget(const char* result, const char* target){
+#define MULTI_SHA256D_AXI_IP_INTR_0_BASEADDR (void*)0x43C10000
+
+#define CMD_LEN 6
+#define DATA_LEN 153
+#define HASH_LEN 65
+#define DATA_CMD "<DTA>"
+#define TARGET_CMD "<TRG>"
+#define NEW_BLOCK_CMD "<NBF>"
+#define NONCE_CMD "<NNC>"
+#define LOG_CMD "<LOG>"
+#define ACK_CMD "<ACK>"
+
+#define MULTI_SHA256D_NEUTRAL 0
+#define MULTI_SHA256D_START 1
+#define MULTI_SHA256D_RESET 2
+
+void Irq_Handler(void *InstancePtr);
+
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr);
+
+int interrupt_init();
+
+void MULTI_SHA256D_writeDataTargetAndStart(const char* data, const char* target);
+
+void MULTI_SHA256D_writeCmd(int cmd);
+
+XScuGic InterruptController;
+static XScuGic_Config *GicConfig;
+
+int main(){
+	char cmd[CMD_LEN], data[DATA_LEN], target[HASH_LEN];
+	int i;
+
+	init_platform();
+	interrupt_init();
+
+	cmd[CMD_LEN-1]=0;
+	data[DATA_LEN-1]=0;
+	target[HASH_LEN-1]=0;
+
+	while(1){
+		//read(STDIN_FILENO, cmd, CMD_LEN-1);
+		fgets(cmd, 6, stdin);
+
+		if(strstr(cmd, DATA_CMD)){
+			//read(STDIN_FILENO, data, DATA_LEN-1);
+			fgets(data, DATA_LEN, stdin);
+		}
+		else if(strstr(cmd, TARGET_CMD)){
+			//read(STDIN_FILENO, target, HASH_LEN-1);
+			fgets(target, HASH_LEN, stdin);
+			MULTI_SHA256D_writeDataTargetAndStart(data, target);
+			MULTI_SHA256D_writeCmd(MULTI_SHA256D_NEUTRAL);
+		}
+		else if(strstr(cmd, NEW_BLOCK_CMD)){
+			MULTI_SHA256D_writeCmd(MULTI_SHA256D_RESET);
+			xil_printf(ACK_CMD);
+		}
+		//removes \n from stdin
+		char c = getchar();
+	}
+	cleanup_platform();
+	return 0;
+}
+void Irq_Handler(void *InstancePtr)
+{
+	char output[20];
+	u32 nonce = MULTI_SHA256D_AXI_IP_INTR_mReadReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG0_OFFSET);
+	snprintf(output, 20, "%s%#08lx", NONCE_CMD, nonce);
+	//xil_printf("<LOG>nonce found");
+	xil_printf(output);
+	MULTI_SHA256D_AXI_IP_INTR_ACK(MULTI_SHA256D_AXI_IP_INTR_0_BASEADDR);
+}
+
+int SetUpInterruptSystem(XScuGic *XScuGicInstancePtr)
+{
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler) XScuGic_InterruptHandler, XScuGicInstancePtr);
+	Xil_ExceptionEnable();
+	return XST_SUCCESS;
+}
+
+int interrupt_init()
+{
+	int Status;
+
+	GicConfig = XScuGic_LookupConfig(XPAR_PS7_SCUGIC_0_DEVICE_ID);
+	if (NULL == GicConfig) {
+		return XST_FAILURE;
+	}
+	Status = XScuGic_CfgInitialize(&InterruptController, GicConfig, GicConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	Status = SetUpInterruptSystem(&InterruptController);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	Status = XScuGic_Connect(&InterruptController, XPAR_FABRIC_MULTI_SHA256D_AXI_IP_0_IRQ_INTR, (Xil_ExceptionHandler)Irq_Handler, (void *)NULL);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+	XScuGic_Enable(&InterruptController, XPAR_FABRIC_MULTI_SHA256D_AXI_IP_0_IRQ_INTR);
+
+	MULTI_SHA256D_AXI_IP_INTR_EnableInterrupt(MULTI_SHA256D_AXI_IP_INTR_0_BASEADDR);
+
+	return XST_SUCCESS;
+}
+
+void MULTI_SHA256D_writeDataTargetAndStart(const char* data, const char* target){
+	char input[9];
+	register int i;
+	register u32 result;
+	for(i=0; i<19; ++i){
+		strncpy(input, data+(i*8), 8);
+		result = strtoul(input, NULL, 16);
+		MULTI_SHA256D_AXI_IP_INTR_mWriteReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4, result);
+	}
+
+	for(i=0; i<8; ++i){
+		strncpy(input, target+(i*8), 8);
+		result = strtoul(input, NULL, 16);
+		MULTI_SHA256D_AXI_IP_INTR_mWriteReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG19_OFFSET + i*4, result);
+	}
+
+	MULTI_SHA256D_writeCmd(MULTI_SHA256D_START);
+}
+
+void MULTI_SHA256D_writeCmd(int cmd){
+	MULTI_SHA256D_AXI_IP_INTR_mWriteReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG27_OFFSET, cmd);
+}
+
+int _main()
+{
+	char data[153] = "0100000081cd02ab7e569e8bcd9317e2fe99f2de44d49ab2b8851ba4a308000000000000e320b6c2fffc8d750423db8b1eb942ae710e951ed797f7affc8892b0f1fc122bc7f5d74df2b9441a";
+	char target[65] = "0000000000000000000000000000000000000000000000f2b944000000000000";
+	char input[9];
+	int i;
+	u32 result;
+
+	input[8] = 0;
+
+    init_platform();
+
+    interrupt_init();
+
+
+    for(i=0; i<19; ++i){
+		strncpy(input, data+(i*8), 8);
+		result = strtoul(input, NULL, 16);
+		MULTI_SHA256D_AXI_IP_INTR_mWriteReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4, result);
+    }
+
+    for(i=0; i<8; ++i){
+		strncpy(input, target+(i*8), 8);
+		result = strtoul(input, NULL, 16);
+		MULTI_SHA256D_AXI_IP_INTR_mWriteReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG19_OFFSET + i*4, result);
+    }
+
+    MULTI_SHA256D_AXI_IP_INTR_mWriteReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG27_OFFSET, 1);
+
+    MULTI_SHA256D_AXI_IP_INTR_mWriteReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG27_OFFSET, 0);
+
+    while(1);
+
+    print("Successfully ran Hello World application");
+    cleanup_platform();
+    return 0;
+}
+
+/*
+
+void clean_stdin(){
+	char control = getc(stdin);
+	if(control != '\r' && control != '\n' && control != EOF){
+		ungetc(control, stdin);
+	}
+}
+
+int _meetsTarget(const char* result, const char* target){
 	unsigned dataByte, targetByte;
     char dataByteStr[3];
     char targetByteStr[3];
@@ -75,35 +258,32 @@ int meetsTarget(const char* result, const char* target){
 	}
 }
 
-int main()
+
+int _main()
 {
 	int i;
     u32 result;
     char stringResult[65];
     char input[9];
-    char control;
     char cmd[50];
 
     char data[153];
-    char target[65];
+    char target[66];
 
     input[8] = 0;
     data[152] = 0;
-    target[64] = 0;
+    target[65] = 0;
 
 	init_platform();
 
     while(1){
-    	fflush(stdin);
+    	//fflush(stdin);
 
-    	control = getc(stdin);
-    	if(control != '\r' && control != '\n'){
-    		ungetc(control, stdin);
-    	}
-
+    	//clean_stdin();
 
     	fgets(data, 153, stdin);
-    	fgets(target, 65, stdin);
+    	fgets(target, 66, stdin);
+        target[64] = 0;
 
     	//write first 18 registers (always the same for a given data)
 		for(i=0; i<19; ++i){
@@ -113,20 +293,22 @@ int main()
 		}
 
     	for(u32 nonce=0; nonce<ULONG_MAX; ++nonce){
-
-    		//check if new blocks are found
-    		ungetc('0', stdin);
-    		fgets(cmd, strlen(cmd), stdin);
-    		if(strstr(cmd, "<nb>")!=NULL){
-    			//new block found
-    			break;
+    		//every 1000 nonce check if there is new block found
+    		if(nonce > 0 && nonce % 1000 == 0){
+    			//clean_stdin();
+    			print("<NB>\n");
+    			fgets(cmd, 5, stdin);
+    			if(strstr(cmd, "<Y>") != NULL){
+    				print("<ACK>\n");
+    				//new block fuond
+    				break;
+    			}
     		}
 
     		//write last register (19) that contains the nonce
     		snprintf(input, 9, "%08lx", __builtin_bswap32(nonce));
-    		i=19;
 			result = strtoul(input, NULL, 16);
-			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, i*4, result);
+			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG19_OFFSET, result);
 
 			//write 0x1 in the last register (20) to start the computation
 			SHA256D_AXI_IP_mWriteReg(XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, SHA256D_AXI_IP_S00_AXI_SLV_REG20_OFFSET, (u32)1);
@@ -154,7 +336,7 @@ int main()
 
 			if(meetsTarget(stringResult, target))
 			{
-				printf("<nonce>%08lx</nonce>\n", nonce);
+				printf("<NNC>%08lx\n", nonce);
 				break;
 			}
 
@@ -165,3 +347,5 @@ int main()
     cleanup_platform();
     return 0;
 }
+
+*/

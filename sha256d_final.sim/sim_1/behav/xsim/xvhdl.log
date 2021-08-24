@@ -1,6 +1,28 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/new/sha256.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_rst_ps7_0_100M_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/src/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/src/sha256_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/src/sha256.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'sha256'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/new/sha256d.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/src/sha256d.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'sha256d'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sim_1/new/sha256_sim.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'sha256_sim'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/src/multi_sha256d.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multi_sha256d'
+WARNING: [VRFC 10-3093] actual for formal port 's' is neither a static name nor a globally static expression [D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/src/multi_sha256d.vhd:150]
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/hdl/multi_sha256d_axi_ip_intr_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multi_sha256d_axi_ip_intr_v1_0_S00_AXI'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/hdl/multi_sha256d_axi_ip_intr_v1_0_S_AXI_INTR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multi_sha256d_axi_ip_intr_v1_0_S_AXI_INTR'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ipshared/7a1c/hdl/multi_sha256d_axi_ip_intr_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'multi_sha256d_axi_ip_intr_v1_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/ip/design_1_multi_sha256d_axi_ip_0_1/sim/design_1_multi_sha256d_axi_ip_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_multi_sha256d_axi_ip_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/bd/design_1/sim/design_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'm00_couplers_imp_15SPJYW'
+INFO: [VRFC 10-3107] analyzing entity 'm01_couplers_imp_XU9C55'
+INFO: [VRFC 10-3107] analyzing entity 's00_couplers_imp_UYSKKA'
+INFO: [VRFC 10-3107] analyzing entity 'design_1_ps7_0_axi_periph_0'
+INFO: [VRFC 10-3107] analyzing entity 'design_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_wrapper'

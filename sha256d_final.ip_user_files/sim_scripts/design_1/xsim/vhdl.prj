@@ -1,11 +1,14 @@
 vhdl xil_defaultlib  \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
-"../../../bd/design_1/ipshared/3e8f/src/counter.vhd" \
-"../../../bd/design_1/ipshared/3e8f/src/sha256_pkg.vhd" \
-"../../../bd/design_1/ipshared/3e8f/src/sha256.vhd" \
-"../../../bd/design_1/ipshared/3e8f/src/sha256d.vhd" \
-"../../../bd/design_1/ipshared/3e8f/hdl/sha256d_axi_ip_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ip/design_1_sha256d_axi_ip_0_0/sim/design_1_sha256d_axi_ip_0_0.vhd" \
+"../../../bd/design_1/ipshared/33b0/src/counter.vhd" \
+"../../../bd/design_1/ipshared/33b0/src/sha256_pkg.vhd" \
+"../../../bd/design_1/ipshared/33b0/src/sha256.vhd" \
+"../../../bd/design_1/ipshared/33b0/src/sha256d.vhd" \
+"../../../bd/design_1/ipshared/33b0/src/multi_sha256d.vhd" \
+"../../../bd/design_1/ipshared/33b0/hdl/multi_sha256d_axi_ip_intr_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/33b0/hdl/multi_sha256d_axi_ip_intr_v1_0_S_AXI_INTR.vhd" \
+"../../../bd/design_1/ipshared/33b0/hdl/multi_sha256d_axi_ip_intr_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_multi_sha256d_axi_ip_0_1/sim/design_1_multi_sha256d_axi_ip_0_1.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
 nosort

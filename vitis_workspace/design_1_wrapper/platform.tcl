@@ -10,29 +10,15 @@
 
 platform create -name {design_1_wrapper}\
 -hw {D:\Uni\RL\sha256d_zedboard\design_1_wrapper.xsa}\
--fsbl-target {psu_cortexa53_0} -out {D:/Uni/RL/sha256d_zedboard/vitis_workspace}
+-proc {ps7_cortexa9_0} -os {standalone} -fsbl-target {psu_cortexa53_0} -out {D:/Uni/RL/sha256d_zedboard/vitis_workspace}
 
 platform write
-domain create -name {standalone_ps7_cortexa9_0} -display-name {standalone_ps7_cortexa9_0} -os {standalone} -proc {ps7_cortexa9_0} -runtime {cpp} -arch {32-bit} -support-app {hello_world}
 platform generate -domains 
-platform write
+platform generate
+bsp reload
 domain active {zynq_fsbl}
-domain active {standalone_ps7_cortexa9_0}
-platform generate -quick
-platform generate
-platform active {design_1_wrapper}
-platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
-platform generate -domains 
-platform generate -domains 
-platform active {design_1_wrapper}
-platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
-platform generate -domains 
-platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
-platform generate -domains 
-platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
-platform generate -domains 
-platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
-platform generate -domains 
+bsp reload
+platform generate -domains standalone_domain 
 platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
 platform generate -domains 
 platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
@@ -41,5 +27,6 @@ platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
 platform generate -domains 
 platform active {design_1_wrapper}
 platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
-platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
-platform generate
+platform generate -domains 
+platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
+platform generate -domains 

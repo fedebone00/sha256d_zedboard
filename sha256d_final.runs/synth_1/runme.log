@@ -11,8 +11,11 @@
 
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/multi_sha256d_axi_ip_1.0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+add_files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1109.777 ; gain = 0.000
 Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
@@ -20,70 +23,78 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 34528
+INFO: [Synth 8-7075] Helper process launched with PID 17900
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1108.715 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1109.777 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
-INFO: [Synth 8-3491] module 'design_1' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:591' bound to instance 'design_1_i' of component 'design_1' [D:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'design_1' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:621]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:849]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_processing_system7_0_0_stub.vhdl:79]
-INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:263]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_auto_pc_0_stub.vhdl:70]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (1#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:986]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_sha256d_axi_ip_0_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_sha256d_axi_ip_0_0_stub.vhdl:5' bound to instance 'sha256d_axi_ip_0' of component 'design_1_sha256d_axi_ip_0_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:999]
-INFO: [Synth 8-638] synthesizing module 'design_1_sha256d_axi_ip_0_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-34564-LAPTOP-S28JR86F/realtime/design_1_sha256d_axi_ip_0_0_stub.vhdl:32]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (3#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:621]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (4#1) [D:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
+INFO: [Synth 8-3491] module 'design_1' declared at 'd:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:1121' bound to instance 'design_1_i' of component 'design_1' [D:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:1151]
+INFO: [Synth 8-3491] module 'design_1_multi_sha256d_axi_ip_0_1' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_multi_sha256d_axi_ip_0_1_stub.vhdl:5' bound to instance 'multi_sha256d_axi_ip_0' of component 'design_1_multi_sha256d_axi_ip_0_1' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:1422]
+INFO: [Synth 8-638] synthesizing module 'design_1_multi_sha256d_axi_ip_0_1' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_multi_sha256d_axi_ip_0_1_stub.vhdl:54]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:1468]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_processing_system7_0_0_stub.vhdl:80]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:641]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_15SPJYW' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_15SPJYW' (1#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_XU9C55' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_XU9C55' (2#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:172]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:302]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:485]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (3#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:302]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:1054]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (4#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:641]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:1627]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/.Xil/Vivado-31828-LAPTOP-S28JR86F/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (5#1) [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/synth/design_1.vhd:1151]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (6#1) [D:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1127.074 ; gain = 18.359
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1135.098 ; gain = 25.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1127.074 ; gain = 18.359
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1135.098 ; gain = 25.320
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1127.074 ; gain = 18.359
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1135.098 ; gain = 25.320
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1127.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1135.098 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc] for cell 'design_1_i/processing_system7_0'
+Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/xbar'
 Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0_1/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
 Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
-Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_0/design_1_sha256d_axi_ip_0_0/design_1_sha256d_axi_ip_0_0_in_context.xdc] for cell 'design_1_i/sha256d_axi_ip_0'
-Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_sha256d_axi_ip_0_0/design_1_sha256d_axi_ip_0_0/design_1_sha256d_axi_ip_0_0_in_context.xdc] for cell 'design_1_i/sha256d_axi_ip_0'
+Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_multi_sha256d_axi_ip_0_1/design_1_multi_sha256d_axi_ip_0_1/design_1_multi_sha256d_axi_ip_0_1_in_context.xdc] for cell 'design_1_i/multi_sha256d_axi_ip_0'
+Finished Parsing XDC File [d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_multi_sha256d_axi_ip_0_1/design_1_multi_sha256d_axi_ip_0_1/design_1_multi_sha256d_axi_ip_0_1_in_context.xdc] for cell 'design_1_i/multi_sha256d_axi_ip_0'
 Parsing XDC File [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1143.914 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1156.043 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1143.914 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1156.043 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1143.914 ; gain = 35.199
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1156.043 ; gain = 46.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1143.914 ; gain = 35.199
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1156.043 ; gain = 46.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -350,15 +361,16 @@ Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint fi
 Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0/design_1_processing_system7_0_0_in_context.xdc, line 261).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/sha256d_axi_ip_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/multi_sha256d_axi_ip_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1143.914 ; gain = 35.199
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1156.043 ; gain = 46.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1143.914 ; gain = 35.199
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1156.043 ; gain = 46.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -380,25 +392,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1143.914 ; gain = 35.199
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1156.043 ; gain = 46.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1203.625 ; gain = 94.910
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1211.934 ; gain = 102.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1203.773 ; gain = 95.059
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1212.156 ; gain = 102.379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1222.887 ; gain = 114.172
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1231.258 ; gain = 121.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -416,79 +428,81 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+------+--------------------------------+----------+
-|      |BlackBox name                   |Instances |
-+------+--------------------------------+----------+
-|1     |design_1_auto_pc_0              |         1|
-|2     |design_1_processing_system7_0_0 |         1|
-|3     |design_1_rst_ps7_0_100M_0       |         1|
-|4     |design_1_sha256d_axi_ip_0_0     |         1|
-+------+--------------------------------+----------+
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_xbar_0                   |         1|
+|2     |design_1_auto_pc_0                |         1|
+|3     |design_1_multi_sha256d_axi_ip_0_1 |         1|
+|4     |design_1_processing_system7_0_0   |         1|
+|5     |design_1_rst_ps7_0_100M_0         |         1|
++------+----------------------------------+----------+
 
 Report Cell Usage: 
-+------+-------------------------------------+------+
-|      |Cell                                 |Count |
-+------+-------------------------------------+------+
-|1     |design_1_auto_pc_0_bbox              |     1|
-|2     |design_1_processing_system7_0_0_bbox |     1|
-|3     |design_1_rst_ps7_0_100M_0_bbox       |     1|
-|4     |design_1_sha256d_axi_ip_0_0_bbox     |     1|
-+------+-------------------------------------+------+
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |design_1_auto_pc_0_bbox                |     1|
+|2     |design_1_multi_sha256d_axi_ip_0_1_bbox |     1|
+|3     |design_1_processing_system7_0_0_bbox   |     1|
+|4     |design_1_rst_ps7_0_100M_0_bbox         |     1|
+|5     |design_1_xbar_0_bbox                   |     1|
++------+---------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1228.629 ; gain = 103.074
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1228.629 ; gain = 119.914
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 1237.059 ; gain = 106.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1237.059 ; gain = 127.281
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1228.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1237.059 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1241.117 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1260.773 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1246.223 ; gain = 137.508
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 1265.793 ; gain = 156.016
 INFO: [Common 17-1381] The checkpoint 'D:/Uni/RL/sha256d_zedboard/sha256d_final.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Aug 20 01:53:20 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 24 14:31:34 2021...

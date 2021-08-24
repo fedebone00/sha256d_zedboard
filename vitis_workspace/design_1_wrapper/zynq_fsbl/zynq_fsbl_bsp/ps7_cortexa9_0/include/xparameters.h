@@ -239,6 +239,17 @@
 
 /******************************************************************/
 
+/* Definitions for driver MULTI_SHA256D_AXI_IP_INTR */
+#define XPAR_MULTI_SHA256D_AXI_IP_INTR_NUM_INSTANCES 1
+
+/* Definitions for peripheral MULTI_SHA256D_AXI_IP_0 */
+#define XPAR_MULTI_SHA256D_AXI_IP_0_DEVICE_ID 0
+#define XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR 0x43C00000
+#define XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_HIGHADDR 0x43C0FFFF
+
+
+/******************************************************************/
+
 /* Definitions for driver QSPIPS */
 #define XPAR_XQSPIPS_NUM_INSTANCES 1
 
@@ -261,6 +272,16 @@
 #define XPAR_XQSPIPS_0_QSPI_MODE 0
 #define XPAR_XQSPIPS_0_QSPI_BUS_WIDTH 2
 
+
+/******************************************************************/
+
+/* Definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_MULTI_SHA256D_AXI_IP_0_IRQ_INTR 31U
+
+/******************************************************************/
+
+/* Canonical definitions for Fabric interrupts connected to ps7_scugic_0 */
+#define XPAR_FABRIC_MULTI_SHA256D_AXI_IP_INTR_0_VEC_ID XPAR_FABRIC_MULTI_SHA256D_AXI_IP_0_IRQ_INTR
 
 /******************************************************************/
 
@@ -352,17 +373,6 @@
 #define XPAR_XSDPS_0_MIO_BANK 0
 #define XPAR_XSDPS_0_HAS_EMIO 0
 #define XPAR_XSDPS_0_IS_CACHE_COHERENT 0
-
-
-/******************************************************************/
-
-/* Definitions for driver SHA256D_AXI_IP */
-#define XPAR_SHA256D_AXI_IP_NUM_INSTANCES 1
-
-/* Definitions for peripheral SHA256D_AXI_IP_0 */
-#define XPAR_SHA256D_AXI_IP_0_DEVICE_ID 0
-#define XPAR_SHA256D_AXI_IP_0_S00_AXI_BASEADDR 0x43C00000
-#define XPAR_SHA256D_AXI_IP_0_S00_AXI_HIGHADDR 0x43C0FFFF
 
 
 /******************************************************************/
