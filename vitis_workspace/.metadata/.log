@@ -6707,3 +6707,525 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-86: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:48:43.916
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-86: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:54:51.370
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-86: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:54:51.377
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-86: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:54:51.377
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-86: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:54:51.381
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-86: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-08-27 10:54:51.382
+!MESSAGE Generating MD5 hash for file: D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:54:51.383
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-86: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:54:51.385
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-86: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:05.280
+!MESSAGE XSCT Command: [disconnect tcfchan#45], Thread: Thread-2554
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:05.346
+!MESSAGE XSCT command with result: [disconnect tcfchan#45], Result: [null, ]. Thread: Thread-2554
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.333
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.338
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#47]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.339
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.353
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.354
+!MESSAGE XSCT Command: [version -server], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.356
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.356
+!MESSAGE XSCT Command: [version], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.357
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.358
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.366
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.366
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.401
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.402
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.410
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.410
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.430
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.431
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.440
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.441
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.464
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.465
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.474
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.474
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.496
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.497
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.513
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.514
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.536
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.537
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.546
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.547
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.569
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.569
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.590
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.591
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.592
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.593
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.613
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.614
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.687
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:06.687
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.707
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.727
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.736
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.736
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.757
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.758
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.799
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:09.800
+!MESSAGE XSCT Command: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.136
+!MESSAGE XSCT command with result: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.180
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.201
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.202
+!MESSAGE XSCT Command: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.214
+!MESSAGE XSCT command with result: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_19]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.215
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.217
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.218
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.234
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.235
+!MESSAGE XSCT Command: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.238
+!MESSAGE XSCT command with result: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.240
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.729
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.729
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.759
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.759
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.774
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:12.775
+!MESSAGE XSCT Command: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:13.028
+!MESSAGE XSCT command with result: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:13.029
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:13.058
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:13.151
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:13.182
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:13.183
+!MESSAGE XSCT Command: [con], Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:55:13.339
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-78: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:38.378
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-82: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:38.385
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-82: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:38.386
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-82: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:38.391
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-82: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-08-27 10:56:38.392
+!MESSAGE Generating MD5 hash for file: D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:38.393
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-82: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:38.411
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-82: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:55.233
+!MESSAGE XSCT Command: [disconnect tcfchan#47], Thread: Thread-2643
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:55.285
+!MESSAGE XSCT command with result: [disconnect tcfchan#47], Result: [null, ]. Thread: Thread-2643
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.283
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.297
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#49]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.299
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.309
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.309
+!MESSAGE XSCT Command: [version -server], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.311
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.312
+!MESSAGE XSCT Command: [version], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.313
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.313
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.321
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.322
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.343
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.344
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.353
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.354
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.373
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.374
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.383
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.383
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.404
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.405
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.414
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.415
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.434
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.435
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.442
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.442
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.463
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.463
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.470
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.470
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.497
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.498
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.520
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.520
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.522
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.523
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.537
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.538
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.618
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:56.619
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.637
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.874
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.881
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.882
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.903
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.904
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.963
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:56:59.964
+!MESSAGE XSCT Command: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.313
+!MESSAGE XSCT command with result: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.353
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.389
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.389
+!MESSAGE XSCT Command: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.420
+!MESSAGE XSCT command with result: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_19]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.421
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.423
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.424
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.451
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.454
+!MESSAGE XSCT Command: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.457
+!MESSAGE XSCT command with result: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.458
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.923
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.924
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.948
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.949
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.961
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:02.961
+!MESSAGE XSCT Command: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:03.245
+!MESSAGE XSCT command with result: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:03.246
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:03.275
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:03.347
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:03.371
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:03.371
+!MESSAGE XSCT Command: [con], Thread: Worker-89: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:57:03.416
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-89: Launching Debugger_sha256d-Default

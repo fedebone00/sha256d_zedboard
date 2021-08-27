@@ -109,7 +109,7 @@ int main(){
 		}
 		else if(strstr(cmd, NEW_BLOCK_CMD)){
 			MULTI_SHA256D_writeCmd(MULTI_SHA256D_RESET);
-			xil_printf(ACK_CMD); xil_printf("\n");
+			xil_printf(ACK_CMD);
 		}
 		//removes \n from stdin
 		getchar();
