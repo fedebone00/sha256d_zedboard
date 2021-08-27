@@ -96,25 +96,23 @@ int main(){
 	target[HASH_LEN-1]=0;
 
 	while(1){
-		//read(STDIN_FILENO, cmd, CMD_LEN-1);
 		fgets(cmd, 6, stdin);
 
 		if(strstr(cmd, DATA_CMD)){
-			//read(STDIN_FILENO, data, DATA_LEN-1);
 			fgets(data, DATA_LEN, stdin);
 		}
 		else if(strstr(cmd, TARGET_CMD)){
-			//read(STDIN_FILENO, target, HASH_LEN-1);
 			fgets(target, HASH_LEN, stdin);
 			MULTI_SHA256D_writeDataTargetAndStart(data, target);
 			MULTI_SHA256D_writeCmd(MULTI_SHA256D_NEUTRAL);
+			xil_printf(LOG_CMD); xil_printf("started mining\n");
 		}
 		else if(strstr(cmd, NEW_BLOCK_CMD)){
 			MULTI_SHA256D_writeCmd(MULTI_SHA256D_RESET);
 			xil_printf(ACK_CMD);
 		}
 		//removes \n from stdin
-		char c = getchar();
+		getchar();
 	}
 	cleanup_platform();
 	return 0;
@@ -123,8 +121,8 @@ void Irq_Handler(void *InstancePtr)
 {
 	char output[20];
 	u32 nonce = MULTI_SHA256D_AXI_IP_INTR_mReadReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG0_OFFSET);
-	snprintf(output, 20, "%s%#08lx", NONCE_CMD, nonce);
-	//xil_printf("<LOG>nonce found");
+	snprintf(output, 20, "%s%#08lx\n", NONCE_CMD, nonce);
+	//xil_printf("<LOG>nonce found\n");
 	xil_printf(output);
 	MULTI_SHA256D_AXI_IP_INTR_ACK(MULTI_SHA256D_AXI_IP_INTR_0_BASEADDR);
 }
