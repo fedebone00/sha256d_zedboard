@@ -3768,3 +3768,1685 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-50: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-08-24 15:43:56.237
 !MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-59: Build Projects
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.117
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.284
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.285
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.347
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.362
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.363
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.386
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.400
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.402
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.409
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.410
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.412
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.413
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.414
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.414
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY org.eclipse.tcf 4 0 2021-08-27 10:19:38.416
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:23:42.198
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-68: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:23:42.217
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-68: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:23:42.219
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:23:42.236
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-68: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-08-27 10:23:42.237
+!MESSAGE Generating MD5 hash for file: D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:23:42.240
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-68: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:23:42.252
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-68: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:14.345
+!MESSAGE XSCT Command: [disconnect tcfchan#29], Thread: Thread-1980
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:14.422
+!MESSAGE XSCT command with result: [disconnect tcfchan#29], Result: [null, ]. Thread: Thread-1980
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.388
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.408
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333313",
+}]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.414
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.446
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, {"multi_sha256d_axi_ip_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.447
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.498
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, {"multi_sha256d_axi_ip_0_S00_AXI": {"name": "multi_sha256d_axi_ip_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"multi_sha256d_axi_ip_0_S_AXI_INTR": {"name": "multi_sha256d_axi_ip_0",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "S_AXI_INTR",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.501
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.510
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.512
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.516
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.517
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.528
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.529
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.534
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.540
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.544
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.545
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.548
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.555
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.562
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.563
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.591
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Result: [null, {"multi_sha256d_axi_ip_0": {},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.597
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.647
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Result: [null, {"multi_sha256d_axi_ip_0_S00_AXI": {"name": "multi_sha256d_axi_ip_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "S00_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"multi_sha256d_axi_ip_0_S_AXI_INTR": {"name": "multi_sha256d_axi_ip_0",
+"base": "0x43C10000",
+"high": "0x43C1FFFF",
+"size": "65536",
+"slaveintf": "S_AXI_INTR",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.654
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.657
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.658
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.663
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.668
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.672
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.674
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.677
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.677
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.680
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.681
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.690
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.691
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.695
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, multi_sha256d_axi_ip_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_ttc_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.697
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa bit], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.701
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa bit], Result: [null, design_1_wrapper.bit]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.702
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.726
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#35]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.727
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.760
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.762
+!MESSAGE XSCT Command: [version -server], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.771
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.772
+!MESSAGE XSCT Command: [version], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.774
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.775
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.803
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.804
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.877
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.884
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.903
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.907
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.996
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:15.997
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.025
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.027
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.123
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.125
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.153
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.154
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.220
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.221
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.247
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.248
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.308
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.309
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.337
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.339
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.401
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.403
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.464
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.466
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.468
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.470
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.511
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.512
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.610
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:16.611
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.621
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.660
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.686
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.687
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.766
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.774
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.927
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:19.928
+!MESSAGE XSCT Command: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.465
+!MESSAGE XSCT command with result: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.581
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.697
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.698
+!MESSAGE XSCT Command: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.910
+!MESSAGE XSCT command with result: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_19]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.911
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.922
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.923
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.955
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.960
+!MESSAGE XSCT Command: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.967
+!MESSAGE XSCT command with result: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:22.969
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:24.598
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:24.599
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:24.641
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:24.642
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:24.676
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:24.681
+!MESSAGE XSCT Command: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:25.159
+!MESSAGE XSCT command with result: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:25.160
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:25.221
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:25.424
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:25.490
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:25.496
+!MESSAGE XSCT Command: [con], Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:24:25.723
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-69: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:34.058
+!MESSAGE XSCT Command: [disconnect tcfchan#35], Thread: Thread-2073
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:34.125
+!MESSAGE XSCT command with result: [disconnect tcfchan#35], Result: [null, ]. Thread: Thread-2073
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.127
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.138
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#36]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.139
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.155
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.156
+!MESSAGE XSCT Command: [version -server], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.158
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.158
+!MESSAGE XSCT Command: [version], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.159
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.160
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.169
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.170
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.196
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.197
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.207
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.208
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.234
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.235
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.248
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.249
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.275
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.276
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.287
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.288
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.317
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.318
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.329
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.329
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.365
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.366
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.375
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.376
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.408
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.409
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.437
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248684685" && level == 0}], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.438
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.444
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.445
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.463
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.464
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.532
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:35.533
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:38.547
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:39.714
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:39.727
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248684685]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:39.727
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:39.756
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:39.757
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:39.808
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:39.809
+!MESSAGE XSCT Command: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.164
+!MESSAGE XSCT command with result: [fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.198
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.254
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.260
+!MESSAGE XSCT Command: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.317
+!MESSAGE XSCT command with result: [loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs], Result: [null, design_1_wrapper_19]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.321
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.329
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.333
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.416
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.417
+!MESSAGE XSCT Command: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.421
+!MESSAGE XSCT command with result: [source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.421
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.934
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.935
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.946
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.946
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.961
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:42.961
+!MESSAGE XSCT Command: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:43.247
+!MESSAGE XSCT command with result: [dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:43.248
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:43.282
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:43.397
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:43.423
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:43.424
+!MESSAGE XSCT Command: [con], Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:27:43.461
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-50: Launching Debugger_sha256d-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:36:10.231
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-74: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:36:10.245
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-74: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:36:10.246
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-74: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:36:10.250
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.3",
+}]. Thread: Worker-74: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-08-27 10:36:10.250
+!MESSAGE Generating MD5 hash for file: D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:36:10.252
+!MESSAGE XSCT Command: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-74: Build Projects
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-08-27 10:36:10.254
+!MESSAGE XSCT command with result: [::hsi::utils::closesw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-74: Build Projects
