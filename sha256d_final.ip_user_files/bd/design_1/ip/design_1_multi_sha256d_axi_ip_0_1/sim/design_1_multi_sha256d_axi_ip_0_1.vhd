@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:1.9
--- IP Revision: 1
+-- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:1.15
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,6 +55,7 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_multi_sha256d_axi_ip_0_1 IS
   PORT (
+    led : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -118,6 +119,7 @@ ARCHITECTURE design_1_multi_sha256d_axi_ip_0_1_arch OF design_1_multi_sha256d_ax
       SHA256D_INST_N : INTEGER
     );
     PORT (
+      led : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -229,9 +231,10 @@ BEGIN
       C_IRQ_ACTIVE_STATE => 1,
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 7,
-      SHA256D_INST_N => 16
+      SHA256D_INST_N => 4
     )
     PORT MAP (
+      led => led,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

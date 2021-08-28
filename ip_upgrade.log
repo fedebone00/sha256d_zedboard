@@ -1,6 +1,164 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Aug 28 14:48:27 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 (xilinx.com:user:multi_sha256d_axi_ip_intr:1.15) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Aug 28 12:12:12 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.14 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.15 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Aug 27 17:43:32 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.13 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.14 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Aug 27 14:44:27 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.12 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.13 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Aug 27 14:11:24 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.11 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.12 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Aug 27 12:30:25 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.10 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.11 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Aug 27 11:58:32 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.9 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.10 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_multi_sha256d_axi_ip_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'led'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 | Date         : Tue Aug 24 14:25:35 2021
 | Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

@@ -68,9 +68,8 @@
 #define LOG_CMD "<LOG>"
 #define ACK_CMD "<ACK>"
 
-#define MULTI_SHA256D_NEUTRAL 0
-#define MULTI_SHA256D_START 1
-#define MULTI_SHA256D_RESET 2
+#define MULTI_SHA256D_RESET 0x0
+#define MULTI_SHA256D_START 0x1
 
 void Irq_Handler(void *InstancePtr);
 
@@ -103,8 +102,9 @@ int main(){
 		}
 		else if(strstr(cmd, TARGET_CMD)){
 			fgets(target, HASH_LEN, stdin);
+			//sprintf(target, "0000000000000000000000000000000000000000000000000000000000000f00");
 			MULTI_SHA256D_writeDataTargetAndStart(data, target);
-			MULTI_SHA256D_writeCmd(MULTI_SHA256D_NEUTRAL);
+			//MULTI_SHA256D_writeCmd(MULTI_SHA256D_NEUTRAL);
 			xil_printf(LOG_CMD); xil_printf("started mining\n");
 		}
 		else if(strstr(cmd, NEW_BLOCK_CMD)){
@@ -120,8 +120,9 @@ int main(){
 void Irq_Handler(void *InstancePtr)
 {
 	char output[20];
+	MULTI_SHA256D_writeCmd(MULTI_SHA256D_RESET);
 	u32 nonce = MULTI_SHA256D_AXI_IP_INTR_mReadReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG0_OFFSET);
-	snprintf(output, 20, "%s%#08lx\n", NONCE_CMD, nonce);
+	snprintf(output, 20, "%s%08lx\n", NONCE_CMD, nonce);
 	//xil_printf("<LOG>nonce found\n");
 	xil_printf(output);
 	MULTI_SHA256D_AXI_IP_INTR_ACK(MULTI_SHA256D_AXI_IP_INTR_0_BASEADDR);
@@ -166,6 +167,7 @@ int interrupt_init()
 
 void MULTI_SHA256D_writeDataTargetAndStart(const char* data, const char* target){
 	char input[9];
+	input[8] = 0;
 	register int i;
 	register u32 result;
 	for(i=0; i<19; ++i){

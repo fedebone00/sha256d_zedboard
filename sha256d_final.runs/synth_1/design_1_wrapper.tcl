@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
@@ -113,6 +114,10 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc
+set_property used_in_implementation false [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc]
+set_property processing_order LATE [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

@@ -30,3 +30,15 @@ platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
 platform generate -domains 
 platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
 platform generate -domains 
+platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa}
+platform generate -domains 

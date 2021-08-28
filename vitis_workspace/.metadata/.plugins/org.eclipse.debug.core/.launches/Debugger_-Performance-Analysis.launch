@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xilinx.sdk.profile.PerfLaunchConfigurationType">
+    <stringAttribute key="com.xilinx.sdk.profile.apm_config" value=""/>
+    <booleanAttribute key="com.xilinx.sdk.profile.apm_enabled" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.profile.atg_traffic_duration" value="10"/>
+    <booleanAttribute key="com.xilinx.sdk.profile.post_config" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.profile.ps_freq" value="666.666667"/>
+    <stringAttribute key="com.xilinx.sdk.profile.selected_atg_set" value="Default"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.ui.breakpoint.main" value="true"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.ui.exec.script" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.ui.exec.script.location" value=""/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.ui.fsbl_exit_function" value=""/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.ui.fsbl_flow" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.ui.fsbl_path" value=""/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.ui.fsbl_run" value="false"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.ui.skip.fpga.revision.check" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uiapplication.path" value=""/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uicrosstrigger.bpcontainer" value="{&quot;arch&quot;:&quot;zynq&quot;,&quot;isSelected&quot;:false,&quot;breakPoints&quot;:[]}"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uidebug.type" value="STANDALONE_DEBUG"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uienable.crosstrigger" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uifpga.device" value="Auto Detect"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uihw.bit.file" value=""/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uihw.init.tcl" value=""/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uihw_platform.name" value="No hardware platforms exists"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uipl.powerup" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uiproc.appl.map" value="{}"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uiproc.selection" value=""/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uiprogram.fpga" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uiproject.name" value=""/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uips.device" value="Auto Detect"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uips7.init" value="false"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uips7.post" value="false"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.apu" value="false"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.lock.step" value="false"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.rpu" value="false"/>
+    <booleanAttribute key="com.xilinx.sdk.tcf.debug.uireset.system" value="false"/>
+    <stringAttribute key="com.xilinx.sdk.tcf.debug.uitarget.peer" value="Local"/>
+    <stringAttribute key="ide.launch.pdi.path" value=""/>
+    <stringAttribute key="ide.launch.program.device" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.AttachChildren" value="true"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.DisconnectOnCtxExit" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.StopAtEntry" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.StopAtMain" value="true"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseContextFilter" value="false"/>
+    <booleanAttribute key="org.eclipse.tcf.debug.UseTerminal" value="false"/>
+</launchConfiguration>

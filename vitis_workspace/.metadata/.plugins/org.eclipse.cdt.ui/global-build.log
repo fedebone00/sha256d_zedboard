@@ -1,6 +1,6 @@
 Nothing to build in platform 'design_1_wrapper'
 
-10:56:38 **** Incremental Build of configuration Debug for project sha256d_final ****
+15:11:06 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -22,7 +22,7 @@ arm-none-eabi-size sha256d_final.elf  |tee "sha256d_final.elf.size"
   54156	   3324	  22672	  80152	  13918	sha256d_final.elf
 'Finished building: sha256d_final.elf.size'
 ' '
-10:56:41 **** Incremental Build of configuration Debug for project sha256d_final_system ****
+15:11:08 **** Incremental Build of configuration Debug for project sha256d_final_system ****
 make all 
 Generating bif file for the system project
 generate_system_bif.bat 64411 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif

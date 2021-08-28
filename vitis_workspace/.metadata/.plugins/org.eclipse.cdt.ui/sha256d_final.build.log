@@ -1,4 +1,4 @@
-10:56:38 **** Incremental Build of configuration Debug for project sha256d_final ****
+15:11:06 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -21,5 +21,5 @@ arm-none-eabi-size sha256d_final.elf  |tee "sha256d_final.elf.size"
 'Finished building: sha256d_final.elf.size'
 ' '
 
-10:56:41 Build Finished (took 3s.77ms)
+15:11:08 Build Finished (took 1s.193ms)
 
