@@ -1,0 +1,372 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep  9 17:42:59 2021
+# Process ID: 9332
+# Current directory: D:/Uni/RL/sha256d_zedboard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent908 D:\Uni\RL\sha256d_zedboard\sha256d_final.xpr
+# Log file: D:/Uni/RL/sha256d_zedboard/vivado.log
+# Journal file: D:/Uni/RL/sha256d_zedboard\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr
+open_bd_design {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.SHA256D_INST_N {2}] [get_bd_cells multi_sha256d_axi_ip_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name multi_sha256d_axi_ip_intr_v2_1_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/multi_sha256d_axi_ip_intr_v2_1_project d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0/component.xml
+update_compile_order -fileset sources_1
+startgroup
+current_project sha256d_final
+set_property -dict [list CONFIG.SHA256D_INST_N {3}] [get_bd_cells multi_sha256d_axi_ip_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_project multi_sha256d_axi_ip_intr_v2_1_project
+open_project D:/Uni/RL/sha256d_old/sha256d_final.xpr
+update_compile_order -fileset sources_1
+import_files -norecurse {D:/Uni/RL/oled_driver/delay_module.vhd D:/Uni/RL/oled_driver/oled_counter.vhd D:/Uni/RL/oled_driver/spi_controller.vhd D:/Uni/RL/oled_driver/hex_display.vhd D:/Uni/RL/oled_driver/oled_driver.vhd D:/Uni/RL/oled_driver/test_driver.vhd D:/Uni/RL/oled_driver/ascii_rom.vhd}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_driver [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source test_driver.tcl
+restart
+run all
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 543
+run all
+run all
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 409
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 412
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 416
+run all
+remove_bps -file {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} -line 543
+run all
+remove_bps -file {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} -line 409
+remove_bps -file {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} -line 412
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 411
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 413
+remove_bps -file {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} -line 416
+run all
+run all
+run all
+remove_bps -all
+relaunch_sim
+relaunch_sim
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 410
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 413
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+remove_bps -file {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} -line 410
+relaunch_sim
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 410
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 413
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+run all
+run all
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 411
+restart
+run all
+run all
+run all
+relaunch_sim
+remove_bps -file {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} -line 410
+relaunch_sim
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 410
+run all
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 419
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 422
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 420
+remove_bps -file {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} -line 419
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+remove_bps -a
+relaunch_sim
+current_project multi_sha256d_axi_ip_intr_v2_1_project
+close [ open D:/Uni/RL/oled_driver/multi_sha256d_pkg.vhd w ]
+add_files D:/Uni/RL/oled_driver/multi_sha256d_pkg.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+reset_run synth_1
+set_property library work [get_files  D:/Uni/RL/oled_driver/multi_sha256d_pkg.vhd]
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property previous_version_for_upgrade {xilinx.com:user:multi_sha256d_axi_ip_intr:1.0 xilinx.com:user:multi_sha256d_axi_ip_intr:1.1 xilinx.com:user:multi_sha256d_axi_ip_intr:1.2 xilinx.com:user:multi_sha256d_axi_ip_intr:1.3 xilinx.com:user:multi_sha256d_axi_ip_intr:1.4 xilinx.com:user:multi_sha256d_axi_ip_intr:1.5 xilinx.com:user:multi_sha256d_axi_ip_intr:1.6 xilinx.com:user:multi_sha256d_axi_ip_intr:1.7 xilinx.com:user:multi_sha256d_axi_ip_intr:1.8 xilinx.com:user:multi_sha256d_axi_ip_intr:1.9 xilinx.com:user:multi_sha256d_axi_ip_intr:1.10 xilinx.com:user:multi_sha256d_axi_ip_intr:1.11 xilinx.com:user:multi_sha256d_axi_ip_intr:1.12 xilinx.com:user:multi_sha256d_axi_ip_intr:1.13 xilinx.com:user:multi_sha256d_axi_ip_intr:1.14 xilinx.com:user:multi_sha256d_axi_ip_intr:1.15 xilinx.com:user:multi_sha256d_axi_ip_intr:1.16 xilinx.com:user:multi_sha256d_axi_ip_intr:1.17 xilinx.com:user:multi_sha256d_axi_ip_intr:1.21 xilinx.com:user:multi_sha256d_axi_ip_intr:1.22 xilinx.com:user:multi_sha256d_axi_ip_intr:1.23 xilinx.com:user:multi_sha256d_axi_ip_intr:1.24 xilinx.com:user:multi_sha256d_axi_ip_intr:2.0 xilinx.com:user:multi_sha256d_axi_ip_intr:2.1} [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0
+current_project sha256d_final
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project sha256d_final(2)
+current_project sha256d_final
+upgrade_ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.2 [get_ips  design_1_multi_sha256d_axi_ip_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_multi_sha256d_axi_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_multi_sha256d_axi_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_multi_sha256d_axi_ip_0_1_synth_1 -jobs 8
+wait_on_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+export_simulation -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files -ipstatic_source_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/modelsim} {questa=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/questa} {riviera=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/riviera} {activehdl=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name multi_sha256d_axi_ip_intr_v2_2_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/multi_sha256d_axi_ip_intr_v2_2_project d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0/component.xml
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0/src D:/Uni/RL/oled_driver/multi_sha256d_pkg.vhd
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0
+current_project sha256d_final
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.2 [get_ips  design_1_multi_sha256d_axi_ip_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_multi_sha256d_axi_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_multi_sha256d_axi_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_multi_sha256d_axi_ip_0_1_synth_1 -jobs 8
+wait_on_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+export_simulation -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files -ipstatic_source_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/modelsim} {questa=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/questa} {riviera=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/riviera} {activehdl=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.2 [get_ips  design_1_multi_sha256d_axi_ip_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_multi_sha256d_axi_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_multi_sha256d_axi_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_multi_sha256d_axi_ip_0_1_synth_1 -jobs 8
+wait_on_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+export_simulation -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files -ipstatic_source_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/modelsim} {questa=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/questa} {riviera=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/riviera} {activehdl=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+startgroup
+set_property -dict [list CONFIG.SHA256D_INST_N {2}] [get_bd_cells multi_sha256d_axi_ip_0]
+endgroup
+save_bd_design
+reset_run synth_1
+reset_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name multi_sha256d_axi_ip_intr_v2_2_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/multi_sha256d_axi_ip_intr_v2_2_project d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0/component.xml
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property previous_version_for_upgrade {xilinx.com:user:multi_sha256d_axi_ip_intr:1.0 xilinx.com:user:multi_sha256d_axi_ip_intr:1.1 xilinx.com:user:multi_sha256d_axi_ip_intr:1.2 xilinx.com:user:multi_sha256d_axi_ip_intr:1.3 xilinx.com:user:multi_sha256d_axi_ip_intr:1.4 xilinx.com:user:multi_sha256d_axi_ip_intr:1.5 xilinx.com:user:multi_sha256d_axi_ip_intr:1.6 xilinx.com:user:multi_sha256d_axi_ip_intr:1.7 xilinx.com:user:multi_sha256d_axi_ip_intr:1.8 xilinx.com:user:multi_sha256d_axi_ip_intr:1.9 xilinx.com:user:multi_sha256d_axi_ip_intr:1.10 xilinx.com:user:multi_sha256d_axi_ip_intr:1.11 xilinx.com:user:multi_sha256d_axi_ip_intr:1.12 xilinx.com:user:multi_sha256d_axi_ip_intr:1.13 xilinx.com:user:multi_sha256d_axi_ip_intr:1.14 xilinx.com:user:multi_sha256d_axi_ip_intr:1.15 xilinx.com:user:multi_sha256d_axi_ip_intr:1.16 xilinx.com:user:multi_sha256d_axi_ip_intr:1.17 xilinx.com:user:multi_sha256d_axi_ip_intr:1.21 xilinx.com:user:multi_sha256d_axi_ip_intr:1.22 xilinx.com:user:multi_sha256d_axi_ip_intr:1.23 xilinx.com:user:multi_sha256d_axi_ip_intr:1.24 xilinx.com:user:multi_sha256d_axi_ip_intr:2.0 xilinx.com:user:multi_sha256d_axi_ip_intr:2.1 xilinx.com:user:multi_sha256d_axi_ip_intr:2.2} [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0
+current_project sha256d_final
+update_ip_catalog -rebuild
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.3 [get_ips  design_1_multi_sha256d_axi_ip_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_multi_sha256d_axi_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_multi_sha256d_axi_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_multi_sha256d_axi_ip_0_1_synth_1 -jobs 8
+wait_on_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+export_simulation -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files -ipstatic_source_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/modelsim} {questa=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/questa} {riviera=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/riviera} {activehdl=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.3 [get_ips  design_1_multi_sha256d_axi_ip_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_multi_sha256d_axi_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_multi_sha256d_axi_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_multi_sha256d_axi_ip_0_1_synth_1 -jobs 8
+wait_on_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+export_simulation -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files -ipstatic_source_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/modelsim} {questa=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/questa} {riviera=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/riviera} {activehdl=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+reset_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+ipx::edit_ip_in_project -upgrade true -name multi_sha256d_axi_ip_intr_v2_3_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/multi_sha256d_axi_ip_intr_v2_3_project d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project sha256d_final(2)
+save_wave_config {D:/Uni/RL/sha256d_old/test_driver_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+source test_driver.tcl
+add_bp {D:/Uni/RL/sha256d_old/sha256d_final.srcs/sources_1/imports/oled_driver/oled_driver.vhd} 374
+restart
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+relaunch_sim
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+run all
+current_project multi_sha256d_axi_ip_intr_v2_3_project
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::merge_project_changes files [ipx::current_core]
+reset_run synth_1
+set_property previous_version_for_upgrade {xilinx.com:user:multi_sha256d_axi_ip_intr:1.0 xilinx.com:user:multi_sha256d_axi_ip_intr:1.1 xilinx.com:user:multi_sha256d_axi_ip_intr:1.2 xilinx.com:user:multi_sha256d_axi_ip_intr:1.3 xilinx.com:user:multi_sha256d_axi_ip_intr:1.4 xilinx.com:user:multi_sha256d_axi_ip_intr:1.5 xilinx.com:user:multi_sha256d_axi_ip_intr:1.6 xilinx.com:user:multi_sha256d_axi_ip_intr:1.7 xilinx.com:user:multi_sha256d_axi_ip_intr:1.8 xilinx.com:user:multi_sha256d_axi_ip_intr:1.9 xilinx.com:user:multi_sha256d_axi_ip_intr:1.10 xilinx.com:user:multi_sha256d_axi_ip_intr:1.11 xilinx.com:user:multi_sha256d_axi_ip_intr:1.12 xilinx.com:user:multi_sha256d_axi_ip_intr:1.13 xilinx.com:user:multi_sha256d_axi_ip_intr:1.14 xilinx.com:user:multi_sha256d_axi_ip_intr:1.15 xilinx.com:user:multi_sha256d_axi_ip_intr:1.16 xilinx.com:user:multi_sha256d_axi_ip_intr:1.17 xilinx.com:user:multi_sha256d_axi_ip_intr:1.21 xilinx.com:user:multi_sha256d_axi_ip_intr:1.22 xilinx.com:user:multi_sha256d_axi_ip_intr:1.23 xilinx.com:user:multi_sha256d_axi_ip_intr:1.24 xilinx.com:user:multi_sha256d_axi_ip_intr:2.0 xilinx.com:user:multi_sha256d_axi_ip_intr:2.1 xilinx.com:user:multi_sha256d_axi_ip_intr:2.2 xilinx.com:user:multi_sha256d_axi_ip_intr:2.3} [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0
+current_project sha256d_final
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+current_project sha256d_final(2)
+current_project sha256d_final
+upgrade_ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.4 [get_ips  design_1_multi_sha256d_axi_ip_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips design_1_multi_sha256d_axi_ip_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+catch { config_ip_cache -export [get_ips -all design_1_multi_sha256d_axi_ip_0_1] }
+catch { config_ip_cache -export [get_ips -all design_1_auto_pc_0] }
+export_ip_user_files -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+launch_runs design_1_multi_sha256d_axi_ip_0_1_synth_1 -jobs 8
+wait_on_run design_1_multi_sha256d_axi_ip_0_1_synth_1
+export_simulation -of_objects [get_files D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd] -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/sim_scripts -ip_user_files_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files -ipstatic_source_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/modelsim} {questa=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/questa} {riviera=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/riviera} {activehdl=D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_project sha256d_final(2)
+close_sim
+close_project
+open_run impl_1
+open_bd_design {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}
+ipx::edit_ip_in_project -upgrade true -name multi_sha256d_axi_ip_intr_v2_4_project -directory D:/Uni/RL/sha256d_zedboard/sha256d_final.tmp/multi_sha256d_axi_ip_intr_v2_4_project d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project sha256d_final
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+current_project multi_sha256d_axi_ip_intr_v2_4_project
+current_project sha256d_final
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+write_hw_platform -fixed -include_bit -force -file D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa
+set_property strategy Flow_PerfOptimized_high [get_runs synth_1]
+set_property strategy Performance_Explore [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_design
+current_project multi_sha256d_axi_ip_intr_v2_4_project
+close_project
+open_bd_design {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.SHA256D_INST_N {4}] [get_bd_cells multi_sha256d_axi_ip_0]
+endgroup
+set_property strategy Performance_ExplorePostRoutePhysOpt [get_runs impl_1]
+undo
+undo
+close_bd_design [get_bd_designs design_1]
+write_hw_platform -fixed -include_bit -force -file D:/Uni/RL/sha256d_zedboard/design_1_wrapper.xsa
+open_bd_design {D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+endgroup
