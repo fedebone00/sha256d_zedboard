@@ -184,7 +184,7 @@ ARCHITECTURE design_1_multi_sha256d_axi_ip_0_1_arch OF design_1_multi_sha256d_ax
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_multi_sha256d_axi_ip_0_1_arch : ARCHITECTURE IS "design_1_multi_sha256d_axi_ip_0_1,multi_sha256d_axi_ip_intr_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_multi_sha256d_axi_ip_0_1_arch: ARCHITECTURE IS "design_1_multi_sha256d_axi_ip_0_1,multi_sha256d_axi_ip_intr_v1_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=multi_sha256d_axi_ip_intr,x_ipVersion=2.4,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_INTR_DATA_WIDTH=32,C_S_AXI_INTR_ADDR_WIDTH=5,C_NUM_OF_INTR=1,C_INTR_SENSITIVITY=0xFFFFFFFF,C_INTR_ACTIVE_STATE=0xFFFFFFFF,C_IRQ_SENSITIVITY=0,C_IRQ_ACTIVE_STATE=0,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7,SHA256D_INST_N=2}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_multi_sha256d_axi_ip_0_1_arch: ARCHITECTURE IS "design_1_multi_sha256d_axi_ip_0_1,multi_sha256d_axi_ip_intr_v1_0,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=multi_sha256d_axi_ip_intr,x_ipVersion=2.4,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED,C_S_AXI_INTR_DATA_WIDTH=32,C_S_AXI_INTR_ADDR_WIDTH=5,C_NUM_OF_INTR=1,C_INTR_SENSITIVITY=0xFFFFFFFF,C_INTR_ACTIVE_STATE=0xFFFFFFFF,C_IRQ_SENSITIVITY=0,C_IRQ_ACTIVE_STATE=0,C_S00_AXI_DATA_WIDTH=32,C_S00_AXI_ADDR_WIDTH=7,SHA256D_INST_N=3}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF irq: SIGNAL IS "XIL_INTERFACENAME IRQ, SENSITIVITY LEVEL_HIGH, PortWidth 1";
@@ -251,7 +251,7 @@ BEGIN
       C_IRQ_ACTIVE_STATE => 0,
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 7,
-      SHA256D_INST_N => 2
+      SHA256D_INST_N => 3
     )
     PORT MAP (
       led => led,

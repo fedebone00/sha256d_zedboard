@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="sdx.custom.platform.repository.locations" value="D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper\export\design_1_wrapper"/>
-	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper\export\design_1_wrapper"/>
+	<item key="sdx.custom.platform.repository.locations" value="D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper\export\design_1_wrapper;D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper_3_inst\export\design_1_wrapper_3_inst"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="D:\Uni\RL\sha256d_zedboard\vitis_workspace\design_1_wrapper_3_inst\export\design_1_wrapper_3_inst"/>
 </section>

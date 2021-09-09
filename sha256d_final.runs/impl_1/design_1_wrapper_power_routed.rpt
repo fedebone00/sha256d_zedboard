@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Thu Sep  9 22:02:29 2021
+| Date             : Thu Sep  9 22:58:54 2021
 | Host             : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.883        |
+| Total On-Chip Power (W)  | 1.984        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.733        |
-| Device Static (W)        | 0.150        |
+| Dynamic (W)              | 1.831        |
+| Device Static (W)        | 0.153        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 63.3         |
-| Junction Temperature (C) | 46.7         |
+| Max Ambient (C)          | 62.1         |
+| Junction Temperature (C) | 47.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,19 +52,19 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.031 |        3 |       --- |             --- |
-| Slice Logic             |     0.067 |    40761 |       --- |             --- |
-|   LUT as Logic          |     0.061 |    16921 |     53200 |           31.81 |
-|   CARRY4                |     0.003 |      545 |     13300 |            4.10 |
-|   F7/F8 Muxes           |     0.003 |     6043 |     53200 |           11.36 |
-|   Register              |    <0.001 |    14863 |    106400 |           13.97 |
+| Clocks                  |     0.043 |        3 |       --- |             --- |
+| Slice Logic             |     0.100 |    59263 |       --- |             --- |
+|   LUT as Logic          |     0.090 |    24973 |     53200 |           46.94 |
+|   CARRY4                |     0.005 |      809 |     13300 |            6.08 |
+|   F7/F8 Muxes           |     0.004 |     9037 |     53200 |           16.99 |
+|   Register              |    <0.001 |    21327 |    106400 |           20.04 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
-|   Others                |     0.000 |      228 |       --- |             --- |
-| Signals                 |     0.103 |    25283 |       --- |             --- |
+|   Others                |     0.000 |      237 |       --- |             --- |
+| Signals                 |     0.157 |    36531 |       --- |             --- |
 | I/O                     |     0.002 |        8 |       200 |            4.00 |
 | PS7                     |     1.529 |        1 |       --- |             --- |
-| Static Power            |     0.150 |          |           |                 |
-| Total                   |     1.883 |          |           |                 |
+| Static Power            |     0.153 |          |           |                 |
+| Total                   |     1.984 |          |           |                 |
 +-------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.218 |       0.202 |      0.016 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.317 |       0.300 |      0.017 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.016 |       0.000 |      0.016 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -87,7 +87,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.751 |       0.718 |      0.032 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.752 |       0.718 |      0.034 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |       NA    | Unspecified | NA         |
@@ -150,10 +150,10 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| design_1_wrapper           |     1.733 |
-|   design_1_i               |     1.731 |
-|     multi_sha256d_axi_ip_0 |     0.197 |
-|       U0                   |     0.197 |
+| design_1_wrapper           |     1.831 |
+|   design_1_i               |     1.829 |
+|     multi_sha256d_axi_ip_0 |     0.295 |
+|       U0                   |     0.295 |
 |     processing_system7_0   |     1.531 |
 |       inst                 |     1.531 |
 |     ps7_0_axi_periph       |     0.003 |

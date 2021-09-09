@@ -176,7 +176,7 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.C_IRQ_ACTIVE_STATE {0} \
    CONFIG.C_IRQ_SENSITIVITY {0} \
-   CONFIG.SHA256D_INST_N {2} \
+   CONFIG.SHA256D_INST_N {3} \
  ] $multi_sha256d_axi_ip_0
 
   # Create instance: processing_system7_0, and set properties

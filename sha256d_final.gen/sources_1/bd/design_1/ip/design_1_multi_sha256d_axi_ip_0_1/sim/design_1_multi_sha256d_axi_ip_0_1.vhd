@@ -245,7 +245,7 @@ BEGIN
       C_IRQ_ACTIVE_STATE => 0,
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 7,
-      SHA256D_INST_N => 2
+      SHA256D_INST_N => 3
     )
     PORT MAP (
       led => led,

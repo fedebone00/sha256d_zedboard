@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Thu Sep  9 20:56:13 2021
+-- Date        : Thu Sep  9 22:38:41 2021
 -- Host        : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               d:/Uni/RL/sha256d_zedboard/sha256d_final.gen/sources_1/bd/design_1/ip/design_1_multi_sha256d_axi_ip_0_1/design_1_multi_sha256d_axi_ip_0_1_stub.vhdl
