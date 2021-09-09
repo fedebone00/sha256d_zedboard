@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Thu Sep  9 13:17:49 2021
+--Date        : Thu Sep  9 17:17:40 2021
 --Host        : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -34,14 +34,20 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    led_0 : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    OLED_DC_0 : out STD_LOGIC;
+    OLED_RES_0 : out STD_LOGIC;
+    OLED_SCLK_0 : out STD_LOGIC;
+    OLED_SDIN_0 : out STD_LOGIC;
+    OLED_VBAT_0 : out STD_LOGIC;
+    OLED_VDD_0 : out STD_LOGIC;
+    led_0 : out STD_LOGIC;
+    poweroff_0 : in STD_LOGIC
   );
 end design_1_wrapper;
 
 architecture STRUCTURE of design_1_wrapper is
   component design_1 is
   port (
-    led_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ddr_vrn : inout STD_LOGIC;
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
@@ -62,7 +68,15 @@ architecture STRUCTURE of design_1_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    OLED_SDIN_0 : out STD_LOGIC;
+    OLED_SCLK_0 : out STD_LOGIC;
+    OLED_DC_0 : out STD_LOGIC;
+    OLED_RES_0 : out STD_LOGIC;
+    OLED_VBAT_0 : out STD_LOGIC;
+    OLED_VDD_0 : out STD_LOGIC;
+    poweroff_0 : in STD_LOGIC;
+    led_0 : out STD_LOGIC
   );
   end component design_1;
 begin
@@ -89,6 +103,13 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
-      led_0(7 downto 0) => led_0(7 downto 0)
+      OLED_DC_0 => OLED_DC_0,
+      OLED_RES_0 => OLED_RES_0,
+      OLED_SCLK_0 => OLED_SCLK_0,
+      OLED_SDIN_0 => OLED_SDIN_0,
+      OLED_VBAT_0 => OLED_VBAT_0,
+      OLED_VDD_0 => OLED_VDD_0,
+      led_0 => led_0,
+      poweroff_0 => poweroff_0
     );
 end STRUCTURE;

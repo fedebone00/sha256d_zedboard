@@ -162,10 +162,17 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
-  set led_0 [ create_bd_port -dir O -from 7 -to 0 led_0 ]
+  set OLED_DC_0 [ create_bd_port -dir O OLED_DC_0 ]
+  set OLED_RES_0 [ create_bd_port -dir O OLED_RES_0 ]
+  set OLED_SCLK_0 [ create_bd_port -dir O OLED_SCLK_0 ]
+  set OLED_SDIN_0 [ create_bd_port -dir O OLED_SDIN_0 ]
+  set OLED_VBAT_0 [ create_bd_port -dir O OLED_VBAT_0 ]
+  set OLED_VDD_0 [ create_bd_port -dir O OLED_VDD_0 ]
+  set led_0 [ create_bd_port -dir O led_0 ]
+  set poweroff_0 [ create_bd_port -dir I poweroff_0 ]
 
   # Create instance: multi_sha256d_axi_ip_0, and set properties
-  set multi_sha256d_axi_ip_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:1.24 multi_sha256d_axi_ip_0 ]
+  set multi_sha256d_axi_ip_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.1 multi_sha256d_axi_ip_0 ]
   set_property -dict [ list \
    CONFIG.C_IRQ_ACTIVE_STATE {0} \
    CONFIG.C_IRQ_SENSITIVITY {0} \
@@ -587,8 +594,15 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net ps7_0_axi_periph_M01_AXI [get_bd_intf_pins multi_sha256d_axi_ip_0/S_AXI_INTR] [get_bd_intf_pins ps7_0_axi_periph/M01_AXI]
 
   # Create port connections
+  connect_bd_net -net multi_sha256d_axi_ip_0_OLED_DC [get_bd_ports OLED_DC_0] [get_bd_pins multi_sha256d_axi_ip_0/OLED_DC]
+  connect_bd_net -net multi_sha256d_axi_ip_0_OLED_RES [get_bd_ports OLED_RES_0] [get_bd_pins multi_sha256d_axi_ip_0/OLED_RES]
+  connect_bd_net -net multi_sha256d_axi_ip_0_OLED_SCLK [get_bd_ports OLED_SCLK_0] [get_bd_pins multi_sha256d_axi_ip_0/OLED_SCLK]
+  connect_bd_net -net multi_sha256d_axi_ip_0_OLED_SDIN [get_bd_ports OLED_SDIN_0] [get_bd_pins multi_sha256d_axi_ip_0/OLED_SDIN]
+  connect_bd_net -net multi_sha256d_axi_ip_0_OLED_VBAT [get_bd_ports OLED_VBAT_0] [get_bd_pins multi_sha256d_axi_ip_0/OLED_VBAT]
+  connect_bd_net -net multi_sha256d_axi_ip_0_OLED_VDD [get_bd_ports OLED_VDD_0] [get_bd_pins multi_sha256d_axi_ip_0/OLED_VDD]
   connect_bd_net -net multi_sha256d_axi_ip_0_irq [get_bd_pins multi_sha256d_axi_ip_0/irq] [get_bd_pins processing_system7_0/Core0_nIRQ]
   connect_bd_net -net multi_sha256d_axi_ip_0_led [get_bd_ports led_0] [get_bd_pins multi_sha256d_axi_ip_0/led]
+  connect_bd_net -net poweroff_0_1 [get_bd_ports poweroff_0] [get_bd_pins multi_sha256d_axi_ip_0/poweroff]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins multi_sha256d_axi_ip_0/s00_axi_aclk] [get_bd_pins multi_sha256d_axi_ip_0/s_axi_intr_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/M01_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins multi_sha256d_axi_ip_0/s00_axi_aresetn] [get_bd_pins multi_sha256d_axi_ip_0/s_axi_intr_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]

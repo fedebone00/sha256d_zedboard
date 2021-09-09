@@ -46,8 +46,8 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:1.24
--- IP Revision: 1
+-- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:2.1
+-- IP Revision: 2
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,7 +55,14 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_multi_sha256d_axi_ip_0_1 IS
   PORT (
-    led : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    led : OUT STD_LOGIC;
+    poweroff : IN STD_LOGIC;
+    OLED_SDIN : OUT STD_LOGIC;
+    OLED_SCLK : OUT STD_LOGIC;
+    OLED_DC : OUT STD_LOGIC;
+    OLED_RES : OUT STD_LOGIC;
+    OLED_VBAT : OUT STD_LOGIC;
+    OLED_VDD : OUT STD_LOGIC;
     s00_axi_aclk : IN STD_LOGIC;
     s00_axi_aresetn : IN STD_LOGIC;
     s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -119,7 +126,14 @@ ARCHITECTURE design_1_multi_sha256d_axi_ip_0_1_arch OF design_1_multi_sha256d_ax
       SHA256D_INST_N : INTEGER
     );
     PORT (
-      led : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+      led : OUT STD_LOGIC;
+      poweroff : IN STD_LOGIC;
+      OLED_SDIN : OUT STD_LOGIC;
+      OLED_SCLK : OUT STD_LOGIC;
+      OLED_DC : OUT STD_LOGIC;
+      OLED_RES : OUT STD_LOGIC;
+      OLED_VBAT : OUT STD_LOGIC;
+      OLED_VDD : OUT STD_LOGIC;
       s00_axi_aclk : IN STD_LOGIC;
       s00_axi_aresetn : IN STD_LOGIC;
       s00_axi_awaddr : IN STD_LOGIC_VECTOR(6 DOWNTO 0);
@@ -235,6 +249,13 @@ BEGIN
     )
     PORT MAP (
       led => led,
+      poweroff => poweroff,
+      OLED_SDIN => OLED_SDIN,
+      OLED_SCLK => OLED_SCLK,
+      OLED_DC => OLED_DC,
+      OLED_RES => OLED_RES,
+      OLED_VBAT => OLED_VBAT,
+      OLED_VDD => OLED_VDD,
       s00_axi_aclk => s00_axi_aclk,
       s00_axi_aresetn => s00_axi_aresetn,
       s00_axi_awaddr => s00_axi_awaddr,

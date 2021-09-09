@@ -133,12 +133,12 @@
 # ----------------------------------------------------------------------------
 # OLED Display - Bank 13
 # ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN U10  [get_ports {OLED_DC}];  # "OLED-DC"
-#set_property PACKAGE_PIN U9   [get_ports {OLED_RES}];  # "OLED-RES"
-#set_property PACKAGE_PIN AB12 [get_ports {OLED_SCLK}];  # "OLED-SCLK"
-#set_property PACKAGE_PIN AA12 [get_ports {OLED_SDIN}];  # "OLED-SDIN"
-#set_property PACKAGE_PIN U11  [get_ports {OLED_VBAT}];  # "OLED-VBAT"
-#set_property PACKAGE_PIN U12  [get_ports {OLED_VDD}];  # "OLED-VDD"
+set_property PACKAGE_PIN U10  [get_ports {OLED_DC_0}];  # "OLED-DC"
+set_property PACKAGE_PIN U9   [get_ports {OLED_RES_0}];  # "OLED-RES"
+set_property PACKAGE_PIN AB12 [get_ports {OLED_SCLK_0}];  # "OLED-SCLK"
+set_property PACKAGE_PIN AA12 [get_ports {OLED_SDIN_0}];  # "OLED-SDIN"
+set_property PACKAGE_PIN U11  [get_ports {OLED_VBAT_0}];  # "OLED-VBAT"
+set_property PACKAGE_PIN U12  [get_ports {OLED_VDD_0}];  # "OLED-VDD"
 
 # ----------------------------------------------------------------------------
 # HDMI Output - Bank 33
@@ -172,14 +172,14 @@
 # ----------------------------------------------------------------------------
 # User LEDs - Bank 33
 # ---------------------------------------------------------------------------- 
-set_property PACKAGE_PIN T22 [get_ports {led_0[0]}];  # "LD0"
-set_property PACKAGE_PIN T21 [get_ports {led_0[1]}];  # "LD1"
-set_property PACKAGE_PIN U22 [get_ports {led_0[2]}];  # "LD2"
-set_property PACKAGE_PIN U21 [get_ports {led_0[3]}];  # "LD3"
-set_property PACKAGE_PIN V22 [get_ports {led_0[4]}];  # "LD4"
-set_property PACKAGE_PIN W22 [get_ports {led_0[5]}];  # "LD5"
-set_property PACKAGE_PIN U19 [get_ports {led_0[6]}];  # "LD6"
-set_property PACKAGE_PIN U14 [get_ports {led_0[7]}];  # "LD7"
+set_property PACKAGE_PIN T22 [get_ports {led_0}];  # "LD0"
+#set_property PACKAGE_PIN T21 [get_ports {led_0[1]}];  # "LD1"
+#set_property PACKAGE_PIN U22 [get_ports {led_0[2]}];  # "LD2"
+#set_property PACKAGE_PIN U21 [get_ports {led_0[3]}];  # "LD3"
+#set_property PACKAGE_PIN V22 [get_ports {led_0[4]}];  # "LD4"
+#set_property PACKAGE_PIN W22 [get_ports {led_0[5]}];  # "LD5"
+#set_property PACKAGE_PIN U19 [get_ports {led_0[6]}];  # "LD6"
+#set_property PACKAGE_PIN U14 [get_ports {led_0[7]}];  # "LD7"
 
 # ----------------------------------------------------------------------------
 # VGA Output - Bank 33
@@ -202,7 +202,7 @@ set_property PACKAGE_PIN U14 [get_ports {led_0[7]}];  # "LD7"
 # ----------------------------------------------------------------------------
 # User Push Buttons - Bank 34
 # ---------------------------------------------------------------------------- 
-#set_property PACKAGE_PIN P16 [get_ports {BTNC}];  # "BTNC"
+set_property PACKAGE_PIN P16 [get_ports {poweroff_0}];  # "BTNC"
 #set_property PACKAGE_PIN R16 [get_ports {BTND}];  # "BTND"
 #set_property PACKAGE_PIN N15 [get_ports {BTNL}];  # "BTNL"
 #set_property PACKAGE_PIN R18 [get_ports {BTNR}];  # "BTNR"
@@ -364,7 +364,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
 # Set the bank voltage for IO Bank 34 to 1.8V by default.
 # set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 34]];
 # set_property IOSTANDARD LVCMOS25 [get_ports -of_objects [get_iobanks 34]];
-#set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 34]];
+set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 34]];
 
 # Set the bank voltage for IO Bank 35 to 1.8V by default.
 # set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 35]];
@@ -372,4 +372,4 @@ set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
 #set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 35]];
 
 # Note that the bank voltage for IO Bank 13 is fixed to 3.3V on ZedBoard. 
-#set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]];
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]];

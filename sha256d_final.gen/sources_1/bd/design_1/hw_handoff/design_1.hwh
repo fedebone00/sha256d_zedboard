@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep  9 13:17:50 2021" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep  9 17:17:41 2021" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
   <EXTERNALPORTS>
-    <PORT DIR="O" LEFT="7" NAME="led_0" RIGHT="0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_led">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="led"/>
-      </CONNECTIONS>
-    </PORT>
     <PORT DIR="IO" LEFT="53" NAME="FIXED_IO_mio" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_MIO">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="MIO"/>
@@ -114,6 +109,46 @@
         <CONNECTION INSTANCE="processing_system7_0" PORT="DDR_DQS"/>
       </CONNECTIONS>
     </PORT>
+    <PORT DIR="O" NAME="OLED_SDIN_0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_SDIN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="OLED_SDIN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="OLED_SCLK_0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_SCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="OLED_SCLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="OLED_DC_0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_DC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="OLED_DC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="OLED_RES_0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_RES">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="OLED_RES"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="OLED_VBAT_0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_VBAT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="OLED_VBAT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="OLED_VDD_0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_VDD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="OLED_VDD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="poweroff_0" SIGIS="undef" SIGNAME="External_Ports_poweroff_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="poweroff"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="led_0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_led">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="multi_sha256d_axi_ip_0" PORT="led"/>
+      </CONNECTIONS>
+    </PORT>
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
@@ -164,7 +199,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/multi_sha256d_axi_ip_0" HWVERSION="1.24" INSTANCE="multi_sha256d_axi_ip_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="multi_sha256d_axi_ip_intr" VLNV="xilinx.com:user:multi_sha256d_axi_ip_intr:1.24">
+    <MODULE COREREVISION="2" FULLNAME="/multi_sha256d_axi_ip_0" HWVERSION="2.1" INSTANCE="multi_sha256d_axi_ip_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="multi_sha256d_axi_ip_intr" VLNV="xilinx.com:user:multi_sha256d_axi_ip_intr:2.1">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -191,9 +226,44 @@
         <PARAMETER NAME="C_S_AXI_INTR_HIGHADDR" VALUE="0x43C1FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="O" LEFT="7" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_led">
+        <PORT DIR="O" NAME="led" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_led">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="led_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="poweroff" SIGIS="undef" SIGNAME="External_Ports_poweroff_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="poweroff_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OLED_SDIN" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_SDIN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OLED_SDIN_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OLED_SCLK" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_SCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OLED_SCLK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OLED_DC" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_DC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OLED_DC_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OLED_RES" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_RES">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OLED_RES_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OLED_VBAT" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_VBAT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OLED_VBAT_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OLED_VDD" SIGIS="undef" SIGNAME="multi_sha256d_axi_ip_0_OLED_VDD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="OLED_VDD_0"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axi_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">

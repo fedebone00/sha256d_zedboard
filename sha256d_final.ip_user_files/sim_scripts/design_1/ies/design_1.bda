@@ -34,7 +34,7 @@
       <data key="SX">/multi_sha256d_axi_ip_0</data>
       <data key="SI">S_AXI_INTR</data>
       <data key="SS">S_AXI_INTR_reg</data>
-      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:1.24</data>
+      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:2.1</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
@@ -52,32 +52,32 @@
       <data key="SX">/multi_sha256d_axi_ip_0</data>
       <data key="SI">S00_AXI</data>
       <data key="SS">S00_AXI_reg</data>
-      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:1.24</data>
+      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:2.1</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
     <node id="n2">
-      <data key="VM">design_1</data>
-      <data key="VT">BC</data>
-    </node>
-    <node id="n3">
       <data key="VH">2</data>
       <data key="VM">design_1</data>
       <data key="VT">VR</data>
     </node>
-    <node id="n4">
+    <node id="n3">
       <data key="TU">active</data>
       <data key="VH">2</data>
       <data key="VT">PM</data>
     </node>
-    <edge id="e0" source="n2" target="n3">
+    <node id="n4">
+      <data key="VM">design_1</data>
+      <data key="VT">BC</data>
+    </node>
+    <edge id="e0" source="n4" target="n2">
     </edge>
-    <edge id="e1" source="n3" target="n4">
+    <edge id="e1" source="n2" target="n3">
     </edge>
-    <edge id="e2" source="n1" target="n4">
+    <edge id="e2" source="n1" target="n3">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n0" target="n4">
+    <edge id="e3" source="n0" target="n3">
       <data key="EH">2</data>
     </edge>
   </graph>

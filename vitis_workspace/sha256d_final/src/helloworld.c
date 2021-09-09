@@ -102,7 +102,7 @@ int main(){
 		}
 		else if(strstr(cmd, TARGET_CMD)){
 			fgets(target, HASH_LEN, stdin);
-			//uncomment those 2 lines and the returned nonce should be 0x00000005
+			//uncomment these 2 lines and the returned nonce should be 0x00000005
 			//sprintf(data, "2000000426adff961c11c83d7dc1238992172e8994572c710000cedf00000000000000003afb1227e9aa9713ae1fcf532fe3a4aa777fffef7e6a3e28ed7bc11ab14e0bb26128e108170ffaa0");
 			//sprintf(target, "000000000000000000000000000000000000000000000000000000000000000f");
 			MULTI_SHA256D_writeDataTargetAndStart(data, target);
@@ -126,10 +126,6 @@ void Irq_Handler(void *InstancePtr)
 	u32 nonce = MULTI_SHA256D_AXI_IP_INTR_mReadReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG0_OFFSET);
 	snprintf(output, 20, "%s%08lx\n", NONCE_CMD, nonce);
 
-	for(int i=0; i<8; ++i){
-		u32 res = MULTI_SHA256D_AXI_IP_INTR_mReadReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG1_OFFSET + i*4);
-
-	}
 	xil_printf(output);
 	MULTI_SHA256D_AXI_IP_INTR_ACK(MULTI_SHA256D_AXI_IP_INTR_0_BASEADDR);
 }

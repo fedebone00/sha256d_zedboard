@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Thu Sep  9 13:17:49 2021
+--Date        : Thu Sep  9 17:17:40 2021
 --Host        : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1141,7 +1141,14 @@ entity design_1 is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    led_0 : out STD_LOGIC_VECTOR ( 7 downto 0 )
+    OLED_DC_0 : out STD_LOGIC;
+    OLED_RES_0 : out STD_LOGIC;
+    OLED_SCLK_0 : out STD_LOGIC;
+    OLED_SDIN_0 : out STD_LOGIC;
+    OLED_VBAT_0 : out STD_LOGIC;
+    OLED_VDD_0 : out STD_LOGIC;
+    led_0 : out STD_LOGIC;
+    poweroff_0 : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
   attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=9,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_ps7_cnt=3,synth_mode=OOC_per_IP}";
@@ -1239,7 +1246,14 @@ architecture STRUCTURE of design_1 is
   end component design_1_rst_ps7_0_100M_0;
   component design_1_multi_sha256d_axi_ip_0_1 is
   port (
-    led : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    led : out STD_LOGIC;
+    poweroff : in STD_LOGIC;
+    OLED_SDIN : out STD_LOGIC;
+    OLED_SCLK : out STD_LOGIC;
+    OLED_DC : out STD_LOGIC;
+    OLED_RES : out STD_LOGIC;
+    OLED_VBAT : out STD_LOGIC;
+    OLED_VDD : out STD_LOGIC;
     s00_axi_aclk : in STD_LOGIC;
     s00_axi_aresetn : in STD_LOGIC;
     s00_axi_awaddr : in STD_LOGIC_VECTOR ( 6 downto 0 );
@@ -1285,8 +1299,15 @@ architecture STRUCTURE of design_1 is
     irq : out STD_LOGIC
   );
   end component design_1_multi_sha256d_axi_ip_0_1;
+  signal multi_sha256d_axi_ip_0_OLED_DC : STD_LOGIC;
+  signal multi_sha256d_axi_ip_0_OLED_RES : STD_LOGIC;
+  signal multi_sha256d_axi_ip_0_OLED_SCLK : STD_LOGIC;
+  signal multi_sha256d_axi_ip_0_OLED_SDIN : STD_LOGIC;
+  signal multi_sha256d_axi_ip_0_OLED_VBAT : STD_LOGIC;
+  signal multi_sha256d_axi_ip_0_OLED_VDD : STD_LOGIC;
   signal multi_sha256d_axi_ip_0_irq : STD_LOGIC;
-  signal multi_sha256d_axi_ip_0_led : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal multi_sha256d_axi_ip_0_led : STD_LOGIC;
+  signal poweroff_0_1 : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -1422,11 +1443,25 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-  led_0(7 downto 0) <= multi_sha256d_axi_ip_0_led(7 downto 0);
+  OLED_DC_0 <= multi_sha256d_axi_ip_0_OLED_DC;
+  OLED_RES_0 <= multi_sha256d_axi_ip_0_OLED_RES;
+  OLED_SCLK_0 <= multi_sha256d_axi_ip_0_OLED_SCLK;
+  OLED_SDIN_0 <= multi_sha256d_axi_ip_0_OLED_SDIN;
+  OLED_VBAT_0 <= multi_sha256d_axi_ip_0_OLED_VBAT;
+  OLED_VDD_0 <= multi_sha256d_axi_ip_0_OLED_VDD;
+  led_0 <= multi_sha256d_axi_ip_0_led;
+  poweroff_0_1 <= poweroff_0;
 multi_sha256d_axi_ip_0: component design_1_multi_sha256d_axi_ip_0_1
      port map (
+      OLED_DC => multi_sha256d_axi_ip_0_OLED_DC,
+      OLED_RES => multi_sha256d_axi_ip_0_OLED_RES,
+      OLED_SCLK => multi_sha256d_axi_ip_0_OLED_SCLK,
+      OLED_SDIN => multi_sha256d_axi_ip_0_OLED_SDIN,
+      OLED_VBAT => multi_sha256d_axi_ip_0_OLED_VBAT,
+      OLED_VDD => multi_sha256d_axi_ip_0_OLED_VDD,
       irq => multi_sha256d_axi_ip_0_irq,
-      led(7 downto 0) => multi_sha256d_axi_ip_0_led(7 downto 0),
+      led => multi_sha256d_axi_ip_0_led,
+      poweroff => poweroff_0_1,
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
       s00_axi_araddr(6 downto 0) => ps7_0_axi_periph_M00_AXI_ARADDR(6 downto 0),
       s00_axi_aresetn => rst_ps7_0_100M_peripheral_aresetn(0),

@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x93299716DED00865",
+      "boundary_crc": "0x50154FEFE3B6779C",
       "device": "xc7z020clg484-1",
       "gen_directory": "../../../../sha256d_final.gen/sources_1/bd/design_1",
       "name": "design_1",
@@ -90,10 +90,29 @@
       }
     },
     "ports": {
+      "OLED_SDIN_0": {
+        "direction": "O"
+      },
+      "OLED_SCLK_0": {
+        "direction": "O"
+      },
+      "OLED_DC_0": {
+        "direction": "O"
+      },
+      "OLED_RES_0": {
+        "direction": "O"
+      },
+      "OLED_VBAT_0": {
+        "direction": "O"
+      },
+      "OLED_VDD_0": {
+        "direction": "O"
+      },
+      "poweroff_0": {
+        "direction": "I"
+      },
       "led_0": {
-        "direction": "O",
-        "left": "7",
-        "right": "0"
+        "direction": "O"
       }
     },
     "components": {
@@ -1369,16 +1388,16 @@
               "xbar/S00_AXI"
             ]
           },
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
             ]
           },
           "xbar_to_m01_couplers": {
@@ -1422,7 +1441,7 @@
         "inst_hier_path": "rst_ps7_0_100M"
       },
       "multi_sha256d_axi_ip_0": {
-        "vlnv": "xilinx.com:user:multi_sha256d_axi_ip_intr:1.24",
+        "vlnv": "xilinx.com:user:multi_sha256d_axi_ip_intr:2.1",
         "xci_name": "design_1_multi_sha256d_axi_ip_0_1",
         "xci_path": "ip\\design_1_multi_sha256d_axi_ip_0_1\\design_1_multi_sha256d_axi_ip_0_1.xci",
         "inst_hier_path": "multi_sha256d_axi_ip_0",
@@ -1506,6 +1525,48 @@
         "ports": [
           "multi_sha256d_axi_ip_0/irq",
           "processing_system7_0/Core0_nIRQ"
+        ]
+      },
+      "multi_sha256d_axi_ip_0_OLED_SDIN": {
+        "ports": [
+          "multi_sha256d_axi_ip_0/OLED_SDIN",
+          "OLED_SDIN_0"
+        ]
+      },
+      "multi_sha256d_axi_ip_0_OLED_SCLK": {
+        "ports": [
+          "multi_sha256d_axi_ip_0/OLED_SCLK",
+          "OLED_SCLK_0"
+        ]
+      },
+      "multi_sha256d_axi_ip_0_OLED_DC": {
+        "ports": [
+          "multi_sha256d_axi_ip_0/OLED_DC",
+          "OLED_DC_0"
+        ]
+      },
+      "multi_sha256d_axi_ip_0_OLED_RES": {
+        "ports": [
+          "multi_sha256d_axi_ip_0/OLED_RES",
+          "OLED_RES_0"
+        ]
+      },
+      "multi_sha256d_axi_ip_0_OLED_VBAT": {
+        "ports": [
+          "multi_sha256d_axi_ip_0/OLED_VBAT",
+          "OLED_VBAT_0"
+        ]
+      },
+      "multi_sha256d_axi_ip_0_OLED_VDD": {
+        "ports": [
+          "multi_sha256d_axi_ip_0/OLED_VDD",
+          "OLED_VDD_0"
+        ]
+      },
+      "poweroff_0_1": {
+        "ports": [
+          "poweroff_0",
+          "multi_sha256d_axi_ip_0/poweroff"
         ]
       },
       "multi_sha256d_axi_ip_0_led": {

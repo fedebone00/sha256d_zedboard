@@ -1,19 +1,23 @@
 set_property SRC_FILE_INFO {cfile:D:/Uni/RL/sha256d_zedboard/sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc rfile:../../../sha256d_final.srcs/constrs_1/imports/RL/zedboard_master.xdc id:1 order:LATE} [current_design]
+set_property src_info {type:XDC file:1 line:136 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U10  [get_ports {OLED_DC_0}];  # "OLED-DC"
+set_property src_info {type:XDC file:1 line:137 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U9   [get_ports {OLED_RES_0}];  # "OLED-RES"
+set_property src_info {type:XDC file:1 line:138 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB12 [get_ports {OLED_SCLK_0}];  # "OLED-SCLK"
+set_property src_info {type:XDC file:1 line:139 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA12 [get_ports {OLED_SDIN_0}];  # "OLED-SDIN"
+set_property src_info {type:XDC file:1 line:140 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U11  [get_ports {OLED_VBAT_0}];  # "OLED-VBAT"
+set_property src_info {type:XDC file:1 line:141 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U12  [get_ports {OLED_VDD_0}];  # "OLED-VDD"
 set_property src_info {type:XDC file:1 line:175 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN T22 [get_ports {led_0[0]}];  # "LD0"
-set_property src_info {type:XDC file:1 line:176 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN T21 [get_ports {led_0[1]}];  # "LD1"
-set_property src_info {type:XDC file:1 line:177 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U22 [get_ports {led_0[2]}];  # "LD2"
-set_property src_info {type:XDC file:1 line:178 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U21 [get_ports {led_0[3]}];  # "LD3"
-set_property src_info {type:XDC file:1 line:179 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN V22 [get_ports {led_0[4]}];  # "LD4"
-set_property src_info {type:XDC file:1 line:180 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN W22 [get_ports {led_0[5]}];  # "LD5"
-set_property src_info {type:XDC file:1 line:181 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U19 [get_ports {led_0[6]}];  # "LD6"
-set_property src_info {type:XDC file:1 line:182 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN U14 [get_ports {led_0[7]}];  # "LD7"
+set_property PACKAGE_PIN T22 [get_ports {led_0}];  # "LD0"
+set_property src_info {type:XDC file:1 line:205 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P16 [get_ports {poweroff_0}];  # "BTNC"
 set_property src_info {type:XDC file:1 line:362 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 33]];
+set_property src_info {type:XDC file:1 line:367 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS18 [get_ports -of_objects [get_iobanks 34]];
+set_property src_info {type:XDC file:1 line:375 export:INPUT save:INPUT read:READ} [current_design]
+set_property IOSTANDARD LVCMOS33 [get_ports -of_objects [get_iobanks 13]];
