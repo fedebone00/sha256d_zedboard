@@ -93,19 +93,20 @@ vcom -work proc_sys_reset_v5_0_13 -93 \
 
 vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
-"../../../bd/design_1/ipshared/7874/src/ascii_rom.vhd" \
-"../../../bd/design_1/ipshared/7874/src/counter.vhd" \
-"../../../bd/design_1/ipshared/7874/src/delay_module.vhd" \
-"../../../bd/design_1/ipshared/7874/src/sha256_pkg.vhd" \
-"../../../bd/design_1/ipshared/7874/src/sha256.vhd" \
-"../../../bd/design_1/ipshared/7874/src/sha256d.vhd" \
-"../../../bd/design_1/ipshared/7874/src/multi_sha256d.vhd" \
-"../../../bd/design_1/ipshared/7874/src/oled_driver.vhd" \
-"../../../bd/design_1/ipshared/7874/hdl/multi_sha256d_axi_ip_intr_v1_0_S00_AXI.vhd" \
-"../../../bd/design_1/ipshared/7874/hdl/multi_sha256d_axi_ip_intr_v1_0_S_AXI_INTR.vhd" \
-"../../../bd/design_1/ipshared/7874/src/oled_counter.vhd" \
-"../../../bd/design_1/ipshared/7874/src/spi_controller.vhd" \
-"../../../bd/design_1/ipshared/7874/hdl/multi_sha256d_axi_ip_intr_v1_0.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/ascii_rom.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/counter.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/delay_module.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/multi_sha256d_pkg.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/sha256_pkg.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/sha256.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/sha256d.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/multi_sha256d.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/oled_driver.vhd" \
+"../../../bd/design_1/ipshared/fa2c/hdl/multi_sha256d_axi_ip_intr_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/fa2c/hdl/multi_sha256d_axi_ip_intr_v1_0_S_AXI_INTR.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/oled_counter.vhd" \
+"../../../bd/design_1/ipshared/fa2c/src/spi_controller.vhd" \
+"../../../bd/design_1/ipshared/fa2c/hdl/multi_sha256d_axi_ip_intr_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_multi_sha256d_axi_ip_0_1/sim/design_1_multi_sha256d_axi_ip_0_1.vhd" \
 
 vlog -work axi_protocol_converter_v2_1_22  -v2k5 "+incdir+../../../../sha256d_final.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../sha256d_final.gen/sources_1/bd/design_1/ipshared/34f8/hdl" "+incdir+D:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
