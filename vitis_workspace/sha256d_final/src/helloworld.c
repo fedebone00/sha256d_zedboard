@@ -103,8 +103,8 @@ int main(){
 		else if(strstr(cmd, TARGET_CMD)){
 			fgets(target, HASH_LEN, stdin);
 			//uncomment these 2 lines and the returned nonce should be 0x00000005
-			//sprintf(data, "2000000426adff961c11c83d7dc1238992172e8994572c710000cedf00000000000000003afb1227e9aa9713ae1fcf532fe3a4aa777fffef7e6a3e28ed7bc11ab14e0bb26128e108170ffaa0");
-			//sprintf(target, "000000000000000000000000000000000000000000000000000000000000000f");
+			sprintf(data, "2000000426adff961c11c83d7dc1238992172e8994572c710000cedf00000000000000003afb1227e9aa9713ae1fcf532fe3a4aa777fffef7e6a3e28ed7bc11ab14e0bb26128e108170ffaa0");
+			sprintf(target, "000000000000000000000000000000000000000000000000000000000000000f");
 			MULTI_SHA256D_writeDataTargetAndStart(data, target);
 			xil_printf(LOG_CMD); xil_printf("started mining\n");
 		}
