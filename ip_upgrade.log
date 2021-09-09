@@ -1,6 +1,300 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Sep  9 13:01:25 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.23 (Rev. 4) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.24 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Thu Sep  9 12:31:33 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 (xilinx.com:user:multi_sha256d_axi_ip_intr:1.23) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Sep  7 11:39:18 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 (xilinx.com:user:multi_sha256d_axi_ip_intr:1.23) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Sep  7 11:31:16 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 (xilinx.com:user:multi_sha256d_axi_ip_intr:1.23) from (Rev. 1) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Sep  7 11:19:55 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.22 (Rev. 2) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.23 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Sep  7 10:42:49 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.21 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.22 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Sep  3 14:02:37 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.20 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.21 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Sep  3 13:42:10 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_multi_sha256d_axi_ip_0_1 (xilinx.com:user:multi_sha256d_axi_ip_intr:1.20 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Sep  3 13:34:36 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.19 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.20 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Sep  3 13:08:05 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_multi_sha256d_axi_ip_0_1 (xilinx.com:user:multi_sha256d_axi_ip_intr:1.19 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Sep  3 12:49:25 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.18 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.19 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Fri Sep  3 12:09:28 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.17 (Rev. 1) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.18 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Aug 31 17:13:26 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.16 (Rev. 2) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.17 (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Aug 31 16:57:20 2021
+| Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_multi_sha256d_axi_ip_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_multi_sha256d_axi_ip_0_1 from xilinx.com:user:multi_sha256d_axi_ip_intr:1.15 (Rev. 2) to xilinx.com:user:multi_sha256d_axi_ip_intr:1.16 (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 | Date         : Sat Aug 28 14:48:27 2021
 | Host         : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

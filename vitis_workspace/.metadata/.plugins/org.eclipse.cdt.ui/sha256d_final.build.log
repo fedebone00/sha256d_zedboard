@@ -1,4 +1,4 @@
-15:11:06 **** Incremental Build of configuration Debug for project sha256d_final ****
+13:34:53 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -7,6 +7,10 @@ make --no-print-directory main-build
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'Irq_Handler':
+../src/helloworld.c:130:7: warning: unused variable 'res' [-Wunused-variable]
+  130 |   u32 res = MULTI_SHA256D_AXI_IP_INTR_mReadReg(XPAR_MULTI_SHA256D_AXI_IP_0_S00_AXI_BASEADDR, MULTI_SHA256D_AXI_IP_INTR_S00_AXI_SLV_REG1_OFFSET + i*4);
+      |       ^~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: sha256d_final.elf'
@@ -17,9 +21,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size sha256d_final.elf  |tee "sha256d_final.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  54156	   3324	  22672	  80152	  13918	sha256d_final.elf
+  54220	   3324	  22672	  80216	  13958	sha256d_final.elf
 'Finished building: sha256d_final.elf.size'
 ' '
 
-15:11:08 Build Finished (took 1s.193ms)
+13:34:54 Build Finished (took 1s.695ms)
 
