@@ -21,9 +21,8 @@
   <key attr.name="vert_type" attr.type="string" for="node" id="VT"/>
   <graph edgedefault="undirected" id="G" parse.edgeids="canonical" parse.nodeids="canonical" parse.order="nodesfirst">
     <node id="n0">
-      <data key="TU">active</data>
-      <data key="VH">2</data>
-      <data key="VT">PM</data>
+      <data key="VM">design_1</data>
+      <data key="VT">BC</data>
     </node>
     <node id="n1">
       <data key="BA">0x43C10000</data>
@@ -39,18 +38,19 @@
       <data key="SX">/multi_sha256d_axi_ip_0</data>
       <data key="SI">S_AXI_INTR</data>
       <data key="SS">S_AXI_INTR_reg</data>
-      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:2.4</data>
+      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:2.8</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
     <node id="n2">
-      <data key="VM">design_1</data>
-      <data key="VT">BC</data>
-    </node>
-    <node id="n3">
       <data key="VH">2</data>
       <data key="VM">design_1</data>
       <data key="VT">VR</data>
+    </node>
+    <node id="n3">
+      <data key="TU">active</data>
+      <data key="VH">2</data>
+      <data key="VT">PM</data>
     </node>
     <node id="n4">
       <data key="BA">0x43C00000</data>
@@ -66,18 +66,18 @@
       <data key="SX">/multi_sha256d_axi_ip_0</data>
       <data key="SI">S00_AXI</data>
       <data key="SS">S00_AXI_reg</data>
-      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:2.4</data>
+      <data key="SV">xilinx.com:user:multi_sha256d_axi_ip_intr:2.8</data>
       <data key="TU">register</data>
       <data key="VT">AC</data>
     </node>
-    <edge id="e0" source="n2" target="n3">
+    <edge id="e0" source="n0" target="n2">
     </edge>
-    <edge id="e1" source="n3" target="n0">
+    <edge id="e1" source="n2" target="n3">
     </edge>
-    <edge id="e2" source="n4" target="n0">
+    <edge id="e2" source="n4" target="n3">
       <data key="EH">2</data>
     </edge>
-    <edge id="e3" source="n1" target="n0">
+    <edge id="e3" source="n1" target="n3">
       <data key="EH">2</data>
     </edge>
   </graph>

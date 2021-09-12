@@ -172,11 +172,11 @@ proc create_root_design { parentCell } {
   set poweroff_0 [ create_bd_port -dir I poweroff_0 ]
 
   # Create instance: multi_sha256d_axi_ip_0, and set properties
-  set multi_sha256d_axi_ip_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.4 multi_sha256d_axi_ip_0 ]
+  set multi_sha256d_axi_ip_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:multi_sha256d_axi_ip_intr:2.8 multi_sha256d_axi_ip_0 ]
   set_property -dict [ list \
    CONFIG.C_IRQ_ACTIVE_STATE {0} \
    CONFIG.C_IRQ_SENSITIVITY {0} \
-   CONFIG.SHA256D_INST_N {3} \
+   CONFIG.SHA256D_INST_N {2} \
  ] $multi_sha256d_axi_ip_0
 
   # Create instance: processing_system7_0, and set properties

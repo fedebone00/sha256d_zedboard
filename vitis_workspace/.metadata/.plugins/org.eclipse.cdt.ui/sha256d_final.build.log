@@ -1,25 +1,10 @@
-23:30:06 **** Incremental Build of configuration Debug for project sha256d_final ****
+23:22:54 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -ID:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: sha256d_final.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LD:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "sha256d_final.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: sha256d_final.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size sha256d_final.elf  |tee "sha256d_final.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  54156	   3324	  22672	  80152	  13918	sha256d_final.elf
-'Finished building: sha256d_final.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-23:30:07 Build Finished (took 1s.141ms)
+23:22:54 Build Finished (took 362ms)
 

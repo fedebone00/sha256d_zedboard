@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Sep  9 22:34:08 2021" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Sep 12 22:52:54 2021" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -199,7 +199,7 @@
   </EXTERNALINTERFACES>
 
   <MODULES>
-    <MODULE COREREVISION="1" FULLNAME="/multi_sha256d_axi_ip_0" HWVERSION="2.4" INSTANCE="multi_sha256d_axi_ip_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="multi_sha256d_axi_ip_intr" VLNV="xilinx.com:user:multi_sha256d_axi_ip_intr:2.4">
+    <MODULE COREREVISION="1" FULLNAME="/multi_sha256d_axi_ip_0" HWVERSION="2.8" INSTANCE="multi_sha256d_axi_ip_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="multi_sha256d_axi_ip_intr" VLNV="xilinx.com:user:multi_sha256d_axi_ip_intr:2.8">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -217,7 +217,7 @@
         <PARAMETER NAME="C_IRQ_ACTIVE_STATE" VALUE="0"/>
         <PARAMETER NAME="C_S00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_S00_AXI_ADDR_WIDTH" VALUE="7"/>
-        <PARAMETER NAME="SHA256D_INST_N" VALUE="3"/>
+        <PARAMETER NAME="SHA256D_INST_N" VALUE="2"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_multi_sha256d_axi_ip_0_1"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_S00_AXI_BASEADDR" VALUE="0x43C00000"/>

@@ -16,3 +16,4 @@ platform write
 platform generate -domains 
 platform active {design_1_wrapper_3_inst}
 platform generate
+platform generate

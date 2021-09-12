@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:2.4
+-- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:2.8
 -- IP Revision: 1
 
 LIBRARY ieee;

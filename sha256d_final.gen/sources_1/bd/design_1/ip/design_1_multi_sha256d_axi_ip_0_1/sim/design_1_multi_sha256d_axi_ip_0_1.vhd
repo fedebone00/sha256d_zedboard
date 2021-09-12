@@ -46,7 +46,7 @@
 -- 
 -- DO NOT MODIFY THIS FILE.
 
--- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:2.4
+-- IP VLNV: xilinx.com:user:multi_sha256d_axi_ip_intr:2.8
 -- IP Revision: 1
 
 LIBRARY ieee;
@@ -245,7 +245,7 @@ BEGIN
       C_IRQ_ACTIVE_STATE => 0,
       C_S00_AXI_DATA_WIDTH => 32,
       C_S00_AXI_ADDR_WIDTH => 7,
-      SHA256D_INST_N => 3
+      SHA256D_INST_N => 2
     )
     PORT MAP (
       led => led,

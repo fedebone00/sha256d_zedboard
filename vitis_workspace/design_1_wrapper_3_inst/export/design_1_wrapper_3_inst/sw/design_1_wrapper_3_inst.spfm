@@ -18,7 +18,7 @@ design_1_wrapper_3_inst
                 <sdx:image sdx:name="standard"
                             sdx:bif="design_1_wrapper_3_inst/boot/design_1_wrapper_3_inst.bif"
                             sdx:readme="design_1_wrapper_3_inst/boot/generic.readme"
-                            sdx:qemuArguments="design_1_wrapper_3_inst/standalone_domain/qemu/qemu_args.txt"
+                            sdx:qemuArguments="design_1_wrapper_3_inst/qemu/qemu_args.txt"
                             />
                 <sdx:image sdx:name="standalone_domain"
                             sdx:bif="design_1_wrapper_3_inst/boot/design_1_wrapper_3_inst.bif"
