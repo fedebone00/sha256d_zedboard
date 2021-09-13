@@ -1,1 +1,5 @@
-Il progetto principale contiene ora solo il block design utile all'esportazione del progetto in Vitis. La logica dell'algoritmo sha256d è ora nel progetto dell'ip block sha256d_axi_ip, che è un axi slave personalizzato il cui compito è di comunicare con il processore. Per modificare quest'ultimo, aprire il file sha256d_final.tmp/sha256d_axi_ip_v1_0_project/sha256d_axi_ip_v1_0_project.xpr
+The main project contains the block design, in which the processing system is connected to our ip "multi_sha256d_axi_intr_ip" through an axi interface.
+Our custom axi slave receive the block data and the target, handles nonce generation and hashing phase and alerts the PS using an interrupt, when a hash meets the target.
+The vitis_workspace folder contains both the platform projects (3_inst is not working) and the application project.
+
+Make sure to always shut down the LCD screen by pressing the BTNC button.
