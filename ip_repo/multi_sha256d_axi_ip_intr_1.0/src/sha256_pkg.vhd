@@ -52,7 +52,7 @@ package sha256_pkg is
     pure function small_s1 (x: std_logic_vector(31 downto 0)) return std_logic_vector;
     
     type WordsArray is array(integer range <>) of std_logic_vector(31 downto 0);
-    type MessageBlockArray is array(15 downto 0) of std_logic_vector(511 downto 0);
+    type MessageBlockArray is array(integer range <>) of std_logic_vector(511 downto 0);
     
     
     constant K: WordsArray(63 downto 0) := ( 

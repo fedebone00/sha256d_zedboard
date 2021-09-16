@@ -46,7 +46,11 @@ begin
       if ( counter_init = '1' ) then
         the_count <= to_unsigned(START, SIZE);
       elsif ( counter_enable = '1' ) then
-        the_count <= the_count + 1;
+        if  the_count = TERMINAL then
+            the_count <= to_unsigned(START, SIZE);
+        else
+            the_count <= the_count + 1;
+        end if;
       end if;
     end if;
   end process;

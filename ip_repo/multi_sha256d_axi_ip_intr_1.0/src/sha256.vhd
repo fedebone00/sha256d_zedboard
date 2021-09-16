@@ -53,11 +53,11 @@ architecture Behavioral of sha256 is
     signal currentstate, nextstate: state;
     
     constant blocks_count: integer := ((SIZE+65) / 512) + 1;
-    signal message_blocks: MessageBlockArray;
-    signal hv: WordsArray(7 downto 0);
-    signal words: WordsArray(7 downto 0);
-    signal W: WordsArray(63 downto 0);
-    signal T1, T2: unsigned(31 downto 0);
+    signal message_blocks: MessageBlockArray(blocks_count-1 downto 0);
+    signal hv_d, hv_q: WordsArray(7 downto 0);
+    signal words_d, words_q: WordsArray(7 downto 0);
+    signal W_d, W_q: WordsArray(63 downto 0);
+    signal T1_d, T1_q, T2_d, T2_q: unsigned(31 downto 0);
     
     signal message: std_logic_vector(((((SIZE+65) / 512) + 1)*512)-1 downto 0);
     
@@ -76,13 +76,10 @@ architecture Behavioral of sha256 is
         
         
     
-    signal smallS1, smallS0: std_logic_vector(31 downto 0);
-begin
-    output <= hv(0) & hv(1) & hv(2) & hv(3) & hv(4) & hv(5) & hv(6) & hv(7);
-    
+    signal smallS1_d, smallS1_q, smallS0_d, smallS0_q: std_logic_vector(31 downto 0);
+begin    
     done <= '1' when (currentstate=hashLoop2 and message_block_counter_tc='1') or currentstate=finish else '0';
-        
-    ready <= '1' when (currentstate=hashLoop2 and message_block_counter_tc='1') or currentstate=waiting else '0';
+    ready <= '1' when (currentstate=hashLoop2 and message_block_counter_tc='1') or currentstate=waiting or nextstate=waiting else '0';
     
     message <= input & '1' & std_logic_vector(to_unsigned(SIZE, message'length-SIZE-1));
     
@@ -90,18 +87,7 @@ begin
     for i in 0 to blocks_count-1 generate
         message_blocks(i) <= message((blocks_count-i)*512-1 downto (blocks_count-i-1)*512);
     end generate message_blocks_init;
-    
---    w_generator:
---    for i in 0 to 63 generate
---        FIRST_15: if i<16 generate
---            W(i) <= message_blocks(message_block_counter_int_val)((16-i)*32-1 downto (15-i)*32) when message_block_counter_int_val>-1;
---        end generate FIRST_15;
-        
---        NEXT_16: if i>=16 generate
---            W(i) <= std_logic_vector(unsigned(small_s1(W(i-2))) + unsigned(W(i-7)) + unsigned(small_s0(W(i-15))) + unsigned(W(i-16))) when message_block_counter_int_val>-1;
---        end generate NEXT_16;
---    end generate w_generator;
-            
+                
     
     message_block_counter_int_val <= to_integer(message_block_counter_val);
     message_block_counter_init <= '1' when currentstate=pre else '0';
@@ -133,54 +119,55 @@ begin
                     counter_enable=>hash_round_counter_enable,
                     counter_tc=>hash_round_counter_tc,
                     counter_val=>hash_round_counter_val);    
-    
-    process(clk, hv) is
-    begin
-        hv <= hv;
-        words <= words;
-        T1 <= T1;
-        T2 <= T2;
-        smallS0 <= smallS0;
-        smallS1 <= smallS1;
         
-        if rising_edge(clk) then
-            case currentstate is
-                when pre =>
-                    hv <= init_hv;
-                when hashLoop0a =>
-                    words <= hv;
-                when hashLoop0b =>
-                    if w_counter_int_val >= 16 then
-                        smallS0 <= small_s0(W(w_counter_int_val-15));
-                        smallS1 <= small_s1(W(w_counter_int_val-2));
-                    end if;
-                when hashLoop0c =>
-                    if w_counter_int_val < 16 then
-                        W(w_counter_int_val) <= message_blocks(message_block_counter_int_val)((16-w_counter_int_val)*32-1 downto (15-w_counter_int_val)*32);
-                    else
-                        W(w_counter_int_val) <= std_logic_vector(unsigned(smallS1) + unsigned(W(w_counter_int_val-7)) + unsigned(smallS0) + unsigned(W(w_counter_int_val-16)));
-                    end if;
-                when hashLoop1a =>
-                    --for i in 0 to 3 loop
-                    T1 <= unsigned(words(7))+unsigned(BIG_S1(words(4)))+unsigned(Ch(words(4), words(5), words(6)))+unsigned(K(hash_round_counter_int_val))+unsigned(W(hash_round_counter_int_val));
-                    T2 <= unsigned(BIG_S0(words(0)))+unsigned(Maj(words(0), words(1), words(2)));
-                when hashLoop1b =>
-                    words(7) <= words(6);
-                    words(6) <= words(5);
-                    words(5) <= words(4);
-                    words(4) <= std_logic_vector(unsigned(words(3))+T1);
-                    words(3) <= words(2);
-                    words(2) <= words(1);
-                    words(1) <= words(0);
-                    words(0) <= std_logic_vector(T1+T2);
-                when hashLoop2 =>
-                    for i in HV'range loop
-                        hv(i) <= std_logic_vector(unsigned(words(i)) + unsigned(HV(i)));
-                    end loop;
-                when finish =>
-                when others =>
-            end case;
-        end if;
+    process(clk, currentstate, message_blocks, hash_round_counter_int_val, w_counter_int_val, message_block_counter_int_val, w_q, hv_q, words_q, t1_q, t2_q, smalls0_q, smalls1_q) is
+    begin
+        output <= (others=>'0');
+        hv_d <= hv_q;
+        words_d <= words_q;
+        T1_d <= T1_q;
+        T2_d <= T2_q;
+        smallS0_d <= smallS0_q;
+        smallS1_d <= smallS1_q;
+        W_d <= W_q;
+        
+        case currentstate is
+            when pre =>
+                hv_d <= init_hv;
+            when hashLoop0a =>
+                words_d <= hv_q;
+            when hashLoop0b =>
+                if w_counter_int_val >= 16 then
+                    smallS0_d <= small_s0(W_q(w_counter_int_val-15));
+                    smallS1_d <= small_s1(W_q(w_counter_int_val-2));
+                end if;
+            when hashLoop0c =>
+                if w_counter_int_val < 16 then
+                    W_d(w_counter_int_val) <= message_blocks(message_block_counter_int_val)((16-w_counter_int_val)*32-1 downto (15-w_counter_int_val)*32);
+                else
+                    W_d(w_counter_int_val) <= std_logic_vector(unsigned(smallS1_q) + unsigned(W_q(w_counter_int_val-7)) + unsigned(smallS0_q) + unsigned(W_q(w_counter_int_val-16)));
+                end if;
+            when hashLoop1a =>
+                --for i in 0 to 3 loop
+                T1_d <= unsigned(words_q(7))+unsigned(BIG_S1(words_q(4)))+unsigned(Ch(words_q(4), words_q(5), words_q(6)))+unsigned(K(hash_round_counter_int_val))+unsigned(W_q(hash_round_counter_int_val));
+                T2_d <= unsigned(BIG_S0(words_q(0)))+unsigned(Maj(words_q(0), words_q(1), words_q(2)));
+            when hashLoop1b =>
+                words_d(7) <= words_q(6);
+                words_d(6) <= words_q(5);
+                words_d(5) <= words_q(4);
+                words_d(4) <= std_logic_vector(unsigned(words_q(3))+T1_q);
+                words_d(3) <= words_q(2);
+                words_d(2) <= words_q(1);
+                words_d(1) <= words_q(0);
+                words_d(0) <= std_logic_vector(T1_q+T2_q);
+            when hashLoop2 =>
+                for i in HV_d'range loop
+                    hv_d(i) <= std_logic_vector(unsigned(words_q(i)) + unsigned(HV_q(i)));
+                end loop;
+            when finish =>
+                output <= hv_q(0) & hv_q(1) & hv_q(2) & hv_q(3) & hv_q(4) & hv_q(5) & hv_q(6) & hv_q(7);
+            when others =>
+        end case;
                 
     end process;
 
@@ -193,7 +180,28 @@ begin
         end if;
     end process;
     
-    process(clk, currentstate, rst, start, w_counter_tc, hash_round_counter_tc, message_block_counter_tc) is
+    process(clk, rst) is
+    begin
+        if rst='0' then
+            hv_q <= (others=>(others=>'0'));
+            words_q <= (others=>(others=>'0'));
+            T1_q <= (others=>'0');
+            T2_q <= (others=>'0');
+            smallS0_q <= (others=>'0');
+            smallS1_q <= (others=>'0');
+            W_q <= (others=>(others=>'0'));
+        elsif rising_edge(clk) then
+            hv_q <= hv_d;
+            words_q <= words_d;
+            T1_q <= T1_d;
+            T2_q <= T2_d;
+            smallS0_q <= smallS0_d;
+            smallS1_q <= smallS1_d;
+            W_q <= w_d;
+        end if;
+    end process;
+    
+    process(clk, currentstate, rst, start, w_counter_int_val, w_counter_tc, hash_round_counter_tc, message_block_counter_tc) is
     begin
         case currentstate is
             when waiting =>
@@ -203,11 +211,13 @@ begin
                     nextstate <= waiting;
                 end if;
             when pre => nextstate <= hashLoop0a;
-            when hashLoop0a => nextstate <= hashLoop0b;
+            when hashLoop0a => nextstate <= hashLoop0c;
             when hashLoop0b => nextstate <= hashLoop0c;
             when hashLoop0c =>
                 if w_counter_tc='1' then
                     nextstate <= hashLoop1a;
+                elsif w_counter_int_val < 15 then
+                    nextstate <= hashLoop0c;
                 else
                     nextstate <= hashLoop0b;
                 end if;
@@ -231,8 +241,10 @@ begin
                     nextstate <= waiting;
                 end if;
             when reset =>
-                if rst='0' then nextstate <= reset;
-                else nextstate <= pre;
+                if rst='0' then
+                    nextstate <= reset;
+                else
+                    nextstate <= waiting;
                 end if;
         end case;
     end process;

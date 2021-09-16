@@ -1,4 +1,4 @@
-23:22:54 **** Incremental Build of configuration Debug for project sha256d_final ****
+12:26:05 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -6,5 +6,5 @@ a9-linaro-pre-build-step
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
 
-23:22:54 Build Finished (took 362ms)
+12:26:06 Build Finished (took 924ms)
 

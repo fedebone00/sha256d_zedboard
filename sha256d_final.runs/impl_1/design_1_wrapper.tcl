@@ -115,7 +115,6 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -133,11 +132,7 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/wt [current_project]
   set_property parent.project_path D:/Uni/RL/sha256d_zedboard/sha256d_final.xpr [current_project]
-  set_property ip_repo_paths {
-  D:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0
-  D:/Uni/RL/sha256d_zedboard/ip_repo/multi_sha256d_axi_ip_1.0
-  D:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0
-} [current_project]
+  set_property ip_repo_paths D:/Uni/RL/sha256d_zedboard/ip_repo/multi_sha256d_axi_ip_intr_1.0 [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/Uni/RL/sha256d_zedboard/sha256d_final.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]

@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity multi_sha256d_axi_ip_intr_v1_0 is
 	generic (
 		-- Users to add parameters here
-
+        SHA256D_INST_N: integer := 16;
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 
@@ -24,7 +24,14 @@ entity multi_sha256d_axi_ip_intr_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-
+		led: out std_logic;
+		poweroff: in std_logic;
+        OLED_SDIN,
+        OLED_SCLK,
+        OLED_DC,  
+        OLED_RES, 
+        OLED_VBAT,
+        OLED_VDD  : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -85,11 +92,20 @@ architecture arch_imp of multi_sha256d_axi_ip_intr_v1_0 is
 	component multi_sha256d_axi_ip_intr_v1_0_S00_AXI is
 		generic (
 		SIZE: integer := 640;
+		SHA256D_INST_N: integer := 16;
 		C_S_AXI_DATA_WIDTH	: integer	:= 32;
 		C_S_AXI_ADDR_WIDTH	: integer	:= 7
 		);
 		port (
 		interrupt: out std_logic;
+        reset: out std_logic;
+        poweroff: in std_logic;
+        OLED_SDIN,
+        OLED_SCLK,
+        OLED_DC,  
+        OLED_RES, 
+        OLED_VBAT,
+        OLED_VDD  : out std_logic;
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -199,11 +215,22 @@ begin
 -- Instantiation of Axi Bus Interface S00_AXI
 multi_sha256d_axi_ip_intr_v1_0_S00_AXI_inst : multi_sha256d_axi_ip_intr_v1_0_S00_AXI
 	generic map (
+	   
+        SHA256D_INST_N => SHA256D_INST_N,
 		C_S_AXI_DATA_WIDTH	=> C_S00_AXI_DATA_WIDTH,
 		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH
 	)
 	port map (
 	    interrupt => done,
+	    reset => led,
+	    poweroff => poweroff,
+        OLED_SDIN => OLED_SDIN,
+        OLED_SCLK => OLED_SCLK,
+        OLED_DC => OLED_DC,  
+        OLED_RES => OLED_RES, 
+        OLED_VBAT => OLED_VBAT,
+        OLED_VDD => OLED_VDD,
+        
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,
@@ -261,7 +288,8 @@ multi_sha256d_axi_ip_intr_v1_0_S_AXI_INTR_inst : multi_sha256d_axi_ip_intr_v1_0_
 	);
 	
 	-- Add user logic here
-
+	
+	
 	-- User logic ends
 
 end arch_imp;

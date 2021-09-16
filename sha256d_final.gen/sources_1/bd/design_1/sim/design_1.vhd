@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
---Date        : Sun Sep 12 22:52:53 2021
+--Date        : Thu Sep 16 11:50:01 2021
 --Host        : LAPTOP-S28JR86F running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1151,7 +1151,7 @@ entity design_1 is
     poweroff_0 : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=9,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_ps7_cnt=3,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=9,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=11,da_ps7_cnt=3,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -1244,7 +1244,7 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_rst_ps7_0_100M_0;
-  component design_1_multi_sha256d_axi_ip_0_1 is
+  component design_1_multi_sha256d_axi_ip_0_2 is
   port (
     led : out STD_LOGIC;
     poweroff : in STD_LOGIC;
@@ -1298,7 +1298,7 @@ architecture STRUCTURE of design_1 is
     s_axi_intr_rready : in STD_LOGIC;
     irq : out STD_LOGIC
   );
-  end component design_1_multi_sha256d_axi_ip_0_1;
+  end component design_1_multi_sha256d_axi_ip_0_2;
   signal multi_sha256d_axi_ip_0_OLED_DC : STD_LOGIC;
   signal multi_sha256d_axi_ip_0_OLED_RES : STD_LOGIC;
   signal multi_sha256d_axi_ip_0_OLED_SCLK : STD_LOGIC;
@@ -1451,7 +1451,7 @@ begin
   OLED_VDD_0 <= multi_sha256d_axi_ip_0_OLED_VDD;
   led_0 <= multi_sha256d_axi_ip_0_led;
   poweroff_0_1 <= poweroff_0;
-multi_sha256d_axi_ip_0: component design_1_multi_sha256d_axi_ip_0_1
+multi_sha256d_axi_ip_0: component design_1_multi_sha256d_axi_ip_0_2
      port map (
       OLED_DC => multi_sha256d_axi_ip_0_OLED_DC,
       OLED_RES => multi_sha256d_axi_ip_0_OLED_RES,

@@ -1,17 +1,17 @@
-23:22:47 **** Incremental Build of project design_1_wrapper ****
-buildplatform.bat 58368 design_1_wrapper no_domain_build 
+12:25:54 **** Incremental Build of project design_1_wrapper ****
+buildplatform.bat 55757 design_1_wrapper no_domain_build 
 XSDB Server Channel: tcfchan#1
-23:22:54 **** Incremental Build of configuration Debug for project sha256d_final ****
+12:26:05 **** Incremental Build of configuration Debug for project sha256d_final ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
 make[1]: Nothing to be done for 'main-build'.
-23:23:03 **** Incremental Build of configuration Debug for project sha256d_final_system ****
+12:26:16 **** Incremental Build of configuration Debug for project sha256d_final_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 58368 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif
+generate_system_bif.bat 55757 D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm standalone_domain D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif
 sdcard_gen --xpfm D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/system.bif --bitstream D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit --elf D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf,ps7_cortexa9_0
 creating BOOT.BIN using D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
 Running D:/Xilinx/Vitis/2020.2/bin/bootgen  -image D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

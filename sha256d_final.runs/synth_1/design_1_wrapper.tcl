@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
@@ -85,11 +83,7 @@ set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_repo_paths {
-  d:/Uni/RL/ip_repo/multi_sha256d_axi_ip_intr_1.0
-  d:/Uni/RL/sha256d_zedboard/ip_repo/multi_sha256d_axi_ip_1.0
-  d:/Uni/RL/sha256d_zedboard/ip_repo/sha256d_axi_ip_1.0
-} [current_project]
+set_property ip_repo_paths d:/Uni/RL/sha256d_zedboard/ip_repo/multi_sha256d_axi_ip_intr_1.0 [current_project]
 update_ip_catalog
 set_property ip_output_repo d:/Uni/RL/sha256d_zedboard/sha256d_final.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

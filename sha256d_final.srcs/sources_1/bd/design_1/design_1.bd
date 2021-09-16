@@ -1370,28 +1370,10 @@
           }
         },
         "interface_nets": {
-          "ps7_0_axi_periph_to_s00_couplers": {
-            "interface_ports": [
-              "S00_AXI",
-              "s00_couplers/S_AXI"
-            ]
-          },
-          "m01_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
           "xbar_to_m01_couplers": {
             "interface_ports": [
               "xbar/M01_AXI",
               "m01_couplers/S_AXI"
-            ]
-          },
-          "m00_couplers_to_ps7_0_axi_periph": {
-            "interface_ports": [
-              "M00_AXI",
-              "m00_couplers/M_AXI"
             ]
           },
           "s00_couplers_to_xbar": {
@@ -1400,10 +1382,28 @@
               "xbar/S00_AXI"
             ]
           },
+          "m00_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M00_AXI",
+              "m00_couplers/M_AXI"
+            ]
+          },
+          "m01_couplers_to_ps7_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
           "xbar_to_m00_couplers": {
             "interface_ports": [
               "xbar/M00_AXI",
               "m00_couplers/S_AXI"
+            ]
+          },
+          "ps7_0_axi_periph_to_s00_couplers": {
+            "interface_ports": [
+              "S00_AXI",
+              "s00_couplers/S_AXI"
             ]
           }
         },
@@ -1441,9 +1441,9 @@
         "inst_hier_path": "rst_ps7_0_100M"
       },
       "multi_sha256d_axi_ip_0": {
-        "vlnv": "xilinx.com:user:multi_sha256d_axi_ip_intr:2.8",
-        "xci_name": "design_1_multi_sha256d_axi_ip_0_1",
-        "xci_path": "ip\\design_1_multi_sha256d_axi_ip_0_1\\design_1_multi_sha256d_axi_ip_0_1.xci",
+        "vlnv": "xilinx.com:user:multi_sha256d_axi_ip_intr:2.9",
+        "xci_name": "design_1_multi_sha256d_axi_ip_0_2",
+        "xci_path": "ip\\design_1_multi_sha256d_axi_ip_0_2\\design_1_multi_sha256d_axi_ip_0_2.xci",
         "inst_hier_path": "multi_sha256d_axi_ip_0",
         "parameters": {
           "C_IRQ_ACTIVE_STATE": {
@@ -1521,10 +1521,16 @@
           "multi_sha256d_axi_ip_0/s_axi_intr_aresetn"
         ]
       },
-      "multi_sha256d_axi_ip_0_irq": {
+      "poweroff_0_1": {
         "ports": [
-          "multi_sha256d_axi_ip_0/irq",
-          "processing_system7_0/Core0_nIRQ"
+          "poweroff_0",
+          "multi_sha256d_axi_ip_0/poweroff"
+        ]
+      },
+      "multi_sha256d_axi_ip_0_led": {
+        "ports": [
+          "multi_sha256d_axi_ip_0/led",
+          "led_0"
         ]
       },
       "multi_sha256d_axi_ip_0_OLED_SDIN": {
@@ -1563,16 +1569,10 @@
           "OLED_VDD_0"
         ]
       },
-      "poweroff_0_1": {
+      "multi_sha256d_axi_ip_0_irq": {
         "ports": [
-          "poweroff_0",
-          "multi_sha256d_axi_ip_0/poweroff"
-        ]
-      },
-      "multi_sha256d_axi_ip_0_led": {
-        "ports": [
-          "multi_sha256d_axi_ip_0/led",
-          "led_0"
+          "multi_sha256d_axi_ip_0/irq",
+          "processing_system7_0/Core0_nIRQ"
         ]
       }
     },

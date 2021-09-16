@@ -7,8 +7,8 @@
 
 void MULTI_SHA256D_AXI_IP_INTR_EnableInterrupt(void * baseaddr_p)
 {
-  Xuint32 baseaddr;
-  baseaddr = (Xuint32) baseaddr_p;
+  u32 baseaddr;
+  baseaddr = (u32) baseaddr_p;
   /*
    * Enable all interrupt source from user logic.
    */
@@ -22,8 +22,8 @@ void MULTI_SHA256D_AXI_IP_INTR_EnableInterrupt(void * baseaddr_p)
  
 void MULTI_SHA256D_AXI_IP_INTR_ACK(void * baseaddr_p)
 {
-  Xuint32 baseaddr;
-  baseaddr = (Xuint32) baseaddr_p;
+  u32 baseaddr;
+  baseaddr = (u32) baseaddr_p;
  
   /*
   * ACK interrupts on MULTI_SHA256D_AXI_IP_INTR.

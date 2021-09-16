@@ -17683,3 +17683,87 @@ con
 
 17:34:39 INFO  : Launch script is exported to file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final_system\_ide\scripts\debugger_sha256d-default.tcl'
 17:57:01 INFO  : Disconnected from the channel tcfchan#11.
+23:22:00 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Uni\RL\sha256d_zedboard\vitis_workspace\temp_xsdb_launch_script.tcl
+23:22:03 INFO  : XSCT server has started successfully.
+23:22:03 INFO  : plnx-install-location is set to ''
+23:22:03 INFO  : Successfully done setting XSCT server connection channel  
+23:22:03 INFO  : Successfully done setting workspace for the tool. 
+23:22:09 INFO  : Platform repository initialization has completed.
+23:22:10 INFO  : Registering command handlers for Vitis TCF services
+23:22:14 INFO  : Successfully done query RDI_DATADIR 
+23:22:14 INFO  : Restoring local repository preferences: 
+		 D:\Uni\RL\sha256d_zedboard\ip_repo\multi_sha256d_axi_ip_intr_1.0
+23:22:38 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+23:22:50 INFO  : Result from executing command 'getProjects': design_1_wrapper
+23:22:50 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+23:22:51 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+23:22:55 INFO  : The hardware specfication used by project 'sha256d_final' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+23:22:55 INFO  : The file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+23:22:55 INFO  : The updated bitstream files are copied from platform to folder 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\bitstream' in project 'sha256d_final'.
+23:22:55 INFO  : The file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\psinit\ps7_init.tcl' stored in project is removed.
+23:23:03 INFO  : The updated ps init files are copied from platform to folder 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\psinit' in project 'sha256d_final'.
+23:23:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:23:16 INFO  : Jtag cable 'Digilent Zed 210248684685' is selected.
+23:23:16 INFO  : 'jtag frequency' command is executed.
+23:23:16 INFO  : Context for 'APU' is selected.
+23:23:16 INFO  : System reset is completed.
+23:23:19 INFO  : 'after 3000' command is executed.
+23:23:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}' command is executed.
+23:23:22 INFO  : Device configured successfully with "D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit"
+23:23:22 INFO  : Context for 'APU' is selected.
+23:23:22 INFO  : Hardware design and registers information is loaded from 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+23:23:22 INFO  : 'configparams force-mem-access 1' command is executed.
+23:23:22 INFO  : Context for 'APU' is selected.
+23:23:22 INFO  : Sourcing of 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl' is done.
+23:23:23 INFO  : 'ps7_init' command is executed.
+23:23:23 INFO  : 'ps7_post_config' command is executed.
+23:23:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:23 INFO  : The application 'D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf' is downloaded to processor 'ps7_cortexa9_0'.
+23:23:23 INFO  : 'configparams force-mem-access 0' command is executed.
+23:23:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248684685" && level==0 && jtag_device_ctx=="jsn-Zed-210248684685-23727093-0"}
+fpga -file D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow D:/Uni/RL/sha256d_zedboard/vitis_workspace/sha256d_final/Debug/sha256d_final.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+23:23:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+23:23:23 INFO  : 'con' command is executed.
+23:23:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+23:23:23 INFO  : Launch script is exported to file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final_system\_ide\scripts\debugger_sha256d-default.tcl'
+00:10:37 INFO  : Disconnected from the channel tcfchan#3.
+12:24:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive D:\Uni\RL\sha256d_zedboard\vitis_workspace\temp_xsdb_launch_script.tcl
+12:24:43 INFO  : XSCT server has started successfully.
+12:24:43 INFO  : Successfully done setting XSCT server connection channel  
+12:24:43 INFO  : plnx-install-location is set to ''
+12:24:43 INFO  : Successfully done setting workspace for the tool. 
+12:24:55 INFO  : Registering command handlers for Vitis TCF services
+12:24:57 INFO  : Platform repository initialization has completed.
+12:25:11 INFO  : Successfully done query RDI_DATADIR 
+12:25:11 INFO  : Restoring local repository preferences: 
+		 D:\Uni\RL\sha256d_zedboard\ip_repo\multi_sha256d_axi_ip_intr_1.0
+12:25:50 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+12:26:01 INFO  : Result from executing command 'getProjects': design_1_wrapper
+12:26:01 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|D:/Uni/RL/sha256d_zedboard/vitis_workspace/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+12:26:02 INFO  : Checking for BSP changes to sync application flags for project 'sha256d_final'...
+12:26:08 INFO  : The hardware specfication used by project 'sha256d_final' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+12:26:08 INFO  : The file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+12:26:08 INFO  : The updated bitstream files are copied from platform to folder 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\bitstream' in project 'sha256d_final'.
+12:26:08 INFO  : The file 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\psinit\ps7_init.tcl' stored in project is removed.
+12:26:16 INFO  : The updated ps init files are copied from platform to folder 'D:\Uni\RL\sha256d_zedboard\vitis_workspace\sha256d_final\_ide\psinit' in project 'sha256d_final'.

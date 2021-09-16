@@ -37,7 +37,7 @@ entity sha256d is
         clk: in std_logic;
         rst: in std_logic;
         start: in std_logic;
-        input: in std_logic_vector;
+        input: in std_logic_vector(SIZE-1 downto 0);
         output: out std_logic_vector(255 downto 0);
         ready: out std_logic;
         done: out std_logic
@@ -49,29 +49,35 @@ architecture Behavioral of sha256d is
     signal currentstate, nextstate: state;
     signal start1, start2, done1, done2: std_logic := '0';
     signal ready1, ready2: std_logic;
-    signal input1: std_logic_vector(input'length-1 downto 0);
-    signal input2, output1, output2, output_out: std_logic_vector(255 downto 0);
+    signal input1_d, input1_q: std_logic_vector(input'length-1 downto 0);
+    signal input2_d, input2_q, output1, output2: std_logic_vector(255 downto 0);
 begin
     
-    sha1: entity work.sha256 generic map (SIZE=>SIZE) port map (clk=>clk, rst=>rst, start=>start1, input=>input1, output=>output1, ready=>ready1, done=>done1);
-    sha2: entity work.sha256 generic map (SIZE=>256) port map (clk=>clk, rst=>rst, start=>start2, input=>input2, output=>output2, ready=>ready2, done=>done2);
+    sha1: entity work.sha256 generic map (SIZE=>SIZE) port map (clk=>clk, rst=>rst, start=>start1, input=>input1_q, output=>output1, ready=>ready1, done=>done1);
+    sha2: entity work.sha256 generic map (SIZE=>256) port map (clk=>clk, rst=>rst, start=>start2, input=>input2_q, output=>output2, ready=>ready2, done=>done2);
     
-    done <= '1' when (currentstate=waitinground2 and done2='1') or currentstate=finished else '0';
+    --output <= output_q;
+    --done <= '1' when currentstate=finished else '0';
         
-    ready <= '1' when (currentstate=waitinground2 and done2='1') or currentstate=waiting else '0';
-        
-    input1 <= input;
-    input2 <= output1;
-    output <= output2;
-
-    process(clk, currentstate) is
+    ready <= '1' when currentstate=waiting else '0';
+    
+    process(clk, currentstate, input1_q, input2_q, input, output1, output2) is
     begin
+        input1_d <= input1_q;
+        input2_d <= input2_q;
+        done <= '0';
+        output <= (others=>'1');
         start1<='0'; start2<='0';
         case currentstate is
             when round1 =>
+                input1_d <= input;
                 start1 <= '1';
             when round2 =>
+                input2_d <= output1;
                 start2 <= '1';
+            when finished =>
+                output <= output2;
+                done <= '1';
             when others =>
         end case;
     end process;
@@ -85,7 +91,18 @@ begin
         end if;
     end process;
     
-    process(clk, currentstate, rst, start, done1, done2) is
+    process(clk, rst) is
+    begin
+        if rst='0' then
+            input1_q <= (others=>'0');
+            input2_q <= (others=>'0');
+        elsif rising_edge(clk) then
+            input1_q <= input1_d;
+            input2_q <= input2_d;
+        end if;
+    end process;
+    
+    process(clk, currentstate, rst, start, done1, done2, ready1, ready2) is
     begin
         case currentstate is
             when waiting =>

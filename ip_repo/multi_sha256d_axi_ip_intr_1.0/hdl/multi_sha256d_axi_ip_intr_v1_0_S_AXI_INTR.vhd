@@ -493,7 +493,7 @@ begin
 	        if (sha_done = '1') then                                            
 	          intr <= (others => '1');                                                 
 	        else                                                                       
-	          intr <= (others => '0');                                                 
+	          intr <= (others => '0');
 	        end if;                                                                    
 	      end if;                                                                      
 	    end if;                                                                        

@@ -909,3 +909,9 @@ timestamp=[2021-09-12 23:22:09], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00
 timestamp=[2021-09-12 23:22:51], mode=PLATFORM_GENERATION, duration=0:00:03.391, duration_ms=3391, data={name=design_1_wrapper}
 timestamp=[2021-09-12 23:22:54], mode=BUILD, duration=0:00:00.385, duration_ms=385, data={name=sha256d_final, configuration=Debug, clean_build=false}
 timestamp=[2021-09-12 23:23:12], mode=BUILD, duration=0:00:08.822, duration_ms=8822, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
+timestamp=[2021-09-16 12:24:51], mode=WORKBENCH_START, duration=0:00:33.975, duration_ms=33975, data={}
+timestamp=[2021-09-16 12:24:53], mode=WORKBENCH_UI_INIT, duration=0:00:02.042, duration_ms=2042, data={editors_count=13, platform_editors_count=9, projects_count=5, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,design_1_wrapper,sha256d,sha256d_final,sha256d_final_system}
+timestamp=[2021-09-16 12:24:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.868, duration_ms=2868, data={}
+timestamp=[2021-09-16 12:26:01], mode=PLATFORM_GENERATION, duration=0:00:06.922, duration_ms=6922, data={name=design_1_wrapper}
+timestamp=[2021-09-16 12:26:06], mode=BUILD, duration=0:00:00.983, duration_ms=983, data={name=sha256d_final, configuration=Debug, clean_build=false}
+timestamp=[2021-09-16 12:26:25], mode=BUILD, duration=0:00:09.749, duration_ms=9749, data={name=sha256d_final_system, configuration=Debug, clean_build=false}
